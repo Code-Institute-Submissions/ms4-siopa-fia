@@ -1,59 +1,110 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<div align="center">
+<img src="static/images/logo-banner.png" alt="main title logo"/>
+<br>
+Siopa Fia
+</div>
 
-Welcome USER_NAME,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
+# Project Overview
 ---
 
-Happy coding!
+# Table of Contents
+
+**<details><summary>[User Experience (UX)](#user-experience-ux)</summary>**
+
+- [User Stories](#user-stories)
+- [Strategy](#strategy)
+- [Scope](#scope)
+  - [Existing Features](#existing-features)
+  - [Future Features to Implement](#future-features-to-implement)
+- [Structure](#structure)
+- [Database](#database)
+- [Data Schema](#data-schema)
+- [Skeleton](#skeleton)
+- [Wireframes](#wireframes)
+- [Surface](#surface)
+  - [Colours](#colours)
+  - [Typography](#typography)
+  - [Imagery](#imagery)
+
+</details>
+
+**<details><summary>[Technologies Used](#technologies-used)</summary>**
+
+- [Languages](#languages)
+- [Integration](#integration)
+- [Dependencies](#dependencies)
+- [Tools](#tools)
+- [IDE Extensions](#ide-extensions)
+- [Code Validity](#code-validity)
+
+
+</details>
+
+**<details><summary>[Bugs/Issues](#bugs)</summary>**
+
+- [Project barriers and solutions](#project-barriers-and-solutions)
+- [Known Issues](#known-issues)
+
+</details>
+
+**<details><summary>[Workflow](#workflow)</summary>**
+
+- [Version Control](#version-control)
+- [Development Environment](#development-environment)
+
+</details>
+
+**<details><summary>[Deployment](#deployment)</summary>**
+</details>
+
+**<details><summary>[Testing](#testing)</summary>**
+</details>
+
+**<details><summary>[Credits](#credits)</summary>**
+
+- [Resources](#resources)
+- [Media](#media)
+- [Content](#content)
+- [Code Snippets](#code-snippets)
+- [Acknowledgments](#acknowledgments)
+
+</details>
+
+**<details><summary>[Support](#support)</summary>**
+</details>
+
+## User Experience (UX)
+
+### User Stories
+
+|      As a/an...      |                         I want the ability to...                         |                        So that I can...                       |
+|:--------------------:|:------------------------------------------------------------------------:|:-------------------------------------------------------------:|
+|                      |                                                                          |                                                               |
+|          ---         |                                    ---                                   |                              ---                              |
+| First time user      | easily navigate the site;                                                | find what I am looking for quickly                            |
+| First time user      | view the site on all screen sizes;                                       | view the store across all devices                             |
+| First time user      | read about the company description                                       | gain trust in the company and support local business          |
+| First time user      | search for categories of products                                        | find the best-rated/priced products in a specific category    |
+| First time user      | search for a product by name or category                                 | easily find the exact product Im looking for                  |
+| First time user      | view items selected in the shopping bag                                  | easily see how much I am spending                             |
+| First time user      | adjust or remove items from the shopping bag                             | easily change my order in case I change my mind               |
+| First time user      | access contact details;                                                  | get in touch with any questions                               |
+| First time user      | access social media of the company;                                      | join social media forums for news and updates                 |
+| First time user      | register for a user profile account by choosing a username and password; | store my own personal details and purchase history            |
+| First time user      | make purchases as a guest user                                           | do not have to set up an account if I dont want to            |
+                                                                                                  | or simply make a once-off purchase                  
+|          ---         |                                    ---                                   |                              ---                              |
+| Registered user      | log in and log out of my profile account;                                | Safeguard my information whilst not active on the site        |
+| Registered user      | update my details                                                        | update address and other details in case they change          |
+| Registered user      | store my address for later use;                                          | avoid having to retype it every time I make a purchase        |
+| Registered user      | store my purchase history;                                               | access my previous purchase history                           |
+| Registered user      | store my choices in checkout;                                            | go back to the site in case I wish to add more options        |
+| Registered user      | Make secure payments                                                     | ensure my payments are securely handled                       |
+| Registered user      | Receive email confirmation of payment                                    | confirm that my payment was made |
+|          ---         |                                    ---                                   |                              ---                              |
+| Site Owner           | add new items and category listings;                                     | continuously update the site with new items or specials       |
+| Site Owner           | update items                                                             | change price or product criteria                              |
+| Site Owner           | delete items                                                             | delete items that are no longer for sale                      |
+ ---
+
+
