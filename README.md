@@ -5,6 +5,8 @@ Siopa Fia
 </div>
 
 # Project Overview
+
+Siopa Fia is an fictional online Irish souvenir store aimed at selling Irish gits and hampers that users can buy for themselves or send to their loved ones abroad. Nowadays, especially through times where we cannot be with our families or friends with the limitations of travel, many of our family members or friends that live abroad can often speak of how they miss their favourite Irish tastes, such as a fresh Barry’s Tea or the infamous Tayto Crisp sandwich. This store aims to be a one-stop shop so that the user can choose as few or many gift items that they wish, without having to make multiple visits to their local supermarket/post office etc- Siopa Fia takes care of it all.
 ---
 
 # Table of Contents
@@ -70,9 +72,6 @@ Siopa Fia
 
 </details>
 
-**<details><summary>[Support](#support)</summary>**
-</details>
-
 ## User Experience (UX)
 
 ### User Stories
@@ -91,8 +90,7 @@ Siopa Fia
 | First time user      | access contact details;                                                  | get in touch with any questions                               |
 | First time user      | access social media of the company;                                      | join social media forums for news and updates                 |
 | First time user      | register for a user profile account by choosing a username and password; | store my own personal details and purchase history            |
-| First time user      | make purchases as a guest user                                           | do not have to set up an account if I dont want to            |
-                                                                                                  | or simply make a once-off purchase                  
+| First time user      | make purchases as a guest user                                           | do not have to set up an account if I dont want to            |              
 |          ---         |                                    ---                                   |                              ---                              |
 | Registered user      | log in and log out of my profile account;                                | Safeguard my information whilst not active on the site        |
 | Registered user      | update my details                                                        | update address and other details in case they change          |
