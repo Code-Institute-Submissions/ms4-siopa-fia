@@ -30,8 +30,8 @@ body {
 }
 
 .shop-now-button {
-    background: black;
-    color: white;
+    background: green;
+    color: yellow;
     min-width: 260px;
 }
 
@@ -40,17 +40,20 @@ body {
     color: white;
 }
 
+.bg-white {
+    background-color: darkgreen !important;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
-    color: white;
+    background: rgb(252, 227, 5);
+    color: green;
 }
 
-.bg-green,
 .text-green {
     color: rgb(38, 90, 33) !important;
 }
