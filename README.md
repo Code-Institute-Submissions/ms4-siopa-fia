@@ -6,9 +6,9 @@ Siopa Fia
 
 # Project Overview
 ---
-Siopa Fia is an fictional online Irish souvenir store aimed at selling Irish gifts and hampers that users can buy for themselves or send as gift packages to their loved ones abroad. Nowadays, especially through times where we cannot be with our families or friends with the limitations of travel, many of our family members or friends that live abroad can often speak of how they miss their favourite Irish tastes, such as a fresh Barry’s Tea or the infamous Tayto Crisp sandwich. This store aims to be a one-stop shop so that the user can choose as few or many gift items that they wish, without having to make multiple visits to their local supermarket/post office etc- Siopa Fia takes care of it all.
+Siopa Fia is a fictional online Irish eco/sustainable clothing store. All products in the store are made locally, ethically sourced and are made from 100% organic cotton.
 
-The ideal customer of Siopa Fia is someone, similar to myself who like to send their family and friends quintessential Irish foodfare and things they would miss or appreciate being far from home. As an Irish company customers are also supporting local business which is of huge benefit to local vendors in these times.
+The ideal customer of Siopa Fia is someone, similar to myself...
 
 Primary functions of Siopa Fia:
 - Product purchase functionality
