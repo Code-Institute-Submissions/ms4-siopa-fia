@@ -92,6 +92,7 @@ Primary functions of Siopa Fia:
 |          ---         |                                    ---                                   |                              ---                              |
 | First time user      | easily navigate the site;                                                | find what I am looking for quickly                            |
 | First time user      | view the site on all screen sizes;                                       | view the store across all devices                             |
+| First time user      | view a list of products                                                  | view items available to buy                                   |
 | First time user      | read about the company description                                       | gain trust in the company and support local business          |
 | First time user      | search for categories of products                                        | find the best-rated/priced products in a specific category    |
 | First time user      | search for a product by name or category                                 | easily find the exact product Im looking for                  |

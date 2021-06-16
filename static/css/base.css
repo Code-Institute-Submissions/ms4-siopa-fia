@@ -30,7 +30,7 @@ body {
 }
 
 .shop-now-button {
-    background: rgb(76, 76, 75);
+    background: teal;
     color: white;
     min-width: 260px;
 }
@@ -44,13 +44,17 @@ body {
     background-color: #fff !important;
 }
 
+.bg-teal {
+    background-color: teal !important;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: rgb(117, 117, 115);
+    background: rgb(4, 59, 59);
     color: #fff;
 }
 
