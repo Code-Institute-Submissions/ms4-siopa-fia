@@ -1,0 +1,380 @@
+[{
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "ff3374619900",
+            "name": "Full Length White Organic Cotton Dress",
+            "description": "Keeping in line with siopaFIA's sustainable principles, this white maxi dress is crafted from lightweight organic cotton – a fibre that uses less water, land and chemicals during production. It has a flattering scoop neckline and discreet slip pockets, then falls to a graceful floor-grazing length.",
+            "price": 164.99,
+            "category": 1,
+            "rating": 4.6,
+            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624008910/whitedress_l94zqs.jpg",
+            "image": "whitedress.jpeg"
+        }
+    },
+
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "ff2032309828",
+            "name": "Midi Organic Cotton Dress",
+            "description": " Round Neck, Wide braces, Fitted waist, Cream, Button tab, - Comfortable, Calf-length. 100% Organic cotton grown without pesticides.",
+            "price": 158.99,
+            "category": 1,
+            "rating": 4.8,
+            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624009738/whitedress2_l8gkre.jpg",
+            "image": "whitedress2.jpeg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "ff3402983484",
+            "name": "Organic Cotton Green Long-Sleeve Floral Dress",
+            "description": "Fitted yet flowy midi dress with long sleeves and v-neck. Side pockets and button front. Sheath cut. Designed for a figure-hugging fit. This brand is Spanish so you may want to go up a size.100% Organic cotton grown without pesticides.",
+            "price": 149.99,
+            "category": 1,
+            "rating": 5.0,
+            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624010240/whitedress3_mzbkij.jpg",
+            "image": "whitedress3.jpeg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "ff3493822111",
+            "name": "White-Mocha Mix Maxi Cotton Dress",
+            "description": "siopaFIA's white maxi dress is made from breezy organic linen, echoing the label’s preference for natural, eco-friendly fibres. The minimalist silhouette is crafted in Italy with a V-neck and back, slender straps and self ties, then falls to a graceful floor-grazing length. Complement the low neckline with a pendant necklace.100% Organic cotton grown without pesticides.",
+            "price": 189.99,
+            "category": 1,
+            "rating": 4.3,
+            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624010363/whitedress4_eay8b0.jpg",
+            "image": "whitedress4.jpeg"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "ff3493822111",
+            "name": "Marilyn Organic Silk Mid-Length Dress",
+            "description": "Channel your inner blonde bombshell with Marilyn, a glossy 100% organic Mulberry silk v-neck classic silk slip dress that you can wear both indoors and out. Soft to the touch and incredibly versatile, you'll want one of these in every shade. ",
+            "price": 179.99,
+            "category": 1,
+            "rating": 4.3,
+            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624011208/whitedress5_ibw4j6.jpg",
+            "image": "whitedress5.jpeg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "ff3911190993",
+            "name": "Indigo-Dyed Black TShirt Dress",
+            "description": "Comfortable fit, wide v-neck, mid-thigh length. Made using chemical-free materials and 100% organic cotton. ",
+            "price": 69.99,
+            "category": 1,
+            "rating": 4.3,
+            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624011530/womensdress5_lhdhic.jpg",
+            "image": "womensdress5.jpg"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "ff4583759778",
+            "name": "Linen Midi-Shirt Dress",
+            "description": "siopaFIA's light blue Lisa midi shirt dress is crafted from airy linen, giving it fluidity and soft structure evocative of the London label’s contemporary elegance. The relaxed shapes is framed by a semi-spread collar and patch pocket, then cinched by a braided belt and falls to a panelled skirt with a front hem slit. ",
+            "price": 220.99,
+            "category": 1,
+            "rating": 4.3,
+            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624011831/whitedress6_n9njxw.jpg",
+            "image": "whitedress6.jpeg"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "ff88838398111",
+            "name": "Embroidered Black Organic Cotton Dress",
+            "description": "Casual and comfortable with string-tie v-neck embroidered detail. Made using organic indigo dye and chemical free. 100% organic cotton. ",
+            "price": 89.99,
+            "category": 1,
+            "rating": 4.5,
+            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624012012/womensdress4_tthddy.jpg",
+            "image": "womensdress4.jpg"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "ff7787812113",
+            "name": "Black Organic A-Line Dress",
+            "description": "Comfortable and chic black a-line dress. Made with indigo dye and chemical free. 100% organic cotton. ",
+            "price": 89.99,
+            "category": 1,
+            "rating": 4.3,
+            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624012435/womensdress6_ubyare.jpg",
+            "image": "womensdress6.jpg"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "sku": "ff3984983421",
+            "name": "Two-Tone Linen Midi Dress",
+            "description": "Wide, open neck. Pinafore-style straps with a row of buttons at the back. Mid-calf length.",
+            "price": 59.99,
+            "category": 5,
+            "rating": 4.3,
+            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624012660/womensdress7_j9o8b6.jpg",
+            "image": "womensdress7.jpg"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "sku": "ff3984983425",
+            "name": "Organic Linen V-Neck Dress",
+            "description": "Sleeveless off-cream organic cotton dress, fits comfortable with belt. Mid-thigh length. Made using 100% organic cotton ",
+            "price": 79.99,
+            "category": 5,
+            "rating": 4.3,
+            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624012965/womensdress8_jcqvlq.jpg",
+            "image": "womensdress8.jpg"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "sku": "ff3984983332",
+            "name": "Organic Cotton Two-Tone Mid-Length Dress",
+            "description": "Sleeveless mid-length dress in two-tone colour. Pleated-detail front and back, floral print and red neck-line. Wide and open fit, a great wear on those especially warm summer days. ",
+            "price": 69.99,
+            "category": 5,
+            "rating": 4.3,
+            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624013027/womensdress9_qdoluj.jpg",
+            "image": "womensdress9.jpg"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "sku": "ff3985489331",
+            "name": "Organic Cotton Mid-Length Cream Dress",
+            "description": "Sleeveless mid-length dress in cream . Black fine-stitch detail throughout. Wide and open fit, a great wear on those especially warm summer days. ",
+            "price": 69.99,
+            "category": 5,
+            "rating": 4.3,
+            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624013297/womensdress10_xzparx.jpg",
+            "image": "womensdress10.jpg"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "sku": "ff3985489331",
+            "name": "Burnt Orange Organic Cotton Midi Dress",
+            "description": "Slip into comfort in the mid-length casual dress. Comes with a plaited-rope taupe belt. Made using 100% organic cotton. ",
+            "price": 129.99,
+            "category": 1,
+            "rating": 4.3,
+            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624013415/womensdress13_vhybwu.jpg",
+            "image": "womensdress13.jpg"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "sku": "ff7736251253",
+            "name": "Organic Poplin Dress",
+            "description": "Garment dyed cotton poplin - crisp and light, and woven in Italy. Wider style straps and wrap over cut that can be worn in several ways. Narrow ties at each side that knot at the inner front and back. Panelled sides. 100% Organic Cotton.",
+            "price": 179.99,
+            "category": 1,
+            "rating": 4.3,
+            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624013662/womensdress14_oryrwa.jpg",
+            "image": "womensdress14.jpg"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "sku": "tt9857644212",
+            "name": "Long Sleeve Organic Cotton Sweatshirt",
+            "description": "Light grey, round neck. Comfortable and subtle, it can be combined very easily and is an ideal companion for your everyday life. 100% Organic Cotton.",
+            "price": 79.99,
+            "category": 2,
+            "rating": 4.1,
+            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624014760/womenstop1_jy1kri.jpg",
+            "image": "womenstop1.jpg"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+            "sku": "tt9857644213",
+            "name": "Navy Alison Jumper",
+            "description": "Simple yet eternally wearable, the Alison Jumper is crafted from a blend of organic cotton and wool making it soft, warm and breathable. In a slightly oversized fit, it's comfortable and easy to wear for any shape. ",
+            "price": 139.99,
+            "category": 2,
+            "rating": 4.1,
+            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624015158/womenstop2_fw5c9e.jpg",
+            "image": "womenstop2.jpg"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "products.product",
+        "fields": {
+            "sku": "tt9857644218",
+            "name": "Organic Cotton TShirt",
+            "description": "Hand-printed fair-trade organic cotton tshirt made using chemical free dye and materials. Comfortable loose fit. 100% organic cotton.",
+            "price": 59.99,
+            "category": 2,
+            "rating": 4.8,
+            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624015216/womenstop3_utzkgf.jpg",
+            "image": "womenstop3.jpg"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "products.product",
+        "fields": {
+            "sku": "tt9857644219",
+            "name": "Stephanie TShirt",
+            "description": "This t shirt is a versatile addition to the range. We love the fabric that the Stephanie is made from, the mercerised Tencel™ organic cotton blend jersey is soft, smooth and breathable fabric - not to mention anti-static. Dress this simple top up or down, with smart trousers or relaxed hemp.",
+            "price": 79.99,
+            "category": 5,
+            "rating": 4.4,
+            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624015472/womenstop4_vgnpvd.jpg",
+            "image": "womenstop4.jpg"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "products.product",
+        "fields": {
+            "sku": "tt9857644220",
+            "name": "Ciara TShirt",
+            "description": "The Ciara TShirt is new to our range of hand-printed tops, using non-chemical materials. Loose and relaxed fit with round neck with bow detail at the front. 100% organic cotton.",
+            "price": 59.99,
+            "category": 2,
+            "rating": 4.4,
+            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624015719/womenstop5_lombrl.jpg",
+            "image": "womenstop5.jpg"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "products.product",
+        "fields": {
+            "sku": "tt9857644227",
+            "name": "Madeleine Dusty Pink Top",
+            "description": "Dusty Pink bow-detail top you can dress up or down. 100% organic cotton.",
+            "price": 99.99,
+            "category": 2,
+            "rating": 4.4,
+            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624016046/womenstop6_cpshuo.jpg",
+            "image": "womenstop6.jpg"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "products.product",
+        "fields": {
+            "sku": "tt9857644234",
+            "name": "Aubergine Cotton Jersey Top",
+            "description": "",
+            "price": 79.99,
+            "category": 2,
+            "rating": 4.4,
+            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624016342/womenstop7_trvopu.jpg",
+            "image": "womenstop7.jpg"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "products.product",
+        "fields": {
+            "sku": "tt9857644235",
+            "name": "Teal Cotton Marie TShirt",
+            "description": "This Teal Cotton Marie TShirt is made of 68% bamboo, 4% elastane and 28% organic cotton. It has short sleeves and is feminine and fitted cut.",
+            "price": 44.99,
+            "category": 2,
+            "rating": 4.4,
+            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624016685/womenstop8_ibpcnl.jpg",
+            "image": "womenstop8.jpg"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "products.product",
+        "fields": {
+            "sku": "tt9857644110",
+            "name": "Organic Long-Sleeve Cream Cotton Top",
+            "description": "Simple and a wardrobe staple. Ethically produced and 100% PETA approved.",
+            "price": 54.99,
+            "category": 4,
+            "rating": 4.4,
+            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624016886/womenstop9_rn447k.jpg",
+            "image": "womenstop9.jpg"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "products.product",
+        "fields": {
+            "sku": "tt9857644109",
+            "name": "Hand Printed Louisa Tee",
+            "description": "100% Organic Cotton hand printed and locally designed t-shirt. White and black print and fitted style.",
+            "price": 105.99,
+            "category": 4,
+            "rating": 4.4,
+            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624017332/womenstop10_la0tng.jpg",
+            "image": "womenstop10.jpg"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "products.product",
+        "fields": {
+            "sku": "tt9857644147",
+            "name": "Ella",
+            "description": "Floral hand embroidered detailed top using indigo dye and non-chemical materials. 100% organic cotton. ",
+            "price": 85.99,
+            "category": 5,
+            "rating": 4.2,
+            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624017323/womenstop11_tkzlzw.jpg",
+            "image": "womenstop11.jpg"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "products.product",
+        "fields": {
+            "sku": "tt9851624147",
+            "name": "100% Crganic Cotton Vest",
+            "description": "Range of 100% organic cotton vests.",
+            "price": 25.99,
+            "category": 2,
+            "rating": 5.0,
+            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624017343/womenstops_me4dpr.jpg",
+            "image": "womenstops.jpg"
+        }
+    }
+]
