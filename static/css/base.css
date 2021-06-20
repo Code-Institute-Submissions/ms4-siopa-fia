@@ -58,14 +58,29 @@ body {
     color: #fff;
 }
 
-
-
 .text-black {
     color: rgb(78, 77, 70);
 }
 
 .border-black {
     border: 1px solid black !important;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgb(81, 92, 89);
+    z-index: -1;
+}
+
+.card-img,
+.card-img-bottom,
+.card-img-top {
+    width: 100%;
+    height: 28rem;
 }
 
 /* -------------------------------- Media Queries */
