@@ -102,13 +102,13 @@
         "model": "products.product",
         "fields": {
             "sku": "ff88838398111",
-            "name": "Embroidered Black Organic Cotton Dress",
-            "description": "Casual and comfortable with string-tie v-neck embroidered detail. Made using organic indigo dye and chemical free. 100% organic cotton. ",
+            "name": "Light Organic Cotton Linen Day Dress",
+            "description": "Casual and comfortable with string-tie v-neck embroidered detail along belt-line. Made using organic indigo dye and chemical free. 100% organic cotton. ",
             "price": 89.99,
             "category": 1,
             "rating": 4.5,
-            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624012012/womensdress4_tthddy.jpg",
-            "image": "womensdress4.jpg"
+            "image_url": "https://res.cloudinary.com/elerel/image/upload/v1624217048/womensdress16_vho7fo.jpg",
+            "image": "womensdress16.jpeg"
         }
     },
     {

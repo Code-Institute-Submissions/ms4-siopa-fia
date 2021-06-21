@@ -37,5 +37,21 @@
             "name": "sale",
             "friendly_name": "Sale"
         }
+    },
+    {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+            "name": "skincare",
+            "friendly_name": "Skincare"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.category",
+        "fields": {
+            "name": "footwear",
+            "friendly_name": "Footwear"
+        }
     }
 ]
