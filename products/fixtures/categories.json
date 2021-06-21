@@ -47,6 +47,14 @@
         }
     },
     {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+            "name": "soaps",
+            "friendly_name": "Handmade Soaps"
+        }
+    },
+    {
         "pk": 7,
         "model": "products.category",
         "fields": {
