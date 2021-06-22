@@ -80,6 +80,11 @@ body {
     height: 26rem;
 }
 
+a.category-badge>span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
 
 
 /* -------------------------------- Media Queries */
