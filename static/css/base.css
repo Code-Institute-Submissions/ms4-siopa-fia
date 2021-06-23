@@ -30,7 +30,7 @@ body {
 }
 
 .shop-now-button {
-    background: teal;
+    background: rgb(111, 145, 80);
     color: white;
     margin: 0;
     position: absolute;
@@ -66,8 +66,8 @@ body {
     background-color: #fff !important;
 }
 
-.bg-teal {
-    background-color: teal !important;
+.bg-olive {
+    background-color: rgb(111, 145, 80);
 }
 
 .shop-now-button:hover,
@@ -94,7 +94,7 @@ body {
     top: 0;
     left: 0;
     position: fixed;
-    background: rgb(183 189 179);
+    background: rgb(151, 179, 135);
     z-index: -1;
 }
 
@@ -111,6 +111,22 @@ a.category-badge>span.badge:hover {
 .update-link,
 .remove-item {
     cursor: pointer;
+}
+
+/*------------------------------------ Toasts */
+.message-container {
+    position: fixed;
+    top: 4.5rem;
+    right: 1rem;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
 }
 
 
