@@ -46,8 +46,37 @@
                 <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                     {% csrf_token %}
                     <div class="form-row">
-                        <!--Sizing-->
-                        {% include 'products/item_sizing.html' %}
+                        {% if product.category.name == 'footwear' %}
+                        <!--Size Select options for Footwear-->
+                        <div class="col-12 text-black">
+                            <strong>Select Size:</strong>
+                            <select class="form-control rounded-0 w-50" name="product_size" id="id_product_size">
+                                <option class="text-black" value="36">36</option>
+                                <option class="text-black" value="37">37</option>
+                                <option class="text-black" value="38" selected>38</option>
+                                <option class="text-black" value="39">39</option>
+                                <option class="text-black" value="40">40</option>
+                                <option class="text-black" value="41">41</option>
+                            </select>
+                            <small> EU Footwear Sizing</small>
+                        </div>
+                        {% endif %}
+                        {% if product.category.name != 'footwear' and product.category.name != 'skincare' and product.category.name != 'serums' and product.category.name != 'body'  and product.category.name != 'soaps' %}
+                        <div class="col-12 text-black">
+                            <strong>Select Size:</strong>
+                            <select class="form-control rounded-0 w-50" name=" product_size" id="id_product_size">
+                                <option class="text-black" value="4">4</option>
+                                <option class="text-black" value="6">6</option>
+                                <option class="text-black" value="8" selected>8</option>
+                                <option class="text-black" value="10">10</option>
+                                <option class="text-black" value="12">12</option>
+                                <option class="text-black" value="14">14</option>
+                                <option class="text-black" value="16">16</option>
+                                <option class="text-black" value="18">18</option>
+                            </select>
+                            <small>UK/IRL Sizing</small>
+                        </div>
+                        {% endif %}
                         <div class="col-12">
                             <p class="mt-3"><strong>Quantity:</strong></p>
                             <div class="form-group w-50">
@@ -57,7 +86,7 @@
                             </div>
                         </div>
 
-                        <div class="col-12">
+                        <div class="col{% if s %}-12 mt-2{% endif %}">
                             <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
                                 <span class="icon">
                                     <i class="fas fa-chevron-left"></i>
