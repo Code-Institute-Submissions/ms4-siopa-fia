@@ -32,6 +32,12 @@ body {
 .shop-now-button {
     background: teal;
     color: white;
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     min-width: 260px;
 }
 
