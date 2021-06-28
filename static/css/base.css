@@ -97,8 +97,13 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: rgb(255, 255, 255);
-    color: #fff;
+    background: #fff;
+    color: rgb(12, 12, 12);
+	font-weight: 700 !important;
+	letter-spacing: 3px;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.3s ease 0s;
 }
 
 .text-black {
