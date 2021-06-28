@@ -29,6 +29,11 @@ body {
     width: fit-content;
 }
 
+.zoom:hover {
+    transform: scale(1.2);
+    transition: all 1.3s ease-in-out;
+  }
+
 .shop-now-button {
     background: rgb(111, 145, 80);
     color: white;
@@ -40,6 +45,18 @@ body {
     transform: translate(-50%, -50%);
     min-width: 260px;
 }
+
+
+.shop-now-button:hover {
+    color: #404040 !important;
+	font-weight: 700 !important;
+	letter-spacing: 3px;
+	background: none;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.3s ease 0s;
+}
+
 
 .btn-black {
     background: rgb(76, 76, 75);
@@ -70,13 +87,17 @@ body {
     background-color: rgb(111, 145, 80);
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: rgb(4, 59, 59);
+    background: rgb(255, 255, 255);
     color: #fff;
 }
 
