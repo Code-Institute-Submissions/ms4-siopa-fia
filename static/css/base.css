@@ -77,7 +77,11 @@ body {
     color: white !important;
 }
 
-
+.home-btn,
+.nav-link,
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(111, 145, 80);
+}
 
 .bg-white {
     background-color: #fff !important;
