@@ -35,7 +35,7 @@ body {
   }
 
 .shop-now-button {
-    background: rgb(111, 145, 80);
+    background: rgb(78 105 53);
     color: white;
     margin: 0;
     position: absolute;
@@ -75,6 +75,15 @@ body {
 .btn-outline-black:focus {
     background: black;
     color: white !important;
+}
+
+.home-btn {
+    text-shadow: 2px 2px rgb(192, 212, 196);
+    font-size: 2rem;
+}
+
+.banner-alert {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .home-btn,
