@@ -24,12 +24,17 @@ body {
 
 .about-header {
     position: absolute;
-    top: 70%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Cutive Mono', sans-serif;
-    font-weight: 700;
+    font-weight: bold;
+    font-size: 3rem;
 
+}
+
+p {
+    font-size: 1.4rem;
 }
 
 .about-us {
@@ -38,8 +43,8 @@ body {
     align-content: center;
     padding-top: 2rem;
     font-size: 1.6rem;
-
 }
+
 
 .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
     margin-bottom: 15px;
@@ -55,6 +60,7 @@ body {
     width: 33.33%;
     padding: 5px;
   }
+
   
   /* Clearfix (clear floats) */
   .staff-images::after {
@@ -389,3 +395,5 @@ a.category-badge>span.badge:hover {
         height: calc(100vh - 116px);
     }
 }
+
+
