@@ -41,13 +41,27 @@ body {
 
 }
 
-.image-row {
-    display: inline-block;
-}
-
 .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
     margin-bottom: 15px;
 }
+
+.staff-images {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .staff-images::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 /* from Bulma */
 .icon {
