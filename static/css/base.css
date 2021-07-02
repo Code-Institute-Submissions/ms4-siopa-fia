@@ -12,6 +12,8 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/*-----------------------------About Us Page */
+
 .about-page {
     background: url('/media/glasthule.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -37,6 +39,10 @@ body {
     padding-top: 2rem;
     font-size: 1.6rem;
 
+}
+
+.image-row {
+    display: inline-block;
 }
 
 .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
