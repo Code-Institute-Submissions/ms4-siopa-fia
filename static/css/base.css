@@ -4,12 +4,16 @@ html {
     height: 100%;
 }
 
+
 body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.index-page {
     background: url('/media/homepageimg.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    height: 100vh;
     color: rgb(51, 51, 48);
-    font-family: 'Montserrat', sans-serif;
 }
 
 /*-----------------------------About Us Page */
@@ -30,7 +34,6 @@ body {
     font-family: 'Cutive Mono', sans-serif;
     font-weight: bold;
     font-size: 3rem;
-
 }
 
 p {
@@ -61,7 +64,20 @@ p {
     padding: 5px;
   }
 
-  
+  /* ------------------------------ Blog Page----*/
+  .blog-welcome {
+    padding-top: 20px;
+}
+
+  .blog-page {
+    background: url('/media/blogheaderimage.jpg') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    color: rgb(3, 3, 2);
+      
+  }
+
   /* Clearfix (clear floats) */
   .staff-images::after {
     content: "";
