@@ -22,12 +22,12 @@
 </div>
 <div class="container blog-container">
    <div class="row card card-style-blog">
-      <div class="card-body">
-         {% for blog in blog %}
+      <div class="blog-card-body">
+         {% for blog in blogs %}
             <div class="card p-4 my-4">
                <p class="font-weight-bold text-uppercase logo-font">{{ blog.title }}</p>
                <p class="text-muted">By: {{ blog.author }} | {{ blog.published_date }}</p>
-               <p>{{ blog.body|truncatechars:150 }}<a href="#" class="read-on-text">more</a></p>
+               <p>{{ blog.body|truncatechars:150 }}<a href="{% url 'blog_detail' blog.id %}" class="read-on-text">more</a></p>
                {% if request.user.is_superuser %}
                <small class="ml-3">
                <a href="#">Edit</a> | 
