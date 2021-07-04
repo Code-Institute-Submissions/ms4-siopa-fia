@@ -75,9 +75,32 @@ p {
     width: 100%;
     height: 70vh;
     color: rgb(3, 3, 2);
-      
   }
 
+  .card-style-blog,
+  .card {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+  }
+
+  .card-body {
+      background-color: rgb(111, 145, 80);
+    
+  }
+
+ .welcome-blog-text {
+    margin: 20px;
+}
+
+.read-on-text {
+    color: blue;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.blog-page-btns {
+    margin-top: 10px;
+}
   /* Clearfix (clear floats) */
   .staff-images::after {
     content: "";
@@ -411,5 +434,4 @@ a.category-badge>span.badge:hover {
         height: calc(100vh - 116px);
     }
 }
-
 

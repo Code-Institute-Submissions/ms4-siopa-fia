@@ -15,40 +15,31 @@
    <div class="row">
    </div>
 </div>
+<div class="col-12 text-center welcome-blog-text">
+   <h1 class="logo-font text-uppercase ">Welcome To Our Blog Page!</h1>
+   <p>Taking the plunge into the world of slow fashion is not easy.
+   If you could use a little help, or a step-by-step method, check out these amazing blogs.</p>
+</div>
 <div class="container blog-container">
    <div class="row card card-style-blog">
       <div class="card-body">
          {% for blog in blog %}
-            <div class="col-12 text-center">
-               <i class="fas fa-shopping-bag"></i>
-            </div>
-            <div class="col-12">
-               <p class="font-weight-bold text-uppercase logo-font text-center">{{ blog.title }}</p>
-            </div>
-            <div class="col-12">
-               <p class="text-center">{{ blog.body }}</p>
-            </div>
-            <div class="col-12">
-               <p>By {{ blog.author }}</p>
-            </div>
-            <div class="col-12">
-                <p>{{ blog.published_date }}</p>
-             </div>
-            {% endfor %}
-            {% for blog in blog %}
-            {% if request.user.is_superuser %}
+            <div class="card p-4 my-4">
+               <p class="font-weight-bold text-uppercase logo-font">{{ blog.title }}</p>
+               <p class="text-muted">By: {{ blog.author }} | {{ blog.published_date }}</p>
+               <p>{{ blog.body|truncatechars:150 }}<a href="#" class="read-on-text">more</a></p>
+               {% if request.user.is_superuser %}
                <small class="ml-3">
                <a href="#">Edit</a> | 
-               </small>
-               <small class="ml-3">
-               <a href="#">Delete</a> | 
+               <a href="#">Delete</a>
                </small>
             {% endif %}
+             </div>
          {% endfor %}
    </div>
    <div class="row blog-page-btns">
       <div class="col text-right">
-         <a href="{% url 'home' %}" class="btn btn-outline-black rounded-0 btn-sm">
+         <a href="{% url 'home' %}" class="btn btn-outline-black rounded-0 mt-5">
          <span class="icon">
          <i class="fas fa-chevron-left"></i>
          </span>
@@ -56,11 +47,13 @@
          </a>
       </div>
       <div class="col text-left">
-         <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-sm">
-         <span class="text-uppercase">Back To Shopping</span>
-         <span class="icon">
-         <i class="fas fa-chevron-right"></i>
-         </span>
+         
+            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
+               <span class="icon">
+                   <i class="fas fa-chevron-left"></i>
+               </span>
+               <span class="text-uppercase">Keep Shopping</span>
+           </a>
          </a>
       </div>
    </div>
