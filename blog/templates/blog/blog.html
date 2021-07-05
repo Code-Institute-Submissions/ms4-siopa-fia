@@ -18,42 +18,55 @@
 <div class="col-12 text-center welcome-blog-text">
    <h1 class="logo-font text-uppercase ">Welcome To Our Blog Page!</h1>
    <p>Taking the plunge into the world of slow fashion is not easy.
-   If you could use a little help, or a step-by-step method, check out these amazing blogs.</p>
+      If you could use a little help, or a step-by-step method, check out these amazing blogs.</p>
 </div>
 <div class="container blog-container">
    <div class="row card card-style-blog">
       <div class="blog-card-body">
          {% for blog in blogs %}
-            <div class="card p-4 my-4">
-               <p class="font-weight-bold text-uppercase logo-font">{{ blog.title }}</p>
-               <p class="text-muted">By: {{ blog.author }} | {{ blog.published_date }}</p>
-               <p>{{ blog.body|truncatechars:150 }}<a href="{% url 'blog_detail' blog.id %}" class="read-on-text">more</a></p>
-               {% if request.user.is_superuser %}
-               <small class="ml-3">
-               <a href="{% url 'edit_blog' blog.id %}">Edit</a> | 
+         <div class="card p-4 my-4">
+            <p class="font-weight-bold text-uppercase logo-font">{{ blog.title }}</p>
+            <p class="text-muted">By: {{ blog.author }} | {{ blog.published_date }}</p>
+            <p>{{ blog.body|truncatechars:150 }}<a href="{% url 'blog_detail' blog.id %}" class="read-on-text">more</a>
+            </p>
+            {% if request.user.is_superuser %}
+            <small class="ml-3">
+               <a href="{% url 'edit_blog' blog.id %}">Edit</a> |
                <a href="{% url 'delete_blog' blog.id %}">Delete</a>
-               </small>
+            </small>
             {% endif %}
-             </div>
+         </div>
          {% endfor %}
-   </div>
+      </div>
+
+
+
+      <!--Add A Blog if SuperUser-->
+      {% if request.user.is_superuser %}
+      <div class="col text-center mt-5 mb-5">
+         <a class="btn btn-black" href="{% url 'add_blog' %}">Add Post</a>
+      </div>
+     </div>
+      {% endif %}
+
+   <!--Redirect buttons-->
    <div class="row blog-page-btns">
       <div class="col text-right">
          <a href="{% url 'home' %}" class="btn btn-outline-black rounded-0 mt-5">
-         <span class="icon">
-         <i class="fas fa-chevron-left"></i>
-         </span>
-         <span class="text-uppercase">Home</span>
+            <span class="icon">
+               <i class="fas fa-chevron-left"></i>
+            </span>
+            <span class="text-uppercase">Home</span>
          </a>
       </div>
       <div class="col text-left">
-         
-            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
-               <span class="icon">
-                   <i class="fas fa-chevron-left"></i>
-               </span>
-               <span class="text-uppercase">Keep Shopping</span>
-           </a>
+
+         <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
+            <span class="icon">
+               <i class="fas fa-chevron-left"></i>
+            </span>
+            <span class="text-uppercase">Keep Shopping</span>
+         </a>
          </a>
       </div>
    </div>

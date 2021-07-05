@@ -59,6 +59,7 @@ def edit_blog(request, blog_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only siopaFIA admin can do that.')
         return redirect(reverse('home'))
+
     blog = get_object_or_404(Blog, pk=blog_id)
     if request.method == 'POST':
         form = BlogForm(request.POST, request.FILES, instance=blog)
@@ -80,6 +81,7 @@ def edit_blog(request, blog_id):
     }
 
     return render(request, template, context)
+
 
 @login_required
 def delete_blog(request, blog_id):
