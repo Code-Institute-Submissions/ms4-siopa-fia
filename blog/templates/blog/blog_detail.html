@@ -26,11 +26,11 @@
         <div class="row mt-3">
             <div class="blog-content-container container">
                 <h1 class="logo-font text-center">{{ blog.title }}</h1>
-                <p class="text-center">{{ blog.body }}</p>
+                <p class="text-left">{{ blog.body }}</p>
                 {% if request.user.is_superuser %}
                 <small class="ml-3">
-                    <a href="">Edit</a> |
-                    <a class="text-danger" href="">Delete</a>
+                    <a href="{% url 'edit_blog' blog.id %}">Edit</a> |
+                    <a class="text-danger" href="{% url 'delete_blog' blog.id %}">Delete</a>
                 </small>
                 {% endif %}
                 <!--Blog Content-->

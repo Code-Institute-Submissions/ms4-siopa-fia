@@ -30,8 +30,8 @@
                <p>{{ blog.body|truncatechars:150 }}<a href="{% url 'blog_detail' blog.id %}" class="read-on-text">more</a></p>
                {% if request.user.is_superuser %}
                <small class="ml-3">
-               <a href="#">Edit</a> | 
-               <a href="#">Delete</a>
+               <a href="{% url 'edit_blog' blog.id %}">Edit</a> | 
+               <a href="{% url 'delete_blog' blog.id %}">Delete</a>
                </small>
             {% endif %}
              </div>
