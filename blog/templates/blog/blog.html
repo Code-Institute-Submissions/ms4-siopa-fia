@@ -32,14 +32,37 @@
             {% if request.user.is_superuser %}
             <small class="ml-3">
                <a href="{% url 'edit_blog' blog.id %}">Edit</a> |
-               <a href="{% url 'delete_blog' blog.id %}">Delete</a>
+               <button type="button" class="btn btn-sm text-danger" data-toggle="modal" data-target="#deleteBlog_{{blog.id}}">
+                  Delete
+              </button>
+               
             </small>
-            {% endif %}
          </div>
+         
+            <!--Delete Blogpost Modal -->
+            <div class="modal fade" id="deleteBlog_{{blog.id}}" tabindex="-1" aria-labelledby="deletePModal" aria-hidden="true">
+            <div class="modal-dialog">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <h4 class="modal-title font-weight-bold text-green" id="deleteFModal">Delete Blog</h4>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                              </button>
+                     </div>
+                     <div class="modal-body">
+                        <p class="text-center logo-font text-green">Are you sure you want to delete<strong> {{ blog.title }}</strong>?</p>
+                     </div>
+                     <div class="modal-footer">
+                        <button type="button" class="btn shop-btn rounded-0 text-uppercase text-green" data-dismiss="modal">Cancel</button>
+                        <a class="delete-link rounded-0 text-uppercase text-danger" href="{% url 'delete_blog' blog.id %}">Delete</a>
+                     </div>
+                  </div>
+            </div>
+         </div>
+         {% endif %}
          {% endfor %}
       </div>
-
-
+   </div>
 
       <!--Add A Blog if SuperUser-->
       {% if request.user.is_superuser %}
@@ -70,6 +93,5 @@
          </a>
       </div>
    </div>
-</div>
 </div>
 {% endblock %}
