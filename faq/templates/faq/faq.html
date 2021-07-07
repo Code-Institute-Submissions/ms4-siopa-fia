@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+   <div class="row">
+      <div class="col"></div>
+   </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="blog-page">
+   <div class="row">
+   </div>
+</div>
+<div class="col-12 text-center welcome-blog-text">
+   <h1 class="logo-font text-uppercase ">FAQs</h1>
+</div>
+<div class="container blog-container">
+   <div class="row card card-style-blog">
+      <div class="blog-card-body">
+         {% for f in faq %}
+         <div class="card p-4 my-4">
+            <p class="font-weight-bold faq-question text-uppercase text-center logo-font">{{ f.question }}</p>
+            <p class="text-center">{{ f.answer }}
+            </p>
+            {% if request.user.is_superuser %}
+            <small class="ml-3">
+               <a href="">Edit</a> |
+               <button type="button" class="btn btn-sm text-danger" data-toggle="modal" data-target="">
+                  Delete
+              </button>
+               
+            </small>
+         </div>
+         
+            <!--Delete Blogpost Modal -->
+            <div class="modal fade" id="deleteBlog_{{blog.id}}" tabindex="-1" aria-labelledby="deletePModal" aria-hidden="true">
+            <div class="modal-dialog">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <h4 class="modal-title font-weight-bold text-green" id="deleteFModal">Delete Blog</h4>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                              </button>
+                     </div>
+                     <div class="modal-body">
+                        <p class="text-center logo-font text-green">Are you sure you want to delete<strong> {{ blog.title }}</strong>?</p>
+                     </div>
+                     <div class="modal-footer">
+                        <button type="button" class="btn shop-btn rounded-0 text-uppercase text-green" data-dismiss="modal">Cancel</button>
+                        <a class="delete-link rounded-0 text-uppercase text-danger" href="">Delete</a>
+                     </div>
+                  </div>
+            </div>
+         </div>
+         {% endif %}
+         {% endfor %}
+      </div>
+   </div>
+
+      <!--Add A Blog if SuperUser-->
+      {% if request.user.is_superuser %}
+      <div class="col text-center mt-5 mb-5">
+         <a class="btn btn-black" href="">Add FAQ</a>
+      </div>
+     </div>
+      {% endif %}
+
+   <!--Redirect buttons-->
+   <div class="row blog-page-btns">
+      <div class="col text-right">
+         <a href="{% url 'home' %}" class="btn btn-outline-black rounded-0 mt-5">
+            <span class="icon">
+               <i class="fas fa-chevron-left"></i>
+            </span>
+            <span class="text-uppercase">Home</span>
+         </a>
+      </div>
+      <div class="col text-left">
+
+         <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
+            <span class="icon">
+               <i class="fas fa-chevron-left"></i>
+            </span>
+            <span class="text-uppercase">Keep Shopping</span>
+         </a>
+         </a>
+      </div>
+   </div>
+</div>
+{% endblock %}

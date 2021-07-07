@@ -110,6 +110,13 @@ p {
 }
 
 
+/*-------------------------------------- FAQs Page-------*/
+
+.faq-question {
+    font-size: 2rem;
+    color: rgb(21, 131, 21);
+}
+
   /* Clearfix (clear floats) */
   .staff-images::after {
     content: "";
