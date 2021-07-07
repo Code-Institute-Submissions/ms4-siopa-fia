@@ -15,7 +15,7 @@
    <div class="row">
    </div>
 </div>
-<div class="col-12 text-center welcome-blog-text">
+<div class="col-12 text-center welcome-faq-text">
    <h1 class="logo-font text-uppercase ">FAQs</h1>
 </div>
 <div class="container blog-container">
@@ -28,7 +28,7 @@
             </p>
             {% if request.user.is_superuser %}
             <small class="ml-3">
-               <a href="">Edit</a> |
+               <a href="{% url 'edit_faq' f.id %}">Edit</a> |
                <button type="button" class="btn btn-sm text-danger" data-toggle="modal" data-target="">
                   Delete
               </button>
@@ -64,7 +64,7 @@
       <!--Add A Blog if SuperUser-->
       {% if request.user.is_superuser %}
       <div class="col text-center mt-5 mb-5">
-         <a class="btn btn-black" href="">Add FAQ</a>
+         <a class="btn btn-black" href="{% url 'add_faq' %}">Add FAQ</a>
       </div>
      </div>
       {% endif %}

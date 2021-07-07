@@ -91,7 +91,8 @@ p {
       padding: 1.25rem;
   }
 
- .welcome-blog-text {
+ .welcome-blog-text,
+ .welcome-faq-text {
     margin: 20px;
 }
 
