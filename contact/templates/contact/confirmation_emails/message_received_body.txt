@@ -1,0 +1,9 @@
+Hi {{ instance.name }},
+
+Thank you for getting in touch with us!
+
+We will endeavour to respond to your query within 24 hours- if your matter is urgent, please contact Fia on 087-1234567.
+
+With kind regards,
+
+siopaFia

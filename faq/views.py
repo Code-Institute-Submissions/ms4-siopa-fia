@@ -30,7 +30,8 @@ def add_faq(request):
             messages.success(request, 'FAQ Successfully Added!')
             return redirect(reverse('faq'))
         else:
-            messages.error(request, 'Failed to add FAQ. Please check the form is valid.')
+            messages.error(
+                request, 'Failed to add FAQ. Please check the form is valid.')
     else:
         form = FaqForm()
 
@@ -80,5 +81,5 @@ def delete_faq(request, faq_id):
 
     faq = get_object_or_404(Faq, pk=faq_id)
     faq.delete()
-    messages.success(request, 'faq deleted!')
+    messages.success(request, 'FAQ Successfully Deleted!')
     return redirect(reverse('faq'))
