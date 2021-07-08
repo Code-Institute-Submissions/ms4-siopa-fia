@@ -37,7 +37,18 @@ body {
 }
 
 p {
-    font-size: 1.4rem;
+    font-size: 1rem;
+}
+
+.nav-item:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.dropdown-menu a:hover {
+    background-color: rgb(111, 145, 80);
+    color: #fff;
 }
 
 .about-us {
@@ -246,7 +257,7 @@ p {
     top: 0;
     left: 0;
     position: fixed;
-    background: rgb(151, 179, 135);
+    background: rgb(135, 172, 114);
     z-index: -1;
 }
 
