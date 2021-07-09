@@ -75,6 +75,10 @@ p {
     padding: 5px;
   }
 
+ /*------------------------------------------------------------------Philophy page */
+
+
+
   /* ------------------------------ Blog Page----*/
   .blog-welcome {
     padding-top: 20px;
@@ -304,6 +308,15 @@ a.category-badge>span.badge:hover {
     right: 36px;
 }
 
+
+
+
+
+/*--------------------------Modal Styling */
+
+
+
+
 /* Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
     border-bottom-color: #007bff !important;
@@ -387,6 +400,18 @@ a.category-badge>span.badge:hover {
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
+.edit-btn {
+    padding-right: 10px;
+}
+
+.delete-btn {
+    font-size: 12px;
+}
+
+.delete-btn:hover {
+    text-decoration: underline;
+}
+
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
 	color: #fff;
@@ -428,7 +453,7 @@ a.category-badge>span.badge:hover {
 
 
 
-/* -------------------------------- Media Queries */
+/* ------------------------------------------------------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
@@ -463,8 +488,49 @@ a.category-badge>span.badge:hover {
     }
 }
 
-/* Colours Used */
+/*---------------------------------------------------------------- Colours Used */
 
 .text-green {
     color: rgb(4, 54, 4) !important;
 }
+
+.text-olive {
+    color: rgb(89, 114, 65) !important;
+}
+
+/*-------------------------------------------------------------------------- Delivery banner animation */
+
+#scroll-text {
+    /* animation properties */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    
+    -moz-animation: my-animation 25s linear infinite;
+    -webkit-animation: my-animation 25s linear infinite;
+    animation: my-animation 25s linear infinite;
+  }
+  
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateX(100%); }
+    to { -moz-transform: translateX(-100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
