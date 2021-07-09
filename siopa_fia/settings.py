@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-hsew_$0a0rc!empqs@ss^mr3b++t2!zzk%vu(&ft4-p1eiu+*h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://siopafia.herokuapp.com/', 'localhost']
 
 
 # Application definition
@@ -122,12 +122,17 @@ WSGI_APPLICATION = 'siopa_fia.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if 'DATABASE_URL' in os.environ:
+    DATABSES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 
 
