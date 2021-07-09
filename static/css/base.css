@@ -498,7 +498,7 @@ a.category-badge>span.badge:hover {
     color: rgb(89, 114, 65) !important;
 }
 
-/*-------------------------------------------------------------------------- Delivery banner animation */
+/*-------------------------------------------------------------------------- Delivery banner animation taken and edited from https://blog.hubspot.com/website/scrolling-text-css */
 
 #scroll-text {
     /* animation properties */
