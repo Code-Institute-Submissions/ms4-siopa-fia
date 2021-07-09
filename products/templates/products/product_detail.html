@@ -44,8 +44,11 @@
                 {% endif %}
                 {% if request.user.is_superuser %}
                 <small class="ml-3">
-                    <a href="{% url 'edit_product' product.id %}">Edit</a> | 
-                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                    <a href="{% url 'edit_product' product.id %}">Edit</a> |
+                    <button type="button" class="btn btn-sm text-danger" data-toggle="modal"
+                        data-target="#deleteProduct_{{product.id}}">
+                        Delete
+                    </button>
                 </small>
                 {% endif %}
                 <p class="mt-3">{{ product.description }}</p>
@@ -88,15 +91,18 @@
                             <div class="form-group w-50">
                                 <div class="input-group">
                                     <div class="input-group-prepend">
-                                        <button class="decrement-qty btn btn-black rounded-0" data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
+                                        <button class="decrement-qty btn btn-black rounded-0"
+                                            data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
                                             <span class="icon">
                                                 <i class="fas fa-minus"></i>
                                             </span>
                                         </button>
                                     </div>
-                                    <input class="form-control qty_input" type="number" name="quantity" value="1" min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
+                                    <input class="form-control qty_input" type="number" name="quantity" value="1"
+                                        min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
                                     <div class="input-group-append">
-                                        <button class="increment-qty btn btn-black rounded-0" data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
+                                        <button class="increment-qty btn btn-black rounded-0"
+                                            data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
                                             <span class="icon">
                                                 <i class="fas fa-plus"></i>
                                             </span>
@@ -106,7 +112,33 @@
                             </div>
                         </div>
 
+                        <!--Delete Modal-->
+                        <div class="modal fade" id="deleteProduct_{{product.id}}" tabindex="-1"
+                            aria-labelledby="deleteProductModal" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title font-weight-bold text-olive" id="deleteProductModal">
+                                            Confirm Delete</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="text-center text-olive">Are you sure you want to delete<strong
+                                                class="text-pink"> {{ product.name }}</strong>?</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn shop-btn rounded-0 text-uppercase text-olive"
+                                            data-dismiss="modal">Cancel</button>
+                                        <a class="delete-link btn shop-btn rounded-0 text-uppercase text-danger"
+                                            href="{% url 'delete_product' product.id %}">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+                        <!--Redirect buttons-->
                         <div class="col{% if s %}-12 mt-2{% endif %}">
                             <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
                                 <span class="icon">

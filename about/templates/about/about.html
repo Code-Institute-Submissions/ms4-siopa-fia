@@ -12,7 +12,8 @@
 {% block content %}
 <div class="about-page">
     <div class="about-header">
-        <div class="text-white text-center mt-5"><h1>Ethical. Sustainable. Supporting local.</h1>
+        <div class="text-white text-center mt-5">
+            <h1>Ethical. Sustainable. Supporting local.</h1>
         </div>
     </div>
 </div>
@@ -33,8 +34,8 @@
 
                     The Irish Times soon named it Ireland’s best boutique.
                 </p>
-                <br>
-                <p>   
+            
+                <p>
                     The same values inform siopaFIA's online store and our curated collection of ethical and sustainable
                     fashion, skincare, footwear and more.
 
@@ -43,7 +44,7 @@
                     be about looking good.
 
                     It should be good for the people who make it. And good for the planet too.
-                </p> 
+                </p>
                 <p>
 
                     Browse our store and you will find products made from raw materials that are either recycled or
@@ -70,37 +71,47 @@
                     and see our
                     lovely shop.</p>
             </div>
-            <section>
-                {% include 'about/includes/philosophy.html' %}
-            </section>
-            <section class="about-us">
-                <div class="container">
-                    <div class="row">
-                        <div class="text-center">
-                            <h1 class="font-weight-bold">Meet The Team</h1>
-                            <hr>
-                            <p>The first of our lovely lot is our main head honcho, Fia. Her drive and passion in eco-awareness and clothing sustainability has been a setting stone for all of us here at siopaFia.
-                            </p>
-                            <p>   
-                                Next up is Fia's big sis, Jolene, who has also been with us from the very beginning. She tells some great jokes and her favourite colour is cherry-red.
-                            </p> 
-                            <p>
-                                Last but not least, is our darling Sylvia. She is here at the weekends and is currently studying environmental science in university.
-                               </p>
-                                
-                        </div>
-                            <div class="row staff-images">
-                                <div class="column">
-                                  <img src="/media/Fia.jpg" class="img-fluid" alt="Fia">
-                                </div>
-                                <div class="column">
-                                  <img src="/media/Jolene.jpg" class="img-fluid" alt="Jolene">
-                                </div>
-                                <div class="column">
-                                  <img src="/media/sylvia2.jpg" class="img-fluid" alt="sylvia">
-                                </div>
-                              </div>  
-                              <hr class="w-100">
-            </section>
-            
+        </div>
+    </div>
+</section>
+
+<section>
+    {% include 'about/includes/philosophy.html' %}
+</section>
+
+<br>
+<hr>
+<section class="about-us">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="font-weight-bold">Meet The Team</h1>
+                
+                <p>The first of our lovely lot is our main head honcho, Fia. Her drive and passion in eco-awareness and
+                    clothing sustainability has been a setting stone for all of us here at siopaFia.
+                </p>
+                <p>
+                    Next up is Fia's big sis, Jolene, who has also been with us from the very beginning. She tells some
+                    great jokes and her favourite colour is cherry-red.
+                </p>
+                <p>
+                    Last but not least, is our darling Sylvia. She is here at the weekends and is currently studying
+                    environmental science in university.
+                </p>
+
+            </div>
+            <div class="row staff-images">
+                <div class="column">
+                    <img src="/media/Fia.jpg" class="img-fluid" alt="Fia">
+                </div>
+                <div class="column">
+                    <img src="/media/Jolene.jpg" class="img-fluid" alt="Jolene">
+                </div>
+                <div class="column">
+                    <img src="/media/sylvia2.jpg" class="img-fluid" alt="sylvia">
+                </div>
+            </div>
+            <hr class="w-100">
+</section>
+
 {% endblock %}
