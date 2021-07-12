@@ -1,1 +1,1 @@
-web: gunicorn siopa_fia.wsgi:application
+web: gunicorn siopafia.wsgi:application
