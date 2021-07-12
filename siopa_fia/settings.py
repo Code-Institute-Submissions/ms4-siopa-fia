@@ -88,8 +88,9 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
                 'bag.contexts.bag_contents',
-            ],
-                'builtins': [
+                ],
+
+            'builtins': [
                     'crispy_forms.templatetags.crispy_forms_tags',
                     'crispy_forms.templatetags.crispy_forms_field',
             ],
@@ -126,7 +127,7 @@ WSGI_APPLICATION = 'siopa_fia.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 if 'DATABASE_URL' in os.environ:
-    DATABSES = {
+    DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
