@@ -146,40 +146,40 @@
     {% endblock %}
 
       <!-- Footer -->
-  <footer class="bg-white w-100">
-    <div class="container py-5">
+  <footer class="bg-olive w-100">
+    <div class="container">
       <div class="row py-4">
         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="" alt="" width="180" class="mb-3">
-          <p class="font-italic text-muted"><strong>"Think of yourself as a curator, not a consumer."</strong><br> -Christine Koh</p>
-          <p>Follow Us:</p>
-          <ul class="list-inline mt-4">
-            <li class="list-inline-item"><a href="https://twitter.com/" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></li>
-            <li class="list-inline-item"><a href="https://www.facebook.com/" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a></li>
-            <li class="list-inline-item"><a href="https://www.instagram.com/" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a></li>
-            <li class="list-inline-item"><a href="https://www.pinterest.com/" target="_blank" title="pinterest"><i class="fa fa-pinterest"></i></a></li>
-            <li class="list-inline-item"><a href="https://vimeo.com/" target="_blank" title="vimeo"><i class="fa fa-vimeo"></i></a></li>
+          <p class="font-italic text-white text-white"><strong>"Think of yourself as a curator, not a consumer."</strong><br><small>Christine Koh</small></p>
+          <p class="text-white">Follow Us:</p>
+          <ul class="social-links list-inline mt-4">
+            <li class="list-inline-item"><a href="https://twitter.com/" target="_blank" title="twitter"><i class="fa fa-twitter fa-lg"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.facebook.com/" target="_blank" title="facebook"><i class="fa fa-facebook fa-lg"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/" target="_blank" title="instagram"><i class="fa fa-instagram fa-lg"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.pinterest.com/" target="_blank" title="pinterest"><i class="fa fa-pinterest fa-lg"></i></a></li>
+            <li class="list-inline-item"><a href="https://vimeo.com/" target="_blank" title="vimeo"><i class="fa fa-vimeo fa-lg"></i></a></li>
           </ul>
         </div>
         <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-          <h6 class="text-uppercase font-weight-bold mb-4">Shop</h6>
+          <h6 class="footer-header text-uppercase text-white font-weight-bold mb-4">Shop</h6>
           <ul class="list-unstyled mb-0">
-            <li class="mb-2"><a href="{% url 'products' %}?category=dresses,tops,bottoms" class="text-muted">Clothing</a></li>
-            <li class="mb-2"><a href="{% url 'products' %}?category=footwear" class="text-muted">Footwear</a></li>
-            <li class="mb-2"><a href="{% url 'products' %}?category=soaps,cleansers,serums,body" class="text-muted">Skincare</a></li>
-            <li class="mb-2"><a href="{% url 'blog' %}" class="text-muted">Our Blog</a></li>
+            <li class="mb-2"><a href="{% url 'products' %}?category=dresses,tops,bottoms" class="text-white">Clothing</a></li>
+            <li class="mb-2"><a href="{% url 'products' %}?category=footwear" class="text-white">Footwear</a></li>
+            <li class="mb-2"><a href="{% url 'products' %}?category=soaps,cleansers,serums,body" class="text-white">Skincare</a></li>
+            <li class="mb-2"><a href="{% url 'blog' %}" class="text-white">Our Blog</a></li>
           </ul>
         </div>
         <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-          <h6 class="text-uppercase font-weight-bold mb-4">Company</h6>
+          <h6 class="text-uppercase footer-header text-white font-weight-bold mb-4">Company</h6>
           <ul class="list-unstyled mb-0">
-            <li class="mb-2"><a href="{% url 'account_login' %}" class="text-muted">Login</a></li>
-            <li class="mb-2"><a href="{% url 'account_signup' %}" class="text-muted">Register</a></li>
-            <li class="mb-2"><a href="" class="text-muted">Our Products</a></li>
+            <li class="mb-2"><a href="{% url 'account_login' %}" class="text-white">Login</a></li>
+            <li class="mb-2"><a href="{% url 'account_signup' %}" class="text-white">Register</a></li>
+            <li class="mb-2"><a href="{% url 'products' %}" class="text-white">Our Products</a></li>
           </ul>
         </div>
         <div class="col-lg-4 col-md-6 mb-lg-0">
-          <h6 class="text-uppercase font-weight-bold mb-4">Sign up and save</h6>
-          <p class="text-muted mb-4">Subscribe to get special offers, free giveaways and once-in-a-lifetime deals.</p>
+          <h6 class="text-uppercase footer-header text-white font-weight-bold mb-4">Sign up and save</h6>
+          <p class="text-white mb-4">Subscribe to get special offers, free giveaways and once-in-a-lifetime deals.</p>
           <div class="p-1 rounded border">
             <div class="input-group">
               <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
@@ -193,9 +193,9 @@
     </div>
 
     <!-- Copyrights -->
-    <div class="bg-light py-4">
+    <div class="bg-darkolive">
       <div class="container text-center">
-        <p class="text-muted mb-0 py-2">© 2021 ELEREL - for educational purposes only.</p>
+        <p class="text-white mb-0 py-2">© 2021 Copyright: ELEREL - for educational purposes only.</p>
       </div>
     </div>
   </footer>
