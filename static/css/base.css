@@ -48,10 +48,12 @@ p {
     font-size: 1rem;
 }
 
+/*
 .dropdown:hover .dropdown-menu {
     display: block;
     margin-left: 5px;
 }
+*/
 
 .dropdown-menu a:hover {
     background-color: rgb(111, 145, 80);
@@ -536,11 +538,12 @@ a.category-badge>span.badge:hover {
         font-size: 1rem;
     }
 
-    
+    /*
     .dropdown:hover .dropdown-menu {
         display: block;
         margin-left: 5px;
     }
+*/
 
     .nav-item,
     .dropdown,
