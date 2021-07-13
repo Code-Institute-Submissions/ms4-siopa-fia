@@ -48,10 +48,9 @@ p {
     font-size: 1rem;
 }
 
-.nav-item:hover {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-left: 5px;
 }
 
 .dropdown-menu a:hover {
@@ -59,9 +58,6 @@ p {
     color: #fff;
 }
 
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
 
 .about-us {
     background: white;
@@ -236,6 +232,8 @@ p {
     color: rgb(111, 145, 80);
 }
 
+
+
 .bg-white {
     background-color: #fff !important;
 }
@@ -253,9 +251,7 @@ p {
 }
 
 
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
+
 
 .shop-now-button:hover,
 .shop-now-button:active,
@@ -537,15 +533,22 @@ a.category-badge>span.badge:hover {
     }
 
     .navbar-collapse li a {
-        font-size: .75rem;
+        font-size: 1rem;
+    }
+
+    
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-left: 5px;
     }
 
     .nav-item,
     .dropdown,
     .dropdown-menu a {
-        font-size: .5rem !important;
+        font-size: .75rem;
         padding: .25rem;
-        margin-left: .25rem;
+        margin-left: 1rem;
+        margin-bottom: .25rem;
     }
 
     #delivery-banner h4 {
