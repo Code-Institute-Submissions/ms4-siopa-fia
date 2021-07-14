@@ -24,6 +24,20 @@ body {
     letter-spacing: 3px;
 }
 
+.footer-link>a {
+    font-weight: bold;
+    color: #ffc107;
+}
+
+
+.social-links li>a {
+    color: white;
+}
+
+.social-links li>a:hover {
+    color: #ffc107;
+}
+
 /*-----------------------------About Us Page */
 
 .about-page {
@@ -247,12 +261,6 @@ p {
 .bg-darkolive {
     background-color: rgb(91, 110, 72);
 }
-
-.social-links li>a {
-    color: white;
-}
-
-
 
 
 .shop-now-button:hover,
