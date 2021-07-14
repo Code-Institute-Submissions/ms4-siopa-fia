@@ -15,7 +15,8 @@
     <div class="container mb-2">
         <div class="row">
             <div class="col">
-                <h2 class="logo-font mt-5 mb-4 text-white">Shopping Bag</h2>
+                <hr>
+                <h2 class="logo-font mb-4">Shopping Bag</h2>
                 <hr>
             </div>
         </div>
@@ -118,12 +119,12 @@
 
 {% block postloadjs %}
 {{ block.super }}
+{% include 'products/includes/quantity_input_script.html' %}
 <script type="text/javascript">
     $('.btt-link').click(function(e) {
         window.scrollTo(0,0)
     })
 </script>
-{% include 'products/includes/quantity_input_script.html' %}
 
 <script type="text/javascript">
     // Update quantity on click
@@ -132,18 +133,18 @@
         form.submit();
     })
 
-    // Remove item and reload on click
-    $('.remove-item').click(function(e) {
-        var csrfToken = "{{ csrf_token }}";
-        var itemId = $(this).attr('id').split('remove_')[1];
-        var size = $(this).data('product_size');
-        var url = `/bag/remove/${itemId}/`;
-        var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
+  // Remove item and reload on click
+  $('.remove-item').click(function(e) {
+      var csrfToken = "{{ csrf_token }}";
+      var itemId = $(this).attr('id').split('remove_')[1];
+      var size = $(this).data('product_size');
+      var url = `/bag/remove/${itemId}`;
+      var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
 
-        $.post(url, data)
-         .done(function() {
-             location.reload();
-         });
-    })
+      $.post(url, data)
+       .done(function() {
+           location.reload();
+       });
+  })
 </script>
 {% endblock %}
