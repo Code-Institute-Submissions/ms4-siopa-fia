@@ -184,9 +184,8 @@
           <div class="p-1 rounded border">
             <form method="POST" action="{% url 'newsletter_signup' %}" id="subscription_form" class="mb-2">
               <div class="form-group mx-auto mb-1 newsletter-signup">
-                  {% csrf_token %}
-                  {{ NewsletterSubscribeForm|crispy }}   
-                  <small class="text-white text-center p-2 footer-text">We'll never share your email address with anybody else.</small> 
+                {% csrf_token %}
+                {{ NewsletterSubscribeForm | crispy }}
               </div>
               <button type="submit" class="btn btn-sm shop-btn rounded-0 text-center text-uppercase">Sign Up</button>
           </form>

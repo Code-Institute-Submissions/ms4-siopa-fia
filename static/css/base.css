@@ -317,6 +317,18 @@ a.category-badge>span.badge:hover {
     color: #fff !important;
 }
 
+.btt-button {
+    background-color: rgb(30, 59, 30);
+    box-shadow: 3px 3px 3px #5e745c;
+    border-radius: 3px;
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99999999;
+}
+
 .btt-link,
 .update-link,
 .remove-item {
@@ -615,6 +627,14 @@ a.category-badge>span.badge:hover {
     }
 }
 
+@media only screen and (max-width: 664px) {
+    .btt-button {
+        height: 2.25rem;
+        width: 2.25rem;
+        font-size: 1rem;
+    }
+}
+
 /*---------------------------------------------------------------- Colours Used */
 
 .text-green {
@@ -627,6 +647,10 @@ a.category-badge>span.badge:hover {
 
 .sub-text {
     color: rgb(216, 216, 216);
+}
+
+.white-arrow {
+    color: rgb(235, 235, 235);
 }
 
 /*-------------------------------------------------------------------------- Delivery banner animation taken and edited from https://blog.hubspot.com/website/scrolling-text-css */
