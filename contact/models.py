@@ -15,3 +15,15 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class NewsletterSubscribe(models.Model):
+
+    class Meta:
+        verbose_name = 'Newsletter Subscription'
+
+    email = models.EmailField(max_length=50, null=False, blank=False)
+    date_added = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.email

@@ -1,0 +1,14 @@
+
+Hi {{ instance.email }}
+
+Thank you for signing up to our siopaFia Newsletter!
+
+You'll receive our newsletter once a month containing exclusive special offers, news about collaborations with local deisgners, invitations and more!
+
+You are receiving this email as you have added your email address to our mailing list.
+If you did not add your email, you can unsubscribe here :
+
+
+With kind regards,
+
+siopaFia

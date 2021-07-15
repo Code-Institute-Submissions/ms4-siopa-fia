@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container mb-2">
+        <div class="row mt-4">
+            <div class="col">
+                <h1 class="logo-font mb-4 mt-5 text-center text-white">siopaFia Newsletter Confirmation</h1>
+                <hr>
+            </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+              <div class="col text-center">
+          <h2 class="lead mb-5 text-white mt-5">Thank you for joining siopaFia's Mailing List!</h2>
+          <p class="text-centere text-white">You'll receive our newsletter once a month containing exclusive special offers, promo codes, news about collaborations with local designers, invitations and more!
+          You are receiving this email as you have added your email address to our mailing list. 
+            If this email address was added in error you can unsubscribe here: <a href="#">unsubscribe</a>
+          </p>
+          <a href="{% url 'products' %}" class="btn btn-outline-black mb-5 mt-5 my-5 rounded-0 btn-lg">
+              <span class="icon">
+                  <i class="fas fa-chevron-left"></i>
+              </span>
+              <span class="text-uppercase">Continue Shopping</span>
+          </a>
+              </div>
+          </div>
+      </div>
+    </div>
+    {% endblock %}

@@ -182,13 +182,16 @@
           <h6 class="text-uppercase footer-header text-white font-weight-bold mb-4">Sign up and save</h6>
           <p class="text-white mb-4">Subscribe to get special offers, free giveaways and once-in-a-lifetime deals.</p>
           <div class="p-1 rounded border">
-            <div class="input-group">
-              <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
-              <div class="input-group-append">
-                <button id="button-addon1" type="submit" class="btn btn-link"><i class="fas fa-envelope"></i></button>
+            <form method="POST" action="{% url 'newsletter_signup' %}" id="subscription_form" class="mb-2">
+              <div class="form-group mx-auto mb-1 newsletter-signup">
+                  {% csrf_token %}
+                  {{ NewsletterSubscribeForm|crispy }}   
+                  <small class="text-white text-center p-2 footer-text">We'll never share your email address with anybody else.</small> 
               </div>
-            </div>
+              <button type="submit" class="btn btn-sm shop-btn rounded-0 text-center text-uppercase">Sign Up</button>
+          </form>
           </div>
+          <small class="text-white mb-4">If you wish to unsubscribe, please click here</small>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 from django import forms
-from .models import Contact
+from .models import Contact, NewsletterSubscribe
 
 
 class ContactForm(forms.ModelForm):
@@ -8,10 +8,7 @@ class ContactForm(forms.ModelForm):
         fields = ('name', 'email', 'subject', 'message')
 
     def __init__(self, *args, **kwargs):
-        """
-        Add placeholders and classes, remove auto-generated
-        labels and set autofocus on first field
-        """
+
         super().__init__(*args, **kwargs)
         placeholders = {
             'name': 'Name',
@@ -21,6 +18,25 @@ class ContactForm(forms.ModelForm):
         }
 
         self.fields['name'].widget.attrs['autofocus'] = True
+        for field in self.fields:
+            placeholder = f'{placeholders[field]} *'
+            self.fields[field].widget.attrs['placeholder'] = placeholder
+            self.fields[field].widget.attrs['class'] = 'input-shadow'
+            self.fields[field].label = False
+
+
+class NewsletterSubscribeForm(forms.ModelForm):
+    class Meta:
+        model = NewsletterSubscribe
+        fields = ('email',)
+
+    def __init__(self, *args, **kwargs):
+
+        super().__init__(*args, **kwargs)
+        placeholders = {
+            'email': 'Email Address'
+        }
+
         for field in self.fields:
             placeholder = f'{placeholders[field]} *'
             self.fields[field].widget.attrs['placeholder'] = placeholder

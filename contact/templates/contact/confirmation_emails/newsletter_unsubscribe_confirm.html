@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<main>
+    <div class="container-fluid newsletter-container">
+        <div class="row">
+            <div class="col bag-header">
+                <h1 class="text-white font-weight-bold text-center mb-4">Unsubscribe from our Newsletter</h1>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-10 offset-1 text-center">
+                <p>We're sorry to see you go<i class="fas fa-heart-broken text-pink p-1"></i></p>
+                <p>If you'd like to unsubscribe from our newsletter please enter your email address below and hit unsubscribe.</p>
+                <p>If there is a particular reason for unsubscribing please drop us a message 
+                    <a href="{% url 'contact' %}" class="form-link">here</a> and let us know. Any and all feedback is greatly appreciated.
+                    <i class="fas fa-heart text-white"></i>
+                </p> 
+            </div>
+        </div>
+        
+        <!-- Newsletter Unsubscribe Form -->
+        <div class="row mb-3">
+            <div class="col-10 offset-1 ">
+                <form method="POST" action="{% url 'newsletter_unsubscribe' %}" id="subscription_form">
+                    <div class="form-group newsletter-signup mx-auto">
+                        {% csrf_token %}
+                        {{ NewsletterSubscribeForm|crispy }}          
+                    </div>
+                    <div class="text-center mt-2">
+                        <button type="submit" class="btn shop-btn rounded-0 text-center text-uppercase">Unsubscribe</button> 
+                        <a href="{% url 'products' %}"  class="btn shop-btn rounded-0 text-uppercase mr-2">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
