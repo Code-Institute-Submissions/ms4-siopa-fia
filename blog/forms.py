@@ -21,7 +21,7 @@ class BlogForm(forms.ModelForm):
             'image_url': 'Image Url',
             'author': 'Author',
         }
-        
+
         self.fields['title'].widget.attrs['autofocus'] = True
         for field in self.fields:
             if self.fields[field].required:
@@ -29,5 +29,6 @@ class BlogForm(forms.ModelForm):
             else:
                 placeholder = placeholders[field]
             self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'input-shadow border-black rounded-0'
+            self.fields[field].widget.attrs['class'] = 'input-shadow \
+                border-black rounded-0'
             self.fields[field].label = False

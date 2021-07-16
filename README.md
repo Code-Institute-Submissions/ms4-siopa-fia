@@ -30,7 +30,7 @@ Primary functions of Siopa Fia:
   - [Future Features to Implement](#future-features-to-implement)
 - [Structure](#structure)
 - [Database](#database)
-- [Data Schema](#data-schema)
+- [Database Model Schema](#database-model-schema)
 - [Skeleton](#skeleton)
 - [Wireframes](#wireframes)
 - [Surface](#surface)
@@ -117,4 +117,12 @@ Primary functions of Siopa Fia:
 | Site Owner           | delete items                                                             | delete items that are no longer for sale                      |
  ---
 
+### Database 
+- As suggested in throughout the walkthrough project, SQLlite (that comes pre-installed with Django) was used for development.
+- PostgreSQL was used when deployed through Heroku (as an additional add-on).
+
+### Database Model Schema
+- The Data Model below was created using [drawSQL](https://drawsql.app/):
+
+![image](https://res.cloudinary.com/elerel/image/upload/v1626455309/drawSQL-export-2021-07-16_18_07_zniam0.png)
 

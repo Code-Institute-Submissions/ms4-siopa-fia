@@ -182,15 +182,15 @@
           <h6 class="text-uppercase footer-header text-white font-weight-bold mb-4">Sign up and save</h6>
           <p class="text-white mb-4">Subscribe to get special offers, free giveaways and once-in-a-lifetime deals.</p>
           <div class="p-1 rounded border">
-            <form method="POST" action="{% url 'newsletter_signup' %}" id="subscription_form" class="mb-2">
+            <form method="POST" action="{% url 'newsletter_signup' %}" id="newsletter_subscribe" class="mb-2">
               <div class="form-group mx-auto mb-1 newsletter-signup">
                 {% csrf_token %}
-                {{ NewsletterSubscribeForm | crispy }}
+                {{ newsletter_form|crispy }}
               </div>
               <button type="submit" class="btn btn-sm shop-btn rounded-0 text-center text-uppercase">Sign Up</button>
           </form>
           </div>
-          <small class="text-white mb-4">If you wish to unsubscribe, please click here</small>
+          <small class="text-white mb-4">To unsubscribe, please click here</small>
         </div>
       </div>
     </div>

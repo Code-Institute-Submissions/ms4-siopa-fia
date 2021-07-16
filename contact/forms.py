@@ -21,7 +21,8 @@ class ContactForm(forms.ModelForm):
         for field in self.fields:
             placeholder = f'{placeholders[field]} *'
             self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'input-shadow'
+            self.fields[field].widget.attrs['class'] = 'input-shadow \
+                border-black rounded-0'
             self.fields[field].label = False
 
 
@@ -31,14 +32,14 @@ class NewsletterSubscribeForm(forms.ModelForm):
         fields = ('email',)
 
     def __init__(self, *args, **kwargs):
-
         super().__init__(*args, **kwargs)
         placeholders = {
-            'email': 'Email Address'
+            'email': 'Email Address',
         }
 
         for field in self.fields:
             placeholder = f'{placeholders[field]} *'
             self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'input-shadow'
+            self.fields[field].widget.attrs['class'] = 'input-shadow \
+                 border-black rounded-0'
             self.fields[field].label = False
