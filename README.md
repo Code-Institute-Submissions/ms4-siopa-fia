@@ -115,6 +115,8 @@ Primary functions of Siopa Fia:
 | Site Owner           | add new items and category listings;                                     | continuously update the site with new items or specials       |
 | Site Owner           | update items                                                             | change price or product criteria                              |
 | Site Owner           | delete items                                                             | delete items that are no longer for sale                      |
+
+
  ---
 
 ### Database 
