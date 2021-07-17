@@ -128,3 +128,30 @@ Primary functions of Siopa Fia:
 
 ![image](https://res.cloudinary.com/elerel/image/upload/v1626455309/drawSQL-export-2021-07-16_18_07_zniam0.png)
 
+---
+
+### Wireframes
+
+#### Desktop View:
+
+- Home Page:
+
+![image](https://res.cloudinary.com/elerel/image/upload/v1626507220/desktop-home-new_d6svbt.png)
+
+- All Products on offer through siopaFIA:
+
+![image](https://res.cloudinary.com/elerel/image/upload/v1626507354/desktop-all-products_zqzyz9.png)
+
+- Product Detail Page:
+
+![image](https://res.cloudinary.com/elerel/image/upload/v1626507301/desktop-product-detail_zgdflo.png)
+
+- Shopping Bag Page:
+
+![image](https://res.cloudinary.com/elerel/image/upload/v1626548287/desktop-shoppingbag_qxjfez.png)
+
+- Checkout Page:
+
+![image](https://res.cloudinary.com/elerel/image/upload/v1626548341/desktop-checkout_otmkk9.png)
+
+Further desktop views can be accessed here <a href="static/readme/wireframes/siopafia_desktopview.pdf" target="_blank">here.</a>
