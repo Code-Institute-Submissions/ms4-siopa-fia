@@ -185,9 +185,9 @@
             <form method="POST" action="{% url 'newsletter_signup' %}" id="newsletter_subscribe" class="mb-2">
               <div class="form-group mx-auto mb-1 newsletter-signup">
                 {% csrf_token %}
-                {{ newsletter_form|crispy }}
+                {{ newsletter_form }}
               </div>
-              <button type="submit" class="btn btn-sm shop-btn rounded-0 text-center text-uppercase">Sign Up</button>
+              <button type="submit" class="btn btn-sm shop-btn rounded-0 text-center text-uppercase"><i class="fas fa-envelope"></i></button>
           </form>
           </div>
           <small class="text-white mb-4">To unsubscribe, please click here</small>

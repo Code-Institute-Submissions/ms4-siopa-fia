@@ -50,7 +50,7 @@ def contact(request):
 
     return render(request, template, context)
 
-
+# subscribe to newsletter
 def newsletter_signup(request):
 
     newsletter_form = NewsletterSubscribeForm(request.POST or None)
@@ -71,7 +71,7 @@ def newsletter_signup(request):
     template = 'contact/confirmation_emails/newsletter_subscribe_confirm_body.html'
     return render(request, template, context)
 
-
+# To unsubscribe
 def newsletter_unsubscribe(request):
     newsletter_form = NewsletterSubscribeForm(request.POST or None)
 
