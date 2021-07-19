@@ -1,13 +1,13 @@
-from django.shortcuts import render
-from .forms import ContactForm
-from django.core.mail import send_mail
+from django.shortcuts import (render, redirect, 
+                              reverse)
+from django.core.mail import send_mail, EmailMultiAlternatives
 
 from django.conf import settings
 from django.contrib import messages
-from django.template.loader import render_to_string
+from django.template.loader import render_to_string, get_template
 
 from .models import NewsletterSubscribe
-from .forms import NewsletterSubscribeForm
+from .forms import NewsletterSubscribeForm, ContactForm
 
 
 def contact(request):
@@ -64,6 +64,25 @@ def newsletter_signup(request):
         else:
             instance.save()
             messages.success(request, 'Hurray! You have been added to our mailing list!')
+            from_email = settings.DEFAULT_FROM_EMAIL
+            to_email = [instance.email]
+            subject = 'Thank You for Signing Up!'
+            body = render_to_string(
+                'contact/confirmation_emails/newsletter_subscribe_confirm_body.txt',
+                {'instance': instance}
+            )
+            signup_confirmation_email = EmailMultiAlternatives(
+                                    subject=subject,
+                                    body=body,
+                                    from_email=from_email,
+                                    to=to_email)
+
+            html_template = get_template(
+                'contact/confirmation_emails/newsletter_signup_confirmation_body.html'
+                ).render()
+            signup_confirmation_email.attach_alternative(html_template,
+                                                         'text/html')
+            signup_confirmation_email.send()                       
 
     context = {
         'newsletter_form': newsletter_form,
