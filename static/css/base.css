@@ -29,12 +29,12 @@ body {
     color: #ffc107 !important;
 }
 
-
 .social-links li>a {
     color: white;
 }
 
-.social-links li>a:hover {
+.social-links li>a:hover,
+.footer-list li>a:hover {
     color: #ffc107 !important;
 }
 
@@ -203,16 +203,16 @@ p {
 }
 
 
-.shop-now-button:hover {
+.shop-now-button:hover,
+.signup-btn:hover {
     color: #404040 !important;
     font-weight: 700 !important;
     letter-spacing: 3px;
-    background: none;
+    background: #fff;
     -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
     -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
     transition: all 0.3s ease 0s;
 }
-
 
 .btn-black {
     background: rgb(76, 76, 75);
@@ -470,16 +470,11 @@ a.category-badge>span.badge:hover {
 }
 
 .signup-btn {
-    background-color: rgb(252, 195, 7);
+    background-color: #e0af1b;
     color: #000;
     border: 1px solid #000;
-
 }
 
-.signup-btn:hover {
-    background-color: #000;
-    color: #2e6445; 
-}
 
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {

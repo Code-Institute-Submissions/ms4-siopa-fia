@@ -108,15 +108,15 @@ def newsletter_unsubscribe(request):
             body = render_to_string(
                 'contact/confirmation_emails/newsletter_unsubscribe_email_body.txt',
                 {'instance': instance,
-                'contact_email': settings.DEFAULT_FROM_EMAIL}
+                 'contact_email': settings.DEFAULT_FROM_EMAIL}
             )
             NewsletterSubscribe.objects.filter(
                                                email=instance.email).delete()
             messages.success(request, f'{instance.email} \
-                             has been removed from our mailing list')                                   
+                             has been removed from our mailing list')                               
         else:
-            messages.error(request, 'Sorry! This email already exists.')
-            
+            messages.error(request, 'Sorry! This email is not currently in our mailing list.')
+
     newsletter_form = NewsletterSubscribeForm()        
     template = 'contact/confirmation_emails/newsletter_unsubscribe_confirm.html'
     context = {

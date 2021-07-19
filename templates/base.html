@@ -163,7 +163,7 @@
         </div>
         <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
           <h6 class="footer-header text-uppercase text-white font-weight-bold mb-4">Shop</h6>
-          <ul class="list-unstyled mb-0">
+          <ul class="footer-list list-unstyled mb-0">
             <li class="mb-2"><a href="{% url 'products' %}?category=dresses,tops,bottoms" class="text-white">Clothing</a></li>
             <li class="mb-2"><a href="{% url 'products' %}?category=footwear" class="text-white">Footwear</a></li>
             <li class="mb-2"><a href="{% url 'products' %}?category=soaps,cleansers,serums,body" class="text-white">Skincare</a></li>
@@ -172,7 +172,7 @@
         </div>
         <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
           <h6 class="text-uppercase footer-header text-white font-weight-bold mb-4">Company</h6>
-          <ul class="list-unstyled mb-0">
+          <ul class="footer-list list-unstyled mb-0">
             <li class="mb-2"><a href="{% url 'account_login' %}" class="text-white">Login</a></li>
             <li class="mb-2"><a href="{% url 'account_signup' %}" class="text-white">Register</a></li>
             <li class="mb-2"><a href="{% url 'products' %}" class="text-white">Our Products</a></li>
@@ -186,7 +186,7 @@
                 {% csrf_token %}
                 {{ newsletter_form|crispy }}
               </div>
-              <button type="submit" class="btn btn-sm signup-btn rounded-0 text-center text-uppercase">Sign Up!</button>
+              <button type="submit" class="btn btn-sm signup-btn rounded-0 text-center text-white">Submit</button>
           </form>
           <small class="text-white mb-4">To unsubscribe, please click <a href="{% url 'newsletter_unsubscribe' %}" class="unsubscribe-link">here</a></small>
         </div>
