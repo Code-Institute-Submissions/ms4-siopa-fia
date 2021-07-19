@@ -469,6 +469,18 @@ a.category-badge>span.badge:hover {
     text-decoration: underline;
 }
 
+.signup-btn {
+    background-color: rgb(252, 195, 7);
+    color: #000;
+    border: 1px solid #000;
+
+}
+
+.signup-btn:hover {
+    background-color: #000;
+    color: #2e6445; 
+}
+
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {
     color: #fff;

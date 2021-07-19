@@ -51,6 +51,8 @@ def contact(request):
     return render(request, template, context)
 
 # subscribe to newsletter
+
+
 def newsletter_signup(request):
 
     newsletter_form = NewsletterSubscribeForm(request.POST or None)
@@ -62,49 +64,62 @@ def newsletter_signup(request):
                 NewsletterSubscribe.objects.filter(email=instance.email).delete()
                 messages.error(request, 'Sorry, that email is already in our system.')
         else:
-            instance.save()
-            messages.success(request, 'Hurray! You have been added to our mailing list!')
-            from_email = settings.DEFAULT_FROM_EMAIL
-            to_email = [instance.email]
-            subject = 'Thank You for Signing Up!'
+            instance = newsletter_form.save()
+            messages.success(request, 'Woohoo! '
+                             'You are now part of the siopaFIA community!')
+
+            """Send email confirming message received"""
+            sender_email = instance.email
+            subject = render_to_string(
+                'contact/confirmation_emails/newsletter_subscribe_confirm_subject.txt',
+                {'instance': instance})
             body = render_to_string(
                 'contact/confirmation_emails/newsletter_subscribe_confirm_body.txt',
-                {'instance': instance}
+                {'instance': instance,
+                 'contact_email': settings.DEFAULT_FROM_EMAIL})
+            send_mail(
+                subject,
+                body,
+                settings.DEFAULT_FROM_EMAIL,
+                [sender_email],
             )
-            signup_confirmation_email = EmailMultiAlternatives(
-                                    subject=subject,
-                                    body=body,
-                                    from_email=from_email,
-                                    to=to_email)
 
-            html_template = get_template(
-                'contact/confirmation_emails/newsletter_signup_confirmation_body.html'
-                ).render()
-            signup_confirmation_email.attach_alternative(html_template,
-                                                         'text/html')
-            signup_confirmation_email.send()                       
+    template = 'contact/confirmation_emails/newsletter_subscribe_confirm_body.html'                    
 
     context = {
         'newsletter_form': newsletter_form,
     }
-    template = 'contact/confirmation_emails/newsletter_subscribe_confirm_body.html'
+
     return render(request, template, context)
 
 # To unsubscribe
+
+
 def newsletter_unsubscribe(request):
     newsletter_form = NewsletterSubscribeForm(request.POST or None)
 
     if newsletter_form.is_valid():
         instance = newsletter_form.save(commit=False)
         if NewsletterSubscribe.objects.filter(email=instance.email).exists():
+            registered_email = [instance.email]
+            subject = render_to_string(
+                'contact/confirmation_emails/newsletter_unsubscribe_email_subject.txt'
+            )
+            body = render_to_string(
+                'contact/confirmation_emails/newsletter_unsubscribe_email_body.txt',
+                {'instance': instance,
+                'contact_email': settings.DEFAULT_FROM_EMAIL}
+            )
             NewsletterSubscribe.objects.filter(
                                                email=instance.email).delete()
+            messages.success(request, f'{instance.email} \
+                             has been removed from our mailing list')                                   
         else:
             messages.error(request, 'Sorry! This email already exists.')
-
+            
+    newsletter_form = NewsletterSubscribeForm()        
+    template = 'contact/confirmation_emails/newsletter_unsubscribe_confirm.html'
     context = {
         'newsletter_form': newsletter_form,
     }
-
-    template = 'contact/newsletter_unsubscribe.html'
     return render(request, template, context)

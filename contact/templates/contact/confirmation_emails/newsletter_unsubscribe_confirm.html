@@ -11,37 +11,37 @@
 {% endblock %}
 
 {% block content %}
-<main>
-    <div class="container-fluid newsletter-container">
-        <div class="row">
-            <div class="col bag-header">
-                <h1 class="text-white font-weight-bold text-center mb-4">Unsubscribe from our Newsletter</h1>
-                <hr>
-            </div>
+<div class="overlay"></div>
+<div class="container mb-2">
+    <div class="row mt-4">
+        <div class="col">
+            <h1 class="logo-font mb-4 mt-5 text-center text-white">Unsubscribe Confirmation</h1>
+            <hr>
         </div>
-
+    </div>
+    <div class="container">
         <div class="row">
-            <div class="col-10 offset-1 text-center">
-                <p>Thank you for being part of the siopaFIA's newsletter mailing list, we are sorry to see you go!</p>
+            <div class="col-10 offset-1 text-center text-white">
+                <p>Thank you for being part of the siopaFIA's newsletter mailing list, we are sorry you are leaving us <i class="fas fa-sad-tear"></i></p>
                 <p>Simply enter your email address below to be removed from our mailing list.</p>
             </div>
         </div>
+    </div>
         
         <!-- Newsletter Unsubscribe Form -->
         <div class="row mb-3">
             <div class="col-10 offset-1 ">
                 <form method="POST" action="{% url 'newsletter_unsubscribe' %}" id="subscription_form">
-                    <div class="form-group newsletter-signup mx-auto">
+                    <div class="form-group newsletter-signup mx-auto w-50">
                         {% csrf_token %}
-                        {{ NewsletterSubscribeForm | crispy }}          
+                        {{ newsletter_form|crispy }}          
                     </div>
                     <div class="text-center mt-2">
-                        <button type="submit" class="btn shop-btn rounded-0 text-center text-uppercase">Unsubscribe</button> 
-                        <a href="{% url 'products' %}"  class="btn shop-btn rounded-0 text-uppercase mr-2">Cancel</a>
+                        <a href="{% url 'products' %}"  class="btn btn-outline-black mb-5 mt-5 my-5 rounded-0 btn-lg">Cancel</a>
+                        <button type="submit" class="btn btn-black rounded-0 btn-lg text-uppercase">Unsubscribe</button> 
                     </div>
                 </form>
             </div>
         </div>
     </div>
-</main>
 {% endblock %}
