@@ -20,7 +20,7 @@ class Contact(models.Model):
 class NewsletterSubscribe(models.Model):
 
     class Meta:
-        verbose_name = 'Newsletter Subscription'
+        verbose_name = 'Newsletter Subscribe'
 
     email = models.EmailField(max_length=50, null=False, blank=False)
     date_added = models.DateTimeField(auto_now_add=True)

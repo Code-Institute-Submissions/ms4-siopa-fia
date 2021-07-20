@@ -1,6 +1,5 @@
-from django.shortcuts import (render, redirect, 
-                              reverse)
-from django.core.mail import send_mail, EmailMultiAlternatives
+from django.shortcuts import render, redirect, HttpResponseRedirect
+from django.core.mail import send_mail
 
 from django.conf import settings
 from django.contrib import messages
@@ -56,27 +55,25 @@ def contact(request):
 def newsletter_signup(request):
 
     newsletter_form = NewsletterSubscribeForm(request.POST or None)
+    template = 'contact/confirmation_emails/newsletter_subscribe_confirm_body.html'
+    context = {
+        'newsletter_form': newsletter_form,
+    }
 
     if newsletter_form.is_valid():
         instance = newsletter_form.save(commit=False)
-        if (NewsletterSubscribe.objects.filter
-                (email=instance.email).exists()):
-                NewsletterSubscribe.objects.filter(email=instance.email).delete()
-                messages.error(request, 'Sorry, that email is already in our system.')
+        if NewsletterSubscribe.objects.filter(email=instance.email).exists():
+            messages.error(request, 'Oops! '
+                             'This email already exists in our mailing list!')
         else:
-            instance = newsletter_form.save()
+            instance.save()
             messages.success(request, 'Woohoo! '
                              'You are now part of the siopaFIA community!')
-
-            """Send email confirming message received"""
             sender_email = instance.email
-            subject = render_to_string(
-                'contact/confirmation_emails/newsletter_subscribe_confirm_subject.txt',
-                {'instance': instance})
+            subject = 'Thank You for Signing Up!'
             body = render_to_string(
                 'contact/confirmation_emails/newsletter_subscribe_confirm_body.txt',
-                {'instance': instance,
-                 'contact_email': settings.DEFAULT_FROM_EMAIL})
+                {'instance': instance})
             send_mail(
                 subject,
                 body,
@@ -84,13 +81,14 @@ def newsletter_signup(request):
                 [sender_email],
             )
 
-    template = 'contact/confirmation_emails/newsletter_subscribe_confirm_body.html'                    
-
-    context = {
-        'newsletter_form': newsletter_form,
-    }
+    else:
+        messages.error(request, 'Message not sent.'
+                       ' Please ensure email is valid.')
 
     return render(request, template, context)
+
+
+
 
 # To unsubscribe
 
@@ -123,3 +121,5 @@ def newsletter_unsubscribe(request):
         'newsletter_form': newsletter_form,
     }
     return render(request, template, context)
+
+

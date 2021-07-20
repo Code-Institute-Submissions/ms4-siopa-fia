@@ -1,5 +1,5 @@
 
-Hi {{ instance.email }}
+Hi {{ instance.email }},
 
 Thank you for signing up to our siopaFia Newsletter!
 

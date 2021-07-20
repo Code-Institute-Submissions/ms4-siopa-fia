@@ -16,94 +16,96 @@
             <div class="image-container my-5">
             </div>
         </div>
-            <!--Blog post title/author-->
-    <div class="container-blog">
-        <div class="row bag-header">
-            <div class="col-10 offset-1 text-center">
-                <h1 class="text-white font-weight-bold text-capitalize">{{ blog.title }}</h1>
+        <!--Blog post title/author-->
+        <div class="container-blog">
+            <div class="row bag-header">
+                <div class="col-10 offset-1 text-center">
+                    <h1 class="text-white font-weight-bold text-capitalize">{{ blog.title }}</h1>
                     <p class="text-center mb-0">
-                    {% if blog.author %}
-                        <em>by: {{ blog.author }}</em>  
-                    {% endif %}
+                        {% if blog.author %}
+                        <em>by: {{ blog.author }}</em>
+                        {% endif %}
                     </p>
+                </div>
             </div>
-        </div>
 
             <!--Blog post if image uploaded-->
             <div class="row">
                 <div class="col-10 offset-1 mt-4">
                     <div class="blog-image-detail h-50">
                         {% if blog.image %}
-                            <img class="img-fluid" src="{{ blog.image.url }}" alt="{{ blog.title }}">
+                        <img class="img-fluid" src="{{ blog.image.url }}" alt="{{ blog.title }}">
                         {% endif %}
                     </div>
                 </div>
             </div>
 
-        <!--Blog Text Section/for superuser to edit/delete-->
-        <div class="row mt-3">
-            <div class="blog-content-container container">
-                <p class="text-center">{{ blog.body }}</p>
-                {% if request.user.is_superuser %}
-                <small class="ml-3">
-                    <a href="{% url 'edit_blog' blog.id %}" class="edit-btn">Edit </a>  |
-                    <button type="button" class="btn btn-sm delete-btn text-danger" data-toggle="modal"
-                    data-target="#deleteBlog_{{blog.id}}">
-                    Delete
-                </button>
-                </small>
-                {% endif %}
+            <!--Blog Text Section/for superuser to edit/delete-->
+            <div class="row mt-3">
+                <div class="blog-content-container container">
+                    <p class="text-center">{{ blog.body }}</p>
+                    {% if request.user.is_superuser %}
+                    <small class="ml-3">
+                        <a href="{% url 'edit_blog' blog.id %}" class="edit-btn">Edit </a> |
+                        <button type="button" class="btn btn-sm delete-btn text-danger" data-toggle="modal"
+                            data-target="#deleteBlog_{{blog.id}}">
+                            Delete
+                        </button>
+                    </small>
+                    {% endif %}
 
-                <!--Delete Blog Modal-->
-                <div class="modal fade" id="deleteBlog_{{blog.id}}" tabindex="-1" aria-labelledby="deleteBlogModal"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                   <div class="modal-content">
-                      <div class="modal-header">
-                         <h4 class="modal-title font-weight-bold text-green" id="deleteBlogModal">Delete Blog</h4>
-                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                         </button>
-                      </div>
-                      <div class="modal-body">
-                         <p class="text-center logo-font text-green">Are you sure you want to delete<strong>
-                               {{ blog.title }}</strong>?</p>
-                      </div>
-                      <div class="modal-footer">
-                         <button type="button" class="btn shop-btn rounded-0 text-uppercase text-green"
-                            data-dismiss="modal">Cancel</button>
-                         <a class="delete-link rounded-0 text-uppercase text-danger"
-                            href="{% url 'delete_blog' blog.id %}">Delete</a>
-                      </div>
-                   </div>
-                </div>
-             </div>
-
-                <!--Homepage/Keep Shopping buttons-->
-                <div class="row blog-page-btns">
-                    <div class="col">
-                        <a href="{% url 'home' %}" class="btn btn-outline-black">
-                            <span class="icon">
-                                <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="text-uppercase">Home</span>
-                        </a>
-                        <a href="{% url 'products' %}" class="btn btn-outline-black">
-                            <span class="icon">
-                                <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="text-uppercase">View Our Products</span>
-                        </a>
-                        <a href="{% url 'blog' %}" class="btn btn-outline-black">
-                            <span class="icon">
-                                <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="text-uppercase">Blogs</span>
-                        </a>
+                    <!--Delete Blog Modal-->
+                    <div class="modal fade" id="deleteBlog_{{blog.id}}" tabindex="-1" aria-labelledby="deleteBlogModal"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title font-weight-bold text-green" id="deleteBlogModal">Delete Blog
+                                    </h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="text-center logo-font text-green">Are you sure you want to delete<strong>
+                                            {{ blog.title }}</strong>?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn shop-btn rounded-0 text-uppercase text-green"
+                                        data-dismiss="modal">Cancel</button>
+                                    <a class="delete-link rounded-0 text-uppercase text-danger"
+                                        href="{% url 'delete_blog' blog.id %}">Delete</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <input type="hidden" name="redirect_url" value="{{ request.path }}">
+
+                    <!--Homepage/Keep Shopping buttons-->
+                    <div class="row blog-page-btns">
+                        <div class="col">
+                            <a href="{% url 'home' %}" class="btn btn-outline-black">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span class="text-uppercase">Home</span>
+                            </a>
+                            <a href="{% url 'products' %}" class="btn btn-outline-black">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span class="text-uppercase">View Our Products</span>
+                            </a>
+                            <a href="{% url 'blog' %}" class="btn btn-outline-black">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span class="text-uppercase">Blogs</span>
+                            </a>
+                        </div>
+                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                    </div>
+                    </form>
                 </div>
-                </form>
             </div>
         </div>
     </div>
