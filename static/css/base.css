@@ -23,11 +23,64 @@ img {
   }
 
 .index-page {
-    background: url('/media/homepageimg.jpg') no-repeat center center fixed;
+    background: url('/media/cliffsofmoher.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
-    color: rgb(51, 51, 48);
 }
+
+.fade-in-text {
+    position: relative;
+    display: inline;
+    top: 200px;
+    left: 30px;
+    font-size: 4rem;
+    font-weight: bold;
+    animation: fadeIn linear 3s;
+  -webkit-animation: fadeIn linear 3s;
+  -moz-animation: fadeIn linear 3s;
+  -o-animation: fadeIn linear 3s;
+  -ms-animation: fadeIn linear 3s;
+}
+
+.because-text {
+    position: relative;
+    display: inline;
+    font-size: 1.4rem;
+    top: 200px;
+    margin-left: 20px;
+    animation: fadeIn linear 7s;
+    -webkit-animation: fadeIn linear 7s;
+    -moz-animation: fadeIn linear 7s;
+    -o-animation: fadeIn linear 7s;
+    -ms-animation: fadeIn linear 7s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+
 
 a {
     color: #ffc107;
@@ -235,12 +288,12 @@ p {
     color: #000;
     margin: 0;
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    min-width: 260px;
+    min-width: 180px;
 }
 
 
