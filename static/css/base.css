@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Montserrat&display=swap');
 
 html {
@@ -63,7 +70,9 @@ a {
     position: absolute;
     top: 75%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     font-family: 'Cutive Mono', sans-serif;
     font-weight: bold;
     font-size: 3rem;
@@ -89,7 +98,8 @@ p {
 .about-us {
     background: white;
     color: rgb(111, 145, 80);
-    align-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     padding-top: 2rem;
     font-size: 1.6rem;
 }
@@ -104,7 +114,8 @@ p {
 }
 
 .staff-images {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 100%;
 }
 
@@ -133,7 +144,8 @@ p {
 
 .card-style-blog,
 .card {
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .blog-content-container {
@@ -181,9 +193,15 @@ p {
 
 /* from Bulma */
 .icon {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
 }
@@ -193,11 +211,17 @@ p {
 }
 
 .main-logo-link {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
 .zoom:hover {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: all 1.3s ease-in-out;
+    -o-transition: all 1.3s ease-in-out;
     transition: all 1.3s ease-in-out;
 }
 
@@ -209,7 +233,8 @@ p {
     top: 60%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     min-width: 260px;
 }
 
@@ -222,6 +247,8 @@ p {
     background: #fff;
     -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
     -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 
@@ -250,7 +277,8 @@ p {
 }
 
 .banner-alert {
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .home-btn,
@@ -286,6 +314,8 @@ p {
     letter-spacing: 3px;
     -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
     -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 
@@ -330,7 +360,8 @@ a.category-badge>span.badge:hover {
 
 .btt-button {
     background-color: rgb(30, 59, 30);
-    box-shadow: 3px 3px 3px #5e745c;
+    -webkit-box-shadow: 3px 3px 3px #5e745c;
+            box-shadow: 3px 3px 3px #5e745c;
     border-radius: 3px;
     height: 42px;
     width: 42px;
@@ -441,6 +472,22 @@ a.category-badge>span.badge:hover {
     display: none;
 }
 
+.allauth-form-inner-content input::-webkit-input-placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content input::-moz-placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content input:-ms-input-placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content input::-ms-input-placeholder {
+    color: #aab7c4;
+}
+
 .allauth-form-inner-content input::placeholder {
     color: #aab7c4;
 }
@@ -465,7 +512,11 @@ a.category-badge>span.badge:hover {
     border-radius: 0;
 
     /* standard bootstrap btn transitions */
+    -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    -o-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
 }
 
 .edit-btn {
@@ -484,6 +535,11 @@ a.category-badge>span.badge:hover {
     background-color: #e0af1b;
     color: #000;
     border: 1px solid #000;
+}
+
+.keep-shopping-btn {
+    text-align: center;
+    width: auto;
 }
 
 
@@ -676,25 +732,14 @@ a.category-badge>span.badge:hover {
 
 #scroll-text {
     /* animation properties */
-    -moz-transform: translateX(100%);
     -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-
-    -moz-animation: my-animation 25s linear infinite;
+    -ms-transform: translateX(100%);
+        transform: translateX(100%);
     -webkit-animation: my-animation 25s linear infinite;
     animation: my-animation 25s linear infinite;
 }
 
 /* for Firefox */
-@-moz-keyframes my-animation {
-    from {
-        -moz-transform: translateX(100%);
-    }
-
-    to {
-        -moz-transform: translateX(-100%);
-    }
-}
 
 /* for Chrome */
 @-webkit-keyframes my-animation {
@@ -709,13 +754,12 @@ a.category-badge>span.badge:hover {
 
 @keyframes my-animation {
     from {
-        -moz-transform: translateX(100%);
         -webkit-transform: translateX(100%);
         transform: translateX(100%);
     }
 
     to {
-        -moz-transform: translateX(-100%);
         -webkit-transform: translateX(-100%);
         transform: translateX(-100%);
     }
+}
