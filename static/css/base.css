@@ -16,6 +16,11 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+img {
+    width: auto ;
+    max-width: 100% ;
+    height: auto ;
+  }
 
 .index-page {
     background: url('/media/homepageimg.jpg') no-repeat center center fixed;
@@ -644,14 +649,6 @@ a.category-badge>span.badge:hover {
     .navbar-collapse li a {
         font-size: 1rem;
     }
-
-
-    /*
-    .dropdown:hover .dropdown-menu {
-        display: block;
-        margin-left: 5px;
-    }
-*/
 
     .nav-item,
     .dropdown,
