@@ -1,14 +1,17 @@
 <div align="center">
-<img src="#" alt="main title logo"/>
+<img src="https://res.cloudinary.com/elerel/image/upload/v1626871190/amiresponsive_stvdv2.png" alt="multi-device site display image"/>
 <br>
-Siopa Fia
+<h1>Siopa Fia</h1>
 </div>
 
 # Project Overview
----
-Siopa Fia is a fictional online Irish eco/sustainable clothing store. All products in the store are made locally, ethically sourced and are made from 100% organic cotton.
 
-The ideal customer of Siopa Fia is someone, similar to myself...
+Siopa Fia is my 4th and final milestone project as part of the Code Institute's Software Development Diploma, intending to be full-stack site based on a fictional online Irish eco/sustainable clothing store. All products in the store are made locally, ethically sourced and are made from 100% organic materials.
+
+The idea of siopaFIA came to mind when I first visited my cousin’s new business venture specialising in ethical fashion (BasicJuju.com) which is a subject I always felt passionate about. My five year old daughter was also particularly impressed that I would name my next project after her, which resulted it being named “Siopa Fia” or Fia’s Shop.
+
+The logic behind siopaFIA was to create an e-commerce fashion store that promotes sustainable fashion, for someone who likes to wear good quality clothing that lasts while supporting local business.
+
 
 Primary functions of Siopa Fia:
 - Product purchase functionality
@@ -82,7 +85,18 @@ Primary functions of Siopa Fia:
 
 </details>
 
-## User Experience (UX)
+# User Experience (UX)
+
+## [Strategy](#strategy)
+
+### Business Logic
+
+- To make the site easy to navigate and create a positive user experience for the shopper
+- To be able to add add, edit or delete products available
+- To manage a blog circling the topics of discussion around ethical fashion, promoting awareness to users
+- To encourage the user to understand the site owner's mission behind siopaFIA
+- To support local fashion designers and promote ethical fashion
+- To promote awareness of the impact of the fast-fashion industry and help the sustainable fashion grow or even take its place
 
 ### User Stories
 
@@ -118,6 +132,15 @@ Primary functions of Siopa Fia:
 
 
  ---
+
+
+## [Scope](#scope)
+
+### [Existing Features](#existing-features):
+
+### [Features Left to Implement](#features-left-to-implement):
+
+## [Structure](structure)
 
 ### Database 
 - As suggested in throughout the walkthrough project, SQLlite (that comes pre-installed with Django) was used for development.

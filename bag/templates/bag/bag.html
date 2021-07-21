@@ -84,13 +84,13 @@
                             {% include "bag/product-info.html" %}
                         </td>
                         <td class="py-3">
-                            <p class="my-0">${{ item.product.price }}</p>
+                            <p class="my-0">€{{ item.product.price }}</p>
                         </td>
                         <td class="py-3 w-25">
                             {% include "bag/quantity-form.html" %}
                         </td>
                         <td class="py-3">
-                            <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                            <p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
                         </td>
                     </tr>
                     {% endfor %}
@@ -110,8 +110,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <p class="lead mb-5">Your bag is empty.</p>
-                        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                        <p class="lead text-center text-white mb-5">Your bag is empty.</p>
+                        <a href="{% url 'products' %}" class="btn btn-outline-black keep-shopping-btn rounded-0 btn-md">
                             <span class="icon">
                                 <i class="fas fa-chevron-left"></i>
                             </span>
