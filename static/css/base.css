@@ -761,6 +761,25 @@ a.category-badge>span.badge:hover {
         width: 2.25rem;
         font-size: 1rem;
     }
+
+    .hero-text {
+        font-size: 2rem !important;
+    }
+    
+    .because-text {
+        font-size: .75rem;
+    }
+}
+
+@media only screen and (min-width: 665px) and (max-width: 1092px) {
+    .hero-text {
+        font-size: 2.5rem !important;
+    }
+    
+    .because-text {
+        font-size: 1rem;
+    }
+
 }
 
 /*---------------------------------------------------------------- Colours Used */
