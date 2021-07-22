@@ -44,7 +44,7 @@
                 {% endif %}
                 {% if request.user.is_superuser %}
                 <small class="ml-3">
-                    <a href="{% url 'edit_product' product.id %}">Edit</a> |
+                    <a href="{% url 'edit_product' product.id %}" class="edit-btn">Edit</a> |
                     <button type="button" class="btn btn-sm text-danger" data-toggle="modal"
                         data-target="#deleteProduct_{{product.id}}">
                         Delete

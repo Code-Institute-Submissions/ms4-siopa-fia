@@ -80,10 +80,13 @@ img {
   100% {opacity:1;}
 }
 
+.edit-btn {
+    margin-right: 3px;
+}
 
 
 a {
-    color: #ffc107;
+    color: #001692;
 }
 
 /*--------------------FOOTER STYLING------*/
@@ -391,7 +394,7 @@ p {
     top: 0;
     left: 0;
     position: fixed;
-    background: #95ac93;
+    background: #bed6bc;
     z-index: -1;
 }
 
@@ -609,7 +612,7 @@ a.category-badge>span.badge:hover {
 }
 
 .allauth-form-inner-content a {
-    color: #ffc107;
+    color: #0042f7;
     font-weight: bold;
     /* text-info */
 }
