@@ -89,6 +89,11 @@ a {
     color: #001692;
 }
 
+.mobile-logo {
+    
+    background-color: #cacaca;
+}
+
 /*--------------------FOOTER STYLING------*/
 
 #footer {
@@ -289,10 +294,10 @@ p {
 .shop-now-button {
     background: #e0af1b !important;
     color: #000;
-    margin: 0;
     position: absolute;
-    top: 70%;
-    left: 50%;
+    top: 50%;
+    margin-left: 2rem;
+    margin-top: 1rem;
     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -754,6 +759,17 @@ a.category-badge>span.badge:hover {
         font-size: .75rem;
     }
 
+    .shop-now-button {
+        margin-top: 3rem;
+        left: 30%;
+    }
+
+}
+
+@media only screen and (min-width: 385px) and (max-width: 664px) {
+    .shop-now-button {
+        margin-top: 1rem;
+    }
 }
 
 @media only screen and (max-width: 664px) {
@@ -764,7 +780,8 @@ a.category-badge>span.badge:hover {
     }
 
     .shop-now-button {
-        top: 70%;
+        left: 6rem;
+        margin-top: 5rem;
     }
 
     .hero-text {
@@ -788,6 +805,10 @@ a.category-badge>span.badge:hover {
     .because-text {
         font-size: 1rem;
         left: 10px;
+    }
+
+    .shop-now-button {
+        left: 20%;
     }
 
 }

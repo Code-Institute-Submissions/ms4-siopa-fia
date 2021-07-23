@@ -1,12 +1,14 @@
 <div align="center">
 <img src="https://res.cloudinary.com/elerel/image/upload/v1627032789/amiresponsive2_yak1an.png" alt="multi-device site display image"/>
 <br>
-<h1>Siopa Fia</h1>
+<h1 align="center">MS4: Siopa Fia</h1>
 </div>
 
 # Project Overview
 
-Siopa Fia is my 4th and final milestone project as part of the Code Institute's Software Development Diploma, intending to be full-stack site based on a fictional online Irish eco/sustainable clothing store. All products in the store are made locally, ethically sourced and are made from 100% organic materials.
+View the live project [here.](https://siopafia.herokuapp.com/)
+
+Siopa Fia was created as my 4th and final milestone project as part of the Code Institute's Software Development Diploma, intending to be full-stack site based on a fictional online Irish eco/sustainable clothing store. Visitors to the site would be able to browse across all products available, read blogs posted by users or influencers, register for an account to keep track of their recent purchases and they can sign up to the company newsletter to avail of product discounts available in the future. All products in the store are made locally, ethically sourced and are made from 100% organic materials.
 
 The idea of siopaFIA came to mind when I first visited my cousin’s new business venture specialising in ethical fashion (BasicJuju.com) which is a subject I always felt passionate about. My five year old daughter was also particularly impressed that I would name my next project after her, which resulted it being named “Siopa Fia” or Fia’s Shop.
 
@@ -137,6 +139,15 @@ Primary functions of Siopa Fia:
 ## [Scope](#scope)
 
 ### [Existing Features](#existing-features):
+
+Base HTML - features across all pages:
+- Navbar
+
+- Delivery Banner
+
+- Messages (Toasts)
+
+- Footer
 
 ### [Features Left to Implement](#features-left-to-implement):
 
