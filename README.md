@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://res.cloudinary.com/elerel/image/upload/v1626871190/amiresponsive_stvdv2.png" alt="multi-device site display image"/>
+<img src="https://res.cloudinary.com/elerel/image/upload/v1627032789/amiresponsive2_yak1an.png" alt="multi-device site display image"/>
 <br>
 <h1>Siopa Fia</h1>
 </div>

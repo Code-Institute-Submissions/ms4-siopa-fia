@@ -44,7 +44,7 @@ img {
 
 .because-text {
     position: relative;
-    display: inline;
+    display: inline-block;
     font-size: 1.4rem;
     top: 200px;
     margin-left: 20px;
@@ -753,6 +753,7 @@ a.category-badge>span.badge:hover {
         padding: .4rem .4rem;
         font-size: .75rem;
     }
+
 }
 
 @media only screen and (max-width: 664px) {
@@ -762,12 +763,20 @@ a.category-badge>span.badge:hover {
         font-size: 1rem;
     }
 
+    .shop-now-button {
+        top: 70%;
+    }
+
     .hero-text {
-        font-size: 2rem !important;
+        font-size: 1.8rem !important;
+        top: 80px;
+        left: 30px;
     }
     
     .because-text {
         font-size: .75rem;
+        top: 80px;
+        margin-left: 30px;
     }
 }
 
@@ -778,9 +787,17 @@ a.category-badge>span.badge:hover {
     
     .because-text {
         font-size: 1rem;
+        left: 10px;
     }
 
 }
+
+@media only screen and (min-width: 1092px) {
+    .hero-text,
+    .because-text {
+        top: 100px;
+    }
+} 
 
 /*---------------------------------------------------------------- Colours Used */
 
