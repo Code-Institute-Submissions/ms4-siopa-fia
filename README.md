@@ -213,3 +213,31 @@ Full desktop wireframes can be access [here](static/readme/wireframes/siopafia_d
 ![image](https://res.cloudinary.com/elerel/image/upload/v1627311530/Tablet-Mobile-checkout_phrzmc.png)
 
 Full mobile and tablet wireframes can be access [here](static/readme/wireframes/siopafia_tabletmobile_view.pdf)
+
+
+---
+
+## Technologies used
+
+### Languages Used:
+
+-   HTML5: used for creating the structure of the project
+-   CSS3: used to style and position all pages
+-   JavaScript: used to create interactive elements on the relevant pages
+-   Python: used as the primary backend framework
+
+### Frameworks, Libraries and Other Sources Used:
+
+- [Balsamiq](https://balsamiq.com/) was used to create mockups or wireframes for the site.
+- [Django](https://www.djangoproject.com/) was used as the primary framework for the project.
+- [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) was used for all forms on the site.
+- [Django Allauth](https://django-allauth.readthedocs.io/en/latest/) was used for user authentication on the site.
+- [Stripe](https://stripe.com/) was used to handle payments on the site.
+- [Bootstrap4](https://getbootstrap.com/) was used to make the site responsive.
+- [Amazon Web Services](https://aws.amazon.com/) S3 was used to store all static CSS and Javascript files, and images.
+- [SQLite3](https://www.sqlite.org/index.html) is the database that was used in production.
+- [PostgreSQL](https://www.postgresql.org/) is the database used by the deployed site.
+- [Heroku](https://www.heroku.com/) is used as an online cloud platform service used to host the site.
+- [JQuery](https://jquery.com/) was used extensively throughout the site, in order to provide functionality for Bootstrap elements, and for Stripe. 
+- [GitPod](https://gitpod.io/) was used as an IDE for this project. 
+- [GitHub](https://github.com/) is where siopaFIA's repository is stored. Regular commits were made throughout, and code was pushed to GitHub from GitPod.
