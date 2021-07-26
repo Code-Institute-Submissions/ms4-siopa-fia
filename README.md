@@ -188,7 +188,7 @@ Base HTML - features across all pages:
 
 ![image](https://res.cloudinary.com/elerel/image/upload/v1626548341/desktop-checkout_otmkk9.png)
 
-Further desktop mockup views can be accessed here <a href="static/readme/wireframes/siopafia_desktop_view.pdf" target="_blank">here.</a>
+Full desktop wireframes can be access [here](static/readme/wireframes/siopafia_desktop_view.pdf)
 
 #### Tablet and Mobile View:
 
@@ -212,4 +212,4 @@ Further desktop mockup views can be accessed here <a href="static/readme/wirefra
 
 ![image](https://res.cloudinary.com/elerel/image/upload/v1627311530/Tablet-Mobile-checkout_phrzmc.png)
 
-Further tablet and mobile mockup views can be accessed <a href="static/readme/wireframes/siopafia_tabletmobile_view.pdf" target="_blank">here.</a>
+Full mobile and tablet wireframes can be access [here](static/readme/wireframes/siopafia_tabletmobile_view.pdf)
