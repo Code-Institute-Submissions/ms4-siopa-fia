@@ -1,7 +1,7 @@
 <div align="center">
+<h1 align="center">MS4: Siopa Fia</h1>
 <img src="https://res.cloudinary.com/elerel/image/upload/v1627032789/amiresponsive2_yak1an.png" alt="multi-device site display image"/>
 <br>
-<h1 align="center">MS4: Siopa Fia</h1>
 </div>
 
 # Project Overview
@@ -188,4 +188,28 @@ Base HTML - features across all pages:
 
 ![image](https://res.cloudinary.com/elerel/image/upload/v1626548341/desktop-checkout_otmkk9.png)
 
-Further desktop views can be accessed here <a href="static/readme/wireframes/siopafia_desktopview.pdf" target="_blank">here.</a>
+Further desktop mockup views can be accessed here <a href="static/readme/wireframes/siopafia_desktop_view.pdf" target="_blank">here.</a>
+
+#### Tablet and Mobile View:
+
+- Home Page
+
+![image](https://res.cloudinary.com/elerel/image/upload/v1627305887/Tablet-Mobile-home_oc3xrf.png)
+
+- All Products
+
+![image](https://res.cloudinary.com/elerel/image/upload/v1627309060/Tablet-Mobile-allproducts_uexnho.png)
+
+- Product Detail
+
+![image](https://res.cloudinary.com/elerel/image/upload/v1627308976/Tablet-Mobile-productdetail_wrmm4z.png)
+
+- Shopping Bag:
+ 
+![image](https://res.cloudinary.com/elerel/image/upload/v1627309139/Tablet-Mobile-shoppingbag_huvo1o.png)
+
+- Checkout:
+
+![image](https://res.cloudinary.com/elerel/image/upload/v1627311530/Tablet-Mobile-checkout_phrzmc.png)
+
+Further tablet and mobile mockup views can be accessed <a href="static/readme/wireframes/siopafia_tabletmobile_view.pdf" target="_blank">here.</a>

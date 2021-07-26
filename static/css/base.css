@@ -353,7 +353,9 @@ p {
     color: rgb(111, 145, 80);
 }
 
-
+.navbar {
+    padding: 0 .5rem 0 0 !important;
+}
 
 .bg-white {
     background-color: #fff !important;
