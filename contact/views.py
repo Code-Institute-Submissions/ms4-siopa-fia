@@ -64,7 +64,7 @@ def newsletter_signup(request):
         instance = newsletter_form.save(commit=False)
         if NewsletterSubscribe.objects.filter(email=instance.email).exists():
             messages.error(request, 'Oops! '
-                             'This email already exists in our mailing list!')
+                           'This email already exists in our mailing list!')
         else:
             instance.save()
             messages.success(request, 'Woohoo! '
@@ -89,9 +89,7 @@ def newsletter_signup(request):
     return render(request, template, context)
 
 
-
-# To unsubscribe
-
+# To unsubscribe:
 
 def newsletter_unsubscribe(request):
     newsletter_form = NewsletterSubscribeForm(request.POST or None)
@@ -108,6 +106,12 @@ def newsletter_unsubscribe(request):
                 {'instance': instance,
                  'contact_email': settings.DEFAULT_FROM_EMAIL}
             )
+            send_mail(
+                subject,
+                body,
+                settings.DEFAULT_FROM_EMAIL,
+                registered_email,
+            )
             NewsletterSubscribe.objects.filter(
                                                email=instance.email).delete()
             messages.success(request, f'{instance.email} \
@@ -121,5 +125,3 @@ def newsletter_unsubscribe(request):
         'newsletter_form': newsletter_form,
     }
     return render(request, template, context)
-
-
