@@ -1,14 +1,14 @@
   
 <a href="{% url 'home' %}" class="nav-link main-logo-link float-left d-block d-md-none">
-    <h4 class="mobile-logo"> sF</h4>
+    <h4 class="mobile-logo logo-font"> sF</h4>
 </a>
 <a href="{% url 'home' %}" class="nav-link main-logo-link float-left d-none d-md-block d-lg-none">
     <h2 class="logo-font home-btn zoom my-0">siopa<strong>FIA</strong> </h2>
 </a>
-<ul>
+<ul class="mobile-menu">
     <li class="list-inline-item">
-        <a class="text-olive nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <div class="text-center">
+        <a class="nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="text-center text-black">
                 <div><i class="fas fa-search fa-lg"></i></div>
                 <p class="my-0">Search</p>
             </div>
@@ -29,13 +29,13 @@
         </div>
     </li>
     <li class="list-inline-item dropdown">
-        <a class="nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <div class="text-center">
+        <a class="nav-link d-block d-lg-none" href="#" id="user-option" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="text-center text-black">
                 <div><i class="fas fa-user fa-lg"></i></div>
                 <p class="my-0">My Account</p>
             </div>
         </a>
-        <div class="dropdown-menu border-0" aria-labelledby="user-options">
+        <div class="dropdown-menu border-0" aria-labelledby="user-option">
             {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
             <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
@@ -51,7 +51,7 @@
     </li>
     <li class="list-inline-item">
         <a class="{% if grand_total %}text-primary font-weight-bold{% else %}{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}">
-            <div class="text-center">
+            <div class="text-center text-black">
                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                 <p class="my-0">
                     {% if grand_total %}

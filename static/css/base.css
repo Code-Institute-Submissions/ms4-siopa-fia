@@ -90,8 +90,14 @@ a {
 }
 
 .mobile-logo {
-    
-    background-color: #cacaca;
+    margin-bottom: 0px;
+    margin-left: 8px;
+
+}
+
+.mobile-menu {
+    margin: 8px 0 8px 0;
+
 }
 
 /*--------------------FOOTER STYLING------*/
@@ -347,7 +353,7 @@ p {
             box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-.home-btn,
+
 .nav-link,
 .navbar-light .navbar-nav .nav-link {
     color: rgb(111, 145, 80);
@@ -388,7 +394,7 @@ p {
 }
 
 .text-black {
-    color: rgb(78, 77, 70);
+    color: rgb(0, 0, 0);
 }
 
 .border-black {
@@ -705,6 +711,7 @@ a.category-badge>span.badge:hover {
         font-size: 1rem;
     }
 
+
     .navbar li p {
         font-size: 1rem;
     }
@@ -718,7 +725,6 @@ a.category-badge>span.badge:hover {
     .dropdown-menu a {
         font-size: .75rem;
         padding: .25rem;
-        margin-left: 1rem;
         margin-bottom: .25rem;
     }
 
@@ -771,6 +777,10 @@ a.category-badge>span.badge:hover {
 @media only screen and (min-width: 385px) and (max-width: 664px) {
     .shop-now-button {
         top: 325px;
+    }
+
+    .navbar li p {
+        font-size: .75rem;
     }
 }
 
