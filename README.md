@@ -150,6 +150,10 @@ Base HTML - features across all pages:
 - Footer
 
 ### [Features Left to Implement](#features-left-to-implement):
+- 
+-
+-
+
 
 ## [Structure](structure)
 

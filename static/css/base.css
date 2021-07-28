@@ -762,15 +762,15 @@ a.category-badge>span.badge:hover {
     }
 
     .shop-now-button {
-        margin-top: 3rem;
-        left: 30%;
+        top: 325px;
+        
     }
 
 }
 
 @media only screen and (min-width: 385px) and (max-width: 664px) {
     .shop-now-button {
-        margin-top: 1rem;
+        top: 325px;
     }
 }
 
@@ -783,7 +783,7 @@ a.category-badge>span.badge:hover {
 
     .shop-now-button {
         left: 6rem;
-        margin-top: 5rem;
+        
     }
 
     .hero-text {
@@ -810,7 +810,8 @@ a.category-badge>span.badge:hover {
     }
 
     .shop-now-button {
-        left: 20%;
+        left: 6rem;
+        top: 425px;
     }
 
 }
@@ -819,6 +820,11 @@ a.category-badge>span.badge:hover {
     .hero-text,
     .because-text {
         top: 100px;
+    }
+
+    .shop-now-button {
+        left: 6rem;
+        top: 385px;
     }
 } 
 
