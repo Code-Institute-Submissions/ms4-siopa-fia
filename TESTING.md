@@ -14,6 +14,14 @@
 
 ---
 
+### Validation
+
+- W3 HTML Validator Results:
+![image](https://res.cloudinary.com/elerel/image/upload/v1627549562/w3HTMLchecker_px7ncd.png)
+
+The error showing was in regards to the type attribute under the postblockjs section (toasts) in the base.html page- I later removed this and it made no difference to the code.
+
+
 ### Performance
 
 Lighthouse Testing:
@@ -24,4 +32,4 @@ Lighthouse Testing:
 - To improve optimization, I included the word "unsubscribe" in the anchor tag  so the user knows where the link directs:
 ![image](https://res.cloudinary.com/elerel/image/upload/v1627475157/seo_dhrrq1.png)
 
-)
+The other notes included in the lighthouse testing included how the site failed the PWA (progressive Web Apps) instability requirements, which I ignored for now.
