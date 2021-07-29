@@ -13,17 +13,16 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6">
-                <hr>
-                <h2 class="logo-font mb-4">FAQ Management</h2>
-                <h5 class="text-muted">Add a FAQ</h5>
-                <hr>
+            <div class="col text-center">
+                <h2 class="logo-font mb-4 text-olive mt-4">FAQ Management</h2>
+                <h5 class="text-black">Add a FAQ</h5>
+                <hr class="w-50 mb-4 mt-4">
             </div>
         </div>
 
         <div class="row">
             {% if user.is_superuser %}
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-6 offset-lg-3">
                 <form method="POST" action="{% url 'add_faq' %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
@@ -33,7 +32,7 @@
                             {{ field }}
                         {% endif %}
                     {% endfor %}
-                    <div class="text-right">
+                    <div class="mt-5 mb-5 text-center">
                         <a class="btn btn-outline-black rounded-0" href="{% url 'faq' %}">Cancel</a>
                         <button class="btn btn-black rounded-0" type="submit">Add FAQ</button>
                     </div>

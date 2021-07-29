@@ -11,10 +11,14 @@ class FaqForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        for field in self.fields.items():
-            field.widget.attrs['class'] = 'border-black'
 
-    placeholders = {
-        'question': 'question',
-        'answer': 'answer',
-    }
+        placeholders = {
+            'question': 'Question',
+            'answer': 'Answer',
+        }
+        for field in self.fields:
+            placeholder = f'{placeholders[field]} *'
+            self.fields[field].widget.attrs['placeholder'] = placeholder
+            self.fields[field].widget.attrs['class'] = 'input-shadow \
+                 border-black rounded-0'
+            self.fields[field].label = False

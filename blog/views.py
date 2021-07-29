@@ -22,7 +22,7 @@ def blog_detail(request, blog_id):
 
     context = {
         'blog': blog,
-    }
+        }
 
     return render(request, 'blog/blog_detail.html', context)
 
@@ -42,7 +42,8 @@ def add_blog(request):
             messages.success(request, 'Blog Successfully Added!')
             return redirect(reverse('blog_detail', args=[blog.id]))
         else:
-            messages.error(request, 'Failed to add the blog post. Please check the form is valid.')
+            messages.error(request, 'Failed to add the blog post. \
+                           Please check the form is valid.')
     else:
         form = BlogForm()
 
@@ -52,6 +53,7 @@ def add_blog(request):
     }
 
     return render(request, template, context)
+
 
 @login_required
 def edit_blog(request, blog_id):

@@ -16,10 +16,33 @@
 
 ### Validation
 
-- W3 HTML Validator Results:
+- [W3 HTML Validator](https://validator.w3.org/) Results:
+
 ![image](https://res.cloudinary.com/elerel/image/upload/v1627549562/w3HTMLchecker_px7ncd.png)
 
 The error showing was in regards to the type attribute under the postblockjs section (toasts) in the base.html page- I later removed this and it made no difference to the code.
+
+- [W3 Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) Results:
+
+![image](https://res.cloudinary.com/elerel/image/upload/v1627550328/cssvalidation_hfhkp5.png)
+
+Two errors were displayed upon results showing- I wasn't overly concerned about this since they are originating from the Bootstrap CDN and would be out of my control.
+
+- [JSHint](https://jshint.com/): 
+
+![image]https://res.cloudinary.com/elerel/image/upload/v1627551061/jshint_cpa9z3.png)
+
+Just the one error here regarding the missing semi-colon (line 119 in stripe-elements.js) which I subsequently added and no further errors followed.
+
+- [PEP8](http://pep8online.com/):
+
+![image](https://res.cloudinary.com/elerel/image/upload/v1627554718/pep8_q7qj4z.png)
+
+The screenshot above shows the main issues that popped up across several views.py pages- I made sure to address these and no further errors were displayed.
+
+![image](https://res.cloudinary.com/elerel/image/upload/v1627554869/pep8blog_whsula.png)
+
+
 
 
 ### Performance

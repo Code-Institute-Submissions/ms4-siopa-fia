@@ -15,8 +15,8 @@
 <div class="container mb-2">
     <div class="row">
         <div class="col">
-            <h2 class="logo-font mt-5 mb-2 text-center text-white">Shopping Bag</h2>
-            <hr>
+            <h2 class="logo-font mt-5 mb-2 text-center text-olive">Shopping Bag</h2>
+            <hr class="w-50">
         </div>
     </div>
 
@@ -110,17 +110,17 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <p class="lead text-center text-white mb-5">Your bag is empty.</p>
-                        <a href="{% url 'products' %}" class="btn btn-outline-black keep-shopping-btn rounded-0 btn-md">
-                            <span class="icon">
-                                <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="text-uppercase">Keep Shopping</span>
-                        </a>
-                        {% endif %}
+                        <p class="lead text-center text-black mb-5">Your bag is empty.</p>
                     </div>
                 </div>
             </div>
+            <a href="{% url 'products' %}" class="btn btn-outline-black shopping-btn mb-5 rounded-0 btn-md">
+                <span class="icon">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                <span class="text-uppercase">Keep Shopping</span>
+            </a>
+            {% endif %}
         </div>
     </div>
 </div>
