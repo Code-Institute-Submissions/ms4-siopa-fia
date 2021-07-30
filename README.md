@@ -1,6 +1,6 @@
 <div align="center">
 <h1 align="center">MS4: Siopa Fia</h1>
-<img src="https://res.cloudinary.com/elerel/image/upload/v1627590860/amiresponsive3_ztcmge.png" alt="multi-device site display image"/>
+<img src="https://res.cloudinary.com/elerel/image/upload/v1627641031/amiresponsive4_tijagt.png" alt="multi-device site display image"/>
 <br>
 </div>
 
