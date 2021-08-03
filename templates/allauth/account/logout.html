@@ -5,10 +5,9 @@
 {% block head_title %}{% trans "Sign Out" %}{% endblock %}
 
 {% block inner_content %}
-
-<h2 class="logo-font text-white mb-4">{% trans "Sign Out" %}</h2>
-<hr>
-<p>{% trans 'Are you sure you want to sign out?' %}</p>
+<h2 class="logo-font mb-2 text-center text-olive font-weight-bold">{% trans "Sign Out" %}</h2>
+<hr class="w-50">
+<p class="lead text-center text-black mb-5">{% trans 'Are you sure you want to sign out?' %}</p>
 
 <form method="post" action="{% url 'account_logout' %}">
   {% csrf_token %}

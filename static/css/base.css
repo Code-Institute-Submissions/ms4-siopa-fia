@@ -69,7 +69,7 @@ img {
 
 
 a {
-    color: #0072b4;
+    color: #034909;
 }
 
 .mobile-logo {
@@ -87,10 +87,9 @@ a {
 
 #footer {
     clear: both;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100% !important;
-
 }
 
 .footer-header {
@@ -617,7 +616,7 @@ a.category-badge>span.badge:hover {
 }
 
 .allauth-form-inner-content a {
-    color: #0042f7;
+    color: #04440e;
     font-weight: bold;
     /* text-info */
 }
