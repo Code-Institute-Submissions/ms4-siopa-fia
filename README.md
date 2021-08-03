@@ -141,16 +141,43 @@ Primary functions of Siopa Fia:
 ### [Existing Features](#existing-features):
 
 Base HTML - features across all pages:
-- Navbar
+- Navbar:
+The navbar for siopaFIA has two separate designs- one for mobile and tablet view and the other for larger/desktop screens. Like in the walkthrough project, Boutique Ado, for mobiles and smaller screens I used Bootstrap's [collapsible toggler](https://getbootstrap.com/docs/4.1/components/navbar/#external-content), once selected the user can be redirected to the main componenents in a drop-down view. The items in the dropdown menu are the same in the navbar on desktop view. Similar to the favicon, the company logo is present to act as a link to the homepage and alternatively, the user can find the home link on the top of the dropdown list via the hamburger icon. There is a search icon (replaced by the search bar) and a My Account link, where users can register, sign in or view their profile. The user can always track their spending by having the bag displaying the total amount of the items purchased- this is displayed across all pages of the site.
 
 - Delivery Banner
+Throughout the site, users will see the free delivery offer on spending anything over €75 using a [scroll-text animation](https://blog.hubspot.com/website/scrolling-text-css) feature.
+
+![image](https://res.cloudinary.com/elerel/image/upload/v1627982832/deliverybanner_o0r8ix.png)
 
 - Messages (Toasts)
+So that the user is kept aware of important interactions, such as adding items to their shopping bag, signing up to the newsletter/confirmation, logging in to their profile etc. importing 'messages' from 'django-contrib' the messages displayed (error, success, warning, info) are in [Bootstrap's Toast](https://getbootstrap.com/docs/5.0/components/toasts/) format:
+
+![image](https://res.cloudinary.com/elerel/image/upload/v1627982581/toast_ay3j3h.png)
 
 - Footer
+The company footer appears on all pages throughout the site and is divided into three separate parts: social links (where the user can follow the company via Facebook, Twitter etc), Shop and Company links and a sign-up to the company newsletter invitation where the user is required to enter their email address to receive the monthly newsletter. Below the newsletter form, the user can also unsubscribe should they wish.
+
+Home Page:
+
+
+All Products Page:
+
+Product Detail Page:
+
+Shopping Bag Page:
+
+Checkout Page:
+
+Checkout Success Page:
+
+FAQs and Blog Page:
+
+Profile Page:
+
+
 
 ### [Features Left to Implement](#features-left-to-implement):
-- 
+- A welcome or discount offer, like 10% off their first purchase to entice the user to register or spend straight away.
 -
 -
 
