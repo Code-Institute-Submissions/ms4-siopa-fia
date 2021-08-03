@@ -87,7 +87,7 @@ a {
 
 #footer {
     clear: both;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100% !important;
 }
@@ -415,6 +415,10 @@ p {
 
 .product-img {
     height: 26rem;
+}
+
+.badge {
+    background: rgb(145, 184, 153);
 }
 
 a.category-badge>span.badge:hover {

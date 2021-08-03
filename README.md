@@ -138,31 +138,39 @@ Primary functions of Siopa Fia:
 
 ## [Scope](#scope)
 
-### [Existing Features](#existing-features):
+### [Existing Features](#existing-features)
 
 Base HTML - features across all pages:
-- Navbar:
+
+#### Navbar
+
 The navbar for siopaFIA has two separate designs- one for mobile and tablet view and the other for larger/desktop screens. Like in the walkthrough project, Boutique Ado, for mobiles and smaller screens I used Bootstrap's [collapsible toggler](https://getbootstrap.com/docs/4.1/components/navbar/#external-content), once selected the user can be redirected to the main componenents in a drop-down view. The items in the dropdown menu are the same in the navbar on desktop view. Similar to the favicon, the company logo is present to act as a link to the homepage and alternatively, the user can find the home link on the top of the dropdown list via the hamburger icon. There is a search icon (replaced by the search bar) and a My Account link, where users can register, sign in or view their profile. The user can always track their spending by having the bag displaying the total amount of the items purchased- this is displayed across all pages of the site.
 
-- Delivery Banner
+#### Delivery Banner
+
 Throughout the site, users will see the free delivery offer on spending anything over €75 using a [scroll-text animation](https://blog.hubspot.com/website/scrolling-text-css) feature.
 
 ![image](https://res.cloudinary.com/elerel/image/upload/v1627982832/deliverybanner_o0r8ix.png)
 
-- Messages (Toasts)
-So that the user is kept aware of important interactions, such as adding items to their shopping bag, signing up to the newsletter/confirmation, logging in to their profile etc. importing 'messages' from 'django-contrib' the messages displayed (error, success, warning, info) are in [Bootstrap's Toast](https://getbootstrap.com/docs/5.0/components/toasts/) format:
+#### Messages (Toasts)
+   So that the user is kept aware of important interactions, such as adding items to their shopping bag, signing up to the newsletter/confirmation, logging in to their profile etc. importing 'messages' from 'django-contrib' the messages displayed (error, success, warning, info) are in [Bootstrap's Toast](https://getbootstrap.com/docs/5.0/components/toasts/) format:
 
 ![image](https://res.cloudinary.com/elerel/image/upload/v1627982581/toast_ay3j3h.png)
 
-- Footer
-The company footer appears on all pages throughout the site and is divided into three separate parts: social links (where the user can follow the company via Facebook, Twitter etc), Shop and Company links and a sign-up to the company newsletter invitation where the user is required to enter their email address to receive the monthly newsletter. Below the newsletter form, the user can also unsubscribe should they wish.
+#### Footer
+ The company footer appears on all pages throughout the site and is divided into three separate parts: social links (where the user can follow the company via Facebook, Twitter etc), Shop and Company links and a sign-up to the company newsletter invitation where the user is required to enter their email address to receive the monthly newsletter. Below the newsletter form, the user can also unsubscribe should they wish.
 
-Home Page:
+#### Home Page
+Upon entering the site, the user will get a feel of what the site is about with its catchy slogan above the call-to-action "Sale Now On!" button. The hero image of the girl snuggling into her "organic" sweater was chosen to convey the message of the siopaFIA's general mission statement of quality over quantity and promote sustainability. The sale button redirects the user to all products the website has to offer its customer. From there, the user will be able to view the selected items on sale and they can filter results using the sort by feature on the all products page. 
 
 
-All Products Page:
+#### All Products Page:
+Similar to the walkthrough project, Boutique Ado, I followed the similar design of displaying four items across the page on large screens, 3 on medium screens, 2 on smaller tablet screens and 1 item for mobile devices. Each of the product cards show an image of the product itself, its name, price, category and rating. Without overloading the card with more text or buttons, the user simply clicks the image and can be redirected to the product detail page where they can view further detail of the product and add the item to their shopping bag.
+As the product list may be plentisome, I included a scroll button so that the user can be brought to the top of the page when clicked. Once the user selects "All Clothing" via the navbar dropdown item, they are brought to the clothing items and can filter items again by selecting one of the three clothing categories.
 
 Product Detail Page:
+Displaying a larger image and more detail information on the product, the user can select the item's size (if applicable), the quantity (within the set range) they wish to purchase. The user can either select the "Keep Shopping" button where they are redirected to the all products page or they can add the item to their bag by selecting "Add to Bag". The user will be informed they have selected the item with a toast success message alerting them of the items they have currently in their shopping bag, and how much (if applicable) they need to spend to avail of the free delivery offer.
+The edit and delete links on the item card are only visible to the site's superuser.
 
 Shopping Bag Page:
 
@@ -178,8 +186,8 @@ Profile Page:
 
 ### [Features Left to Implement](#features-left-to-implement):
 - A welcome or discount offer, like 10% off their first purchase to entice the user to register or spend straight away.
--
--
+- A size guide on a separate HTML page but time did not allow!
+- 
 
 
 ## [Structure](structure)
