@@ -661,6 +661,7 @@ a.category-badge>span.badge:hover {
 @media (min-width: 1200px) {
     .container {
         max-width: 80%;
+        
     }
 }
 
@@ -676,6 +677,10 @@ a.category-badge>span.badge:hover {
 
     .header-container {
         padding-top: 164px;
+    }
+
+    .bottom-space {
+        padding-bottom: 100px !important;
     }
 
     .shopping-btn {
