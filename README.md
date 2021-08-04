@@ -168,19 +168,19 @@ Upon entering the site, the user will get a feel of what the site is about with 
 Similar to the walkthrough project, Boutique Ado, I followed the similar design of displaying four items across the page on large screens, 3 on medium screens, 2 on smaller tablet screens and 1 item for mobile devices. Each of the product cards show an image of the product itself, its name, price, category and rating. Without overloading the card with more text or buttons, the user simply clicks the image and can be redirected to the product detail page where they can view further detail of the product and add the item to their shopping bag.
 As the product list may be plentisome, I included a scroll button so that the user can be brought to the top of the page when clicked. Once the user selects "All Clothing" via the navbar dropdown item, they are brought to the clothing items and can filter items again by selecting one of the three clothing categories.
 
-Product Detail Page:
+#### Product Detail Page:
 Displaying a larger image and more detail information on the product, the user can select the item's size (if applicable), the quantity (within the set range) they wish to purchase. The user can either select the "Keep Shopping" button where they are redirected to the all products page or they can add the item to their bag by selecting "Add to Bag". The user will be informed they have selected the item with a toast success message alerting them of the items they have currently in their shopping bag, and how much (if applicable) they need to spend to avail of the free delivery offer.
 The edit and delete links on the item card are only visible to the site's superuser.
 
-Shopping Bag Page:
+#### Shopping Bag Page:
+This page features a smaller image with 
+#### Checkout Page:
 
-Checkout Page:
+#### Checkout Success Page:
 
-Checkout Success Page:
+#### FAQs and Blog Page:
 
-FAQs and Blog Page:
-
-Profile Page:
+#### Profile Page:
 
 
 

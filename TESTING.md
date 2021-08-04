@@ -56,3 +56,18 @@ Lighthouse Testing:
 ![image](https://res.cloudinary.com/elerel/image/upload/v1627475157/seo_dhrrq1.png)
 
 The other notes included in the lighthouse testing included how the site failed the PWA (progressive Web Apps) instability requirements, which I ignored for now.
+
+# Bugs
+1. Size not displaying in the shopping bag:
+
+![image](https://res.cloudinary.com/elerel/image/upload/v1628075067/sizebug_ghbdgt.png)
+![image](https://res.cloudinary.com/elerel/image/upload/v1628075226/sizebug2_nnoeex.png)
+
+Resolved: <strong>Yes.</strong>
+On the product_detail.html page, I soon understood the importance of how the name field had to match exactly the value field as set out in the backend. To resolve, I simply removed the whitespace that was causing the issue and the sizes then displayed as they should:
+
+![image](https://res.cloudinary.com/elerel/image/upload/v1628107829/product_detail_vnem0z.png)
+
+Sizes now correctly displaying:
+
+![image](https://res.cloudinary.com/elerel/image/upload/v1628107982/size_resolved_w6ehyb.png)
