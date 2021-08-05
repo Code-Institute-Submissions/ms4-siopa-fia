@@ -8,11 +8,10 @@
 
 View the live project [here.](https://siopafia.herokuapp.com/)
 
-Siopa Fia was created as my 4th and final milestone project as part of the Code Institute's Software Development Diploma, intending to be full-stack site based on a fictional online Irish eco/sustainable clothing store. Visitors to the site would be able to browse across all products available, read blogs posted by users or influencers, register for an account to keep track of their recent purchases and they can sign up to the company newsletter to avail of product discounts available in the future. All products in the store are made locally, ethically sourced and are made from 100% organic materials.
+Siopa Fia was created as my 4th and final milestone project as part of the Code Institute's Software Development Diploma, intending to be full-stack site based on a fictional online Irish eco/sustainable women's clothing store. Visitors to the site would be able to browse across all products available (women's clothing, footwear and cosmetics), read blogs posted by users or the owner, register for an account to keep track of their recent purchases and they can sign up to the company newsletter to avail of product discounts available in the future. siopaFIA is a fashion store that promotes sustainable fashion, for someone who likes to wear good quality clothing, made locally and supports local business.
 
-The idea of siopaFIA came to mind when I first visited my cousin’s new business venture specialising in ethical fashion (BasicJuju.com) which is a subject I always felt passionate about. My five year old daughter was also particularly impressed that I would name my next project after her, which resulted it being named “Siopa Fia” or Fia’s Shop.
 
-The logic behind siopaFIA was to create an e-commerce fashion store that promotes sustainable fashion, for someone who likes to wear good quality clothing that lasts while supporting local business.
+The logic behind siopaFIA was to create an e-commerce based around a personal interest: eco-fashion. siopaFIA was created to incorporate every valuable takeaway learned from the [Code Institute's Full Stack Diploma in Web Development](https://codeinstitute.net/) course, maintaining a MVP approach to the site and keeping it to the level that fits my abilities.
 
 
 Primary functions of Siopa Fia:
@@ -160,6 +159,9 @@ Throughout the site, users will see the free delivery offer on spending anything
 #### Footer
  The company footer appears on all pages throughout the site and is divided into three separate parts: social links (where the user can follow the company via Facebook, Twitter etc), Shop and Company links and a sign-up to the company newsletter invitation where the user is required to enter their email address to receive the monthly newsletter. Below the newsletter form, the user can also unsubscribe should they wish.
 
+ ![image](https://res.cloudinary.com/elerel/image/upload/v1628175943/footer_wjgzwr.png)
+ 
+
 #### Home Page
 Upon entering the site, the user will get a feel of what the site is about with its catchy slogan above the call-to-action "Sale Now On!" button. The hero image of the girl snuggling into her "organic" sweater was chosen to convey the message of the siopaFIA's general mission statement of quality over quantity and promote sustainability. The sale button redirects the user to all products the website has to offer its customer. From there, the user will be able to view the selected items on sale and they can filter results using the sort by feature on the all products page. 
 
@@ -183,7 +185,7 @@ This page contains three forms (user's name, billing details and payment form) t
 
 #### Checkout Success Page:
 
-Once the purchase is completed, a success message appears with confirmation that the payment went through successfully, details of the order number, and a confirmation email will be sent to the user. All details of the order are displayed and the a button redirecting to the new-arrivals category page is below:
+Once the purchase is completed, a success message appears with confirmation that the payment went through successfully, details of the order number, and a confirmation email will be sent to the user. All details of the order are displayed and a button redirecting to the new-arrivals category page is below:
 
 ![image](https://res.cloudinary.com/elerel/image/upload/v1628161345/checkoutsuccess_unqgxr.png)
 
@@ -195,6 +197,8 @@ Accessible by clicking "blog" from the navbar, the user is redirected to the blo
 Once the super user is logged in, they can edit or delete the blog or click "Add Blog" button which is further down the page. There is also a scroll-to-top button to improve UX in case they post entries are lengthy.
 
 #### Blog Page:
+
+
 
 #### Profile Page:
 
