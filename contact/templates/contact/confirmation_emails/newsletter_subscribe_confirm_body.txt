@@ -1,14 +1,12 @@
 
 Hi {{ instance.email }},
 
-Thank you for signing up to our siopaFIA Newsletter!
+Thank you for signing up to our siopaFIA Newsletter! You are receiving this email as you have added your email address to our mailing list.
 
-You'll receive our newsletter once a month containing exclusive special offers, news about collaborations with local designers, invitations and more!
-
-You are receiving this email as you have added your email address to our mailing list.
-If you did not add your email, you can unsubscribe <a href="https://siopafia.herokuapp.com/contact/newsletter_unsubscribe/">here.</a>
+You'll receive our newsletter once a month containing exclusive special offers, news about collaborations with local designers, invitations and more! Our newsletter usually comes out in the first week of the month with exciting promos you simply cannot miss out on! Stay tuned!
 
 
-With kind regards,
+Best wishes,
+The Team at siopaFIA
 
-siopaFIA
+p.s. If you did not add your email or subscribed in error, please visit https://siopafia.herokuapp.com/contact/newsletter_unsubscribe/ to be removed from our mailing list.

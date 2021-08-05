@@ -85,7 +85,6 @@ def newsletter_signup(request):
         messages.error(request, 'Message not sent.'
                        ' Please ensure email is valid.')
 
-    
     return render(request, template, context)
 
 

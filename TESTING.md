@@ -71,3 +71,12 @@ On the product_detail.html page, I soon understood the importance of how the nam
 Sizes now correctly displaying:
 
 ![image](https://res.cloudinary.com/elerel/image/upload/v1628107982/size_resolved_w6ehyb.png)
+
+Other bugs:
+
+-  Through the Heroku deployed site, the sizes only show "N/A" while from gitpod, it    renders no problem. Once the user arrives at the checkout page, the sizes are then displayed as well as in the checkout success page and confirmation email.
+Fix? 
+
+- Unsubscribe link not displaying (its in a text file, may need to change this to a html file instead?)
+
+
