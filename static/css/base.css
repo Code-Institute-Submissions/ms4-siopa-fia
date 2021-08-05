@@ -432,7 +432,7 @@ p {
 }
 
 .badge {
-    background: rgb(145, 184, 153);
+    background: #fff;
 }
 
 a.category-badge>span.badge:hover {

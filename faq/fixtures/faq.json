@@ -1,0 +1,59 @@
+[
+    {
+        "pk": 1,
+        "model": "faq.faq",
+        "fields": {
+            "question": "Who is siopaFIA?",
+            "answer": "siopaFia is a sustainable fashion brand based in Dublin, Ireland. We produce simply designed, eco-friendly clothes that people wish to wear everyday."   
+        }
+    },
+    {
+        "pk": 2,
+        "model": "faq.faq",
+        "fields": {        
+            "question": "What sizes do you normally have in stock?",
+            "answer": "We currently stock in UK/IRL sizing from sizes 4 - 18."       
+        }
+    },
+    {
+        "pk": 3,
+        "model": "faq.faq",
+        "fields": {     
+            "question": "How should I care for my siopaFia products?",
+            "answer": "Washing instructions are on each item, however, just for reassurance, we recommend washing your products inside out at in cold water. Do not iron on the print. Do not tumble dry. With our items being 100% Organic Cotton we would advise to wash cold and expect a small bit of shrinkage after the first wash."      
+        }
+    },
+    {
+        "pk": 4,
+        "model": "faq.faq",
+        "fields": {      
+            "question": "Do you restock items that are sold out?",
+            "answer": "As most of our products are of limited editions from locally designed clothing specialists, we cannot guarantee that the item will be in stock again. You can assured that the item is a unique product and not seen on every street corner."      
+        }
+    },
+    {
+        "pk": 5,
+        "model": "faq.faq",
+        "fields": {  
+            "question": "Do you ship worldwide?",
+            "answer": "YES! siopaFia ships worldwide! You can get free shipping with orders over €75 within the UK and Ireland and free shipping with orders over €100 within the rest of the world."      
+        }
+    },
+    {
+        "pk": 6,
+        "model": "faq.faq",
+        "fields": {  
+            "question": "Where are you located?",
+            "answer": "Previously we were based in South County Dublin but due to unforeseen circumstances beyond our control but creating an even more greener environment for our store, we have moved all operations online."      
+        }
+    },
+    {
+        "pk": 7,
+        "model": "faq.faq",
+        "fields": {    
+            "question": "If I have a delay with my order, how can I contact you?",
+            "answer": "We want to reassure our customers that their order is on their way and if there is any delay, please contact us on 01-4567890 or email us at siopafia@gmail.com. We will endeavour to respond to your email within 24hours."      
+        }
+    }
+
+]

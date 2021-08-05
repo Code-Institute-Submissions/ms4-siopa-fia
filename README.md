@@ -23,68 +23,49 @@ Primary functions of Siopa Fia:
 
 ---
 
-# Table of Contents
+## Contents
 
-**<details><summary>[User Experience (UX)](#user-experience-ux)</summary>**
-
-- [User Stories](#user-stories)
-- [Strategy](#strategy)
-- [Scope](#scope)
-  - [Existing Features](#existing-features)
-  - [Future Features to Implement](#future-features-to-implement)
-- [Structure](#structure)
-- [Database](#database)
-- [Database Model Schema](#database-model-schema)
-- [Skeleton](#skeleton)
-- [Wireframes](#wireframes)
-- [Surface](#surface)
-  - [Colours](#colours)
-  - [Typography](#typography)
-  - [Imagery](#imagery)
-
-</details>
-
-**<details><summary>[Technologies Used](#technologies-used)</summary>**
-
-- [Languages](#languages)
-- [Integration](#integration)
-- [Dependencies](#dependencies)
-- [Tools](#tools)
-- [IDE Extensions](#ide-extensions)
-- [Code Validity](#code-validity)
-
-
-</details>
-
-**<details><summary>[Bugs/Issues](#bugs)</summary>**
-
-- [Project barriers and solutions](#project-barriers-and-solutions)
-- [Known Issues](#known-issues)
-
-</details>
-
-**<details><summary>[Workflow](#workflow)</summary>**
-
-- [Version Control](#version-control)
-- [Development Environment](#development-environment)
-
-</details>
-
-**<details><summary>[Deployment](#deployment)</summary>**
-</details>
-
-**<details><summary>[Testing](#testing)</summary>**
-</details>
-
-**<details><summary>[Credits](#credits)</summary>**
-
-- [Resources](#resources)
-- [Media](#media)
-- [Content](#content)
-- [Code Snippets](#code-snippets)
-- [Acknowledgments](#acknowledgments)
-
-</details>
+- [UX](#ux)
+    - [Strategy](#strategy)
+        - [Business Logic](#business-logic)
+        - [User Stories](#user-stories)
+    - [Scope](#scope)
+        - [Existing Features](#current-features)
+            - [Base HTML](#base-HTML)
+            - [Home Page](#home-page)
+            - [All Products Page](#all-products-page)
+            - [Product Detail Page](#product-detail-page)
+            - [Shopping Bag Page](#shopping-bag-page)
+            - [Checkout Page](#checkout-page)
+            - [Checkout Success Page](#checkout-success-page)
+            - [Profile Page](#profile-page)
+            - [FAQs Page](#faqs-page)
+            - [Profile Page](#profile-page)
+            - [Product and Blog Management Page](#product-and-blog-management-page)
+        - [Features Left To Implement](#features-left-to-implement)
+    - [Structure](#structure)
+    - [Skeleton](#skeleton)
+        - [Wireframes](#wireframes)
+    - [Surface](#surface)
+        - [Design](#design)
+            - [Colour Scheme](#colour-scheme)
+            - [Typography](#typography)
+            - [Imagery](#imagery)
+            - [Icons](#icons)
+- [Information Architecture](#information-architecture)
+    - [Database](#database)
+    - [Data Modelling](#data-modelling)
+- [Technologies used](#technologies-used)
+    - [Languages Used](#languages-used)
+    - [Frameworks, Libraries & Programs Used](#frameworks-libraries-programs-&-databases-used)
+- [Testing](#testing)
+- [Deployment](#deployment)
+     - [Heroku Deployment with AWS](#heroku-deployment-with-aws)
+     - [Amazon Web Services](#amazon-web-services)
+     - [Local Deployment](#local-deployment)
+- [Credits](#credits)
+- [Disclaimer](#disclaimer)
+- [Acknowledgements](#acknowledgements)
 
 # User Experience (UX)
 
@@ -139,7 +120,9 @@ Primary functions of Siopa Fia:
 
 ### [Existing Features](#existing-features)
 
-Base HTML - features across all pages:
+### Base HTML 
+
+Features across all pages:
 
 #### Navbar
 
@@ -218,8 +201,11 @@ This page is only accessible to a registered user where the user can track their
 ### Database 
 - As suggested in throughout the walkthrough project, SQLlite (that comes pre-installed with Django) was used for development.
 - PostgreSQL was used when deployed through Heroku (as an additional add-on).
+- The user model is provided by default with [Django's Authentication System](https://docs.djangoproject.com/en/3.1/ref/contrib/auth/)
 
-### Database Model Schema
+### Database Modelling
+
+- All data related to Products was compiled in a JSON format and is stored in a fixtures folder, as does the FAQ data in its own fixtures folder.
 - The Data Model below was created using [drawSQL](https://drawsql.app/):
 
 ![image](https://res.cloudinary.com/elerel/image/upload/v1626455309/drawSQL-export-2021-07-16_18_07_zniam0.png)
@@ -277,16 +263,42 @@ Full desktop wireframes can be access [here](static/readme/wireframes/siopafia_d
 Full mobile and tablet wireframes can be access [here](static/readme/wireframes/siopafia_tabletmobile_view.pdf)
 
 
+## Surface
+   
+### Design
+-   #### Colour Scheme
+    
+What colours did you use primarily through the site, headers, text
+    - I used [Sessions.edu](https://www.sessions.edu/color-calculator/) to work out the correct complimentary colours, and 
+    [Coolors](https://coolors.co/042d52-1b466c-f9fafa) to create the palette below.
+    <p><img src="readme_materials/colors.jpg"></p>
+
+-   #### Typography
+    -   The Cutive Mono font is the logo font used throughout the whole website with Sans Serif as the fallback font in case for 
+    any reason the font isn't being imported into the site correctly. I chose this as I believe it has a modern feel and 
+    reflects the style of the remainder of the site.
+
+    ![image](https://res.cloudinary.com/elerel/image/upload/v1628189312/cutivemono_taxx12.png)
+
+-   #### Imagery
+    - For most of the product images, I compiled a list from [Kaggle](https://www.kaggle.com/paramaggarwal/fashion-product-images-small) and then sourced the rest of the images from [Pixabay](https://pixabay.com/), [Unsplash](https://unsplash.com/) and [Pexels](https://www.pexels.com/)
+
+    - All photos were put through [Tiny PNG](https://tinypng.com/) to reduce the file size and improve loading time.
+
+-   #### Icons
+    -   The icons used throughout the site are taken from [Font Awesome](https://fontawesome.com/).
+
+
 ---
 
 ## Technologies used
 
 ### Languages Used:
 
--   HTML5: used for creating the structure of the project
--   CSS3: used to style and position all pages
--   JavaScript: used to create interactive elements on the relevant pages
--   Python: used as the primary backend framework
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5): used for creating the structure of the project
+-   [CSS3](https://en.wikipedia.org/wiki/CSS): used to style and position all pages
+-   [JavaScript](https://en.wikipedia.org/wiki/JavaScript): used to create interactive elements on the relevant pages
+-   [Python](https://www.python.org/): used as the primary backend framework
 
 ### Frameworks, Libraries and Other Sources Used:
 
@@ -303,3 +315,5 @@ Full mobile and tablet wireframes can be access [here](static/readme/wireframes/
 - [JQuery](https://jquery.com/) was used extensively throughout the site, in order to provide functionality for Bootstrap elements, and for Stripe. 
 - [GitPod](https://gitpod.io/) was used as an IDE for this project. 
 - [GitHub](https://github.com/) is where siopaFIA's repository is stored. Regular commits were made throughout, and code was pushed to GitHub from GitPod.
+
+## Testing
