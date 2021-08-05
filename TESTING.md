@@ -75,8 +75,8 @@ Sizes now correctly displaying:
 Other bugs:
 
 -  Through the Heroku deployed site, the sizes only show "N/A" while from gitpod, it    renders no problem. Once the user arrives at the checkout page, the sizes are then displayed as well as in the checkout success page and confirmation email.
-Fix? 
+Fix? Yes- changed all items that require has_sizes to yes- some were incorrectly labelled as "no".
 
-- Unsubscribe link not displaying (its in a text file, may need to change this to a html file instead?)
+- Unsubscribe link not displaying (its in a text file, may need to change this to a html file instead?) Fixed: removed the anchor tag and replaced with just hte simple unsubscribe url
 
 

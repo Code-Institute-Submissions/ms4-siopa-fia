@@ -173,14 +173,33 @@ Displaying a larger image and more detail information on the product, the user c
 The edit and delete links on the item card are only visible to the site's superuser.
 
 #### Shopping Bag Page:
-This page features a smaller image with 
+This page is divided into 5 parts- a smaller rendered image of the item, the product name and SKU number, the price, quantity box selector with remove and update links and the subtotal- all displayed horizontally. Should the user wish to change their mind on any of the products added to the bag, they can update their order on this page below the quantity selector box using the remove or update buttons. The grand total is displayed, along with the delivery charge info (if applicable) towards the bottom of the page. The user can also return to the all products page by clicking on the "Keep Shopping" button, or they can proceed with their purchase by clicking "Secure Checkout".
+
 #### Checkout Page:
+
+This page contains three forms (user's name, billing details and payment form) that the user is required to fill out before purchase. This is saved once the user is logged in and below the billing details, the user has the opportunity to create an account or login to save the information filled out. Below the credit card form they are once again informed how much their card will be charged and can proceed to confirm payment or they can adjust their bag and return to the shopping bag page:
+
+![image](https://res.cloudinary.com/elerel/image/upload/v1628159157/checkoutpage_axvcmi.png)
 
 #### Checkout Success Page:
 
-#### FAQs and Blog Page:
+Once the purchase is completed, a success message appears with confirmation that the payment went through successfully, details of the order number, and a confirmation email will be sent to the user. All details of the order are displayed and the a button redirecting to the new-arrivals category page is below:
+
+![image](https://res.cloudinary.com/elerel/image/upload/v1628161345/checkoutsuccess_unqgxr.png)
+
+
+#### FAQs Page:
+
+While any user can read any of the blog posts, only the superuser/site admin can add, edit or delete the featured blogposts. 
+Accessible by clicking "blog" from the navbar, the user is redirected to the blog app. There is a brief description of the benefits of reading through the featured posts, the user can browse through the various topics that are formatted in a card-view, and once they click on "more" they are then brought to the blog_detail page where they can read the blog in full.
+Once the super user is logged in, they can edit or delete the blog or click "Add Blog" button which is further down the page. There is also a scroll-to-top button to improve UX in case they post entries are lengthy.
+
+#### Blog Page:
 
 #### Profile Page:
+
+This page is only accessible to a registered user where the user can track their purchases and update their details should they need: 
+
 
 
 
