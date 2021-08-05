@@ -136,13 +136,6 @@ p {
     font-size: 1rem;
 }
 
-/*
-.dropdown:hover .dropdown-menu {
-    display: block;
-    margin-left: 5px;
-}
-*/
-
 .dropdown-menu a:hover {
     background-color: rgb(111, 145, 80);
     color: #fff;
@@ -600,6 +593,7 @@ a.category-badge>span.badge:hover {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
 }
+
 
 .edit-btn {
     padding-right: 10px;
