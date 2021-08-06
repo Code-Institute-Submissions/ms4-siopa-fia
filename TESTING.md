@@ -80,3 +80,6 @@ Fix? Yes- changed all items that require has_sizes to yes- some were incorrectly
 - Unsubscribe link not displaying (its in a text file, may need to change this to a html file instead?) Fixed: removed the anchor tag and replaced with just hte simple unsubscribe url
 
 
+Other changes made before during production:
+Removed the two decimals from rating- looked better with a simple decimal point
+
