@@ -102,7 +102,7 @@ Primary functions of Siopa Fia:
 |          ---         |                                    ---                                   |                              ---                              |
 | Registered user      | log in and log out of my profile account;                                | Safeguard my information whilst not active on the site        |
 | Registered user      | update my details                                                        | update address and other details in case they change          |
-| Registered user      | store my address for later use;                                          | avoid having to retype it every time I make a purchase        |
+| Registered user      | store my address for later use                                           | avoid having to retype it every time I make a purchase        |
 | Registered user      | store my purchase history;                                               | access my previous purchase history                           |
 | Registered user      | store my choices in checkout;                                            | go back to the site in case I wish to add more options        |
 | Registered user      | Make secure payments                                                     | ensure my payments are securely handled                       |
@@ -122,68 +122,68 @@ Primary functions of Siopa Fia:
 
 ### Base HTML 
 
-Features across all pages:
+Features across all pages
 
-#### Navbar
+### Navbar
 
 The navbar for siopaFIA has two separate designs- one for mobile and tablet view and the other for larger/desktop screens. Like in the walkthrough project, Boutique Ado, for mobiles and smaller screens I used Bootstrap's [collapsible toggler](https://getbootstrap.com/docs/4.1/components/navbar/#external-content), once selected the user can be redirected to the main componenents in a drop-down view. The items in the dropdown menu are the same in the navbar on desktop view. Similar to the favicon, the company logo is present to act as a link to the homepage and alternatively, the user can find the home link on the top of the dropdown list via the hamburger icon. There is a search icon (replaced by the search bar) and a My Account link, where users can register, sign in or view their profile. The user can always track their spending by having the bag displaying the total amount of the items purchased- this is displayed across all pages of the site.
 
-#### Delivery Banner
+### Delivery Banner
 
 Throughout the site, users will see the free delivery offer on spending anything over €75 using a [scroll-text animation](https://blog.hubspot.com/website/scrolling-text-css) feature.
 
 ![image](https://res.cloudinary.com/elerel/image/upload/v1627982832/deliverybanner_o0r8ix.png)
 
-#### Messages (Toasts)
+### Messages (Toasts)
    So that the user is kept aware of important interactions, such as adding items to their shopping bag, signing up to the newsletter/confirmation, logging in to their profile etc. importing 'messages' from 'django-contrib' the messages displayed (error, success, warning, info) are in [Bootstrap's Toast](https://getbootstrap.com/docs/5.0/components/toasts/) format:
 
 ![image](https://res.cloudinary.com/elerel/image/upload/v1627982581/toast_ay3j3h.png)
 
-#### Footer
+### Footer
  The company footer appears on all pages throughout the site and is divided into three separate parts: social links (where the user can follow the company via Facebook, Twitter etc), Shop and Company links and a sign-up to the company newsletter invitation where the user is required to enter their email address to receive the monthly newsletter. Below the newsletter form, the user can also unsubscribe should they wish.
 
  ![image](https://res.cloudinary.com/elerel/image/upload/v1628175943/footer_wjgzwr.png)
  
 
-#### Home Page
+### Home Page
 Upon entering the site, the user will get a feel of what the site is about with its catchy slogan above the call-to-action "Sale Now On!" button. The hero image of the girl snuggling into her "organic" sweater was chosen to convey the message of the siopaFIA's general mission statement of quality over quantity and promote sustainability. The sale button redirects the user to all products the website has to offer its customer. From there, the user will be able to view the selected items on sale and they can filter results using the sort by feature on the all products page. 
 
 
-#### All Products Page:
+### All Products Page:
 Similar to the walkthrough project, Boutique Ado, I followed the similar design of displaying four items across the page on large screens, 3 on medium screens, 2 on smaller tablet screens and 1 item for mobile devices. Each of the product cards show an image of the product itself, its name, price, category and rating. Without overloading the card with more text or buttons, the user simply clicks the image and can be redirected to the product detail page where they can view further detail of the product and add the item to their shopping bag.
 As the product list may be plentisome, I included a scroll button so that the user can be brought to the top of the page when clicked. Once the user selects "All Clothing" via the navbar dropdown item, they are brought to the clothing items and can filter items again by selecting one of the three clothing categories.
 
-#### Product Detail Page:
+### Product Detail Page:
 Displaying a larger image and more detail information on the product, the user can select the item's size (if applicable), the quantity (within the set range) they wish to purchase. The user can either select the "Keep Shopping" button where they are redirected to the all products page or they can add the item to their bag by selecting "Add to Bag". The user will be informed they have selected the item with a toast success message alerting them of the items they have currently in their shopping bag, and how much (if applicable) they need to spend to avail of the free delivery offer.
 The edit and delete links on the item card are only visible to the site's superuser.
 
-#### Shopping Bag Page:
+### Shopping Bag Page:
 This page is divided into 5 parts- a smaller rendered image of the item, the product name and SKU number, the price, quantity box selector with remove and update links and the subtotal- all displayed horizontally. Should the user wish to change their mind on any of the products added to the bag, they can update their order on this page below the quantity selector box using the remove or update buttons. The grand total is displayed, along with the delivery charge info (if applicable) towards the bottom of the page. The user can also return to the all products page by clicking on the "Keep Shopping" button, or they can proceed with their purchase by clicking "Secure Checkout".
 
-#### Checkout Page:
+### Checkout Page:
 
 This page contains three forms (user's name, billing details and payment form) that the user is required to fill out before purchase. This is saved once the user is logged in and below the billing details, the user has the opportunity to create an account or login to save the information filled out. Below the credit card form they are once again informed how much their card will be charged and can proceed to confirm payment or they can adjust their bag and return to the shopping bag page:
 
 ![image](https://res.cloudinary.com/elerel/image/upload/v1628159157/checkoutpage_axvcmi.png)
 
-#### Checkout Success Page:
+### Checkout Success Page:
 
 Once the purchase is completed, a success message appears with confirmation that the payment went through successfully, details of the order number, and a confirmation email will be sent to the user. All details of the order are displayed and a button redirecting to the new-arrivals category page is below:
 
 ![image](https://res.cloudinary.com/elerel/image/upload/v1628161345/checkoutsuccess_unqgxr.png)
 
 
-#### FAQs Page:
+### FAQs Page:
 
 While any user can read any of the blog posts, only the superuser/site admin can add, edit or delete the featured blogposts. 
 Accessible by clicking "blog" from the navbar, the user is redirected to the blog app. There is a brief description of the benefits of reading through the featured posts, the user can browse through the various topics that are formatted in a card-view, and once they click on "more" they are then brought to the blog_detail page where they can read the blog in full.
 Once the super user is logged in, they can edit or delete the blog or click "Add Blog" button which is further down the page. There is also a scroll-to-top button to improve UX in case they post entries are lengthy.
 
-#### Blog Page:
+### Blog Page:
 
 
 
-#### Profile Page:
+### Profile Page:
 
 This page is only accessible to a registered user where the user can track their purchases and update their details should they need: 
 
@@ -212,33 +212,33 @@ This page is only accessible to a registered user where the user can track their
 
 ---
 
-### Wireframes
+## Wireframes
 
-#### Desktop View:
+### Desktop View:
 
-- Home Page:
+- Home Page
 
 ![image](https://res.cloudinary.com/elerel/image/upload/v1626507220/desktop-home-new_d6svbt.png)
 
-- All Products on offer through siopaFIA:
+- All Products on offer through siopaFIA
 
 ![image](https://res.cloudinary.com/elerel/image/upload/v1626507354/desktop-all-products_zqzyz9.png)
 
-- Product Detail Page:
+- Product Detail Page
 
 ![image](https://res.cloudinary.com/elerel/image/upload/v1626507301/desktop-product-detail_zgdflo.png)
 
-- Shopping Bag Page:
+- Shopping Bag Page
 
 ![image](https://res.cloudinary.com/elerel/image/upload/v1626548287/desktop-shoppingbag_qxjfez.png)
 
-- Checkout Page:
+- Checkout Page
 
 ![image](https://res.cloudinary.com/elerel/image/upload/v1626548341/desktop-checkout_otmkk9.png)
 
 Full desktop wireframes can be access [here](static/readme/wireframes/siopafia_desktop_view.pdf)
 
-#### Tablet and Mobile View:
+## Tablet and Mobile View:
 
 - Home Page
 
@@ -273,34 +273,34 @@ What colours did you use primarily through the site, headers, text
     [Coolors](https://coolors.co/042d52-1b466c-f9fafa) to create the palette below.
     <p><img src="readme_materials/colors.jpg"></p>
 
--   #### Typography
+-   ### Typography
     -   The Cutive Mono font is the logo font used throughout the whole website with Sans Serif as the fallback font in case for 
     any reason the font isn't being imported into the site correctly. I chose this as I believe it has a modern feel and 
     reflects the style of the remainder of the site.
 
     ![image](https://res.cloudinary.com/elerel/image/upload/v1628189312/cutivemono_taxx12.png)
 
--   #### Imagery
+-   ### Imagery
     - For most of the product images, I compiled a list from [Kaggle](https://www.kaggle.com/paramaggarwal/fashion-product-images-small) and then sourced the rest of the images from [Pixabay](https://pixabay.com/), [Unsplash](https://unsplash.com/) and [Pexels](https://www.pexels.com/)
 
     - All photos were put through [Tiny PNG](https://tinypng.com/) to reduce the file size and improve loading time.
 
--   #### Icons
+-   ### Icons
     -   The icons used throughout the site are taken from [Font Awesome](https://fontawesome.com/).
 
 
 ---
 
-## Technologies used
+# **Technologies used**
 
-### Languages Used:
+## **Languages**
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5): used for creating the structure of the project
 -   [CSS3](https://en.wikipedia.org/wiki/CSS): used to style and position all pages
 -   [JavaScript](https://en.wikipedia.org/wiki/JavaScript): used to create interactive elements on the relevant pages
 -   [Python](https://www.python.org/): used as the primary backend framework
 
-### Frameworks, Libraries and Other Sources Used:
+## **Frameworks, Libraries and Other Sources**
 
 - [Balsamiq](https://balsamiq.com/) was used to create mockups or wireframes for the site.
 - [Django](https://www.djangoproject.com/) was used as the primary framework for the project.
@@ -316,4 +316,202 @@ What colours did you use primarily through the site, headers, text
 - [GitPod](https://gitpod.io/) was used as an IDE for this project. 
 - [GitHub](https://github.com/) is where siopaFIA's repository is stored. Regular commits were made throughout, and code was pushed to GitHub from GitPod.
 
-## Testing
+# **Testing**
+
+Testing for siopaFIA has been documented in a separate file that can be accessed here: [TESTING.md](https://github.com/elerel/ms4-siopa-fia/blob/master/TESTING.md)
+
+#### [Back to Contents](#contents)
+
+
+# **Deployment**
+
+## **Heroku Deployment with AWS**
+
+In order to deploy the site onto [Heroku](https://dashboard.heroku.com/apps), I took the following steps:
+1. Installed gunicorn, psycopg2-binary and dj-database-url using [PIP](https://pypi.org/project/pip/).
+2. Created a requirements.txt file and froze all the required modules to this file using ```pip3 freeze > requirements.txt```
+3. Created a Procfile and added ```web: gunicorn siopa_fia.wsgi:application```
+4. ```git add```, ```git commit``` and ```git push``` to push these changes to my GitHub repository.
+5. Logged into my Heroku account and created a new app, using Europe (eu-west-1) as my region.
+6. Next was selecting the Resources tab in Heroku, then in the Add-ons search bar added Heroku Postgres, select plan name **Hobby Dev - Free** then clicked 
+Submit Order Form in order to add it to my project.
+7. In the dashboard for the application, I clicked on Settings, then Reveal Config Vars and set the following values to appear as below:
+
+|Key|Value|
+|--|--|
+|AWS_ACCESS_KEY_ID|```Your AWS Access Key```|
+|AWS_SECRET_ACCESS_KEY|```Your AWS Secret Access Key```|
+|DATABASE_URL	|```Your Postgres Database URL```|
+|EMAIL_HOST_PASS|```Your Email Password (generated by Gmail)```|
+|EMAIL_HOST_USER|```Your Email Address```|
+|SECRET_KEY	|```Your Secret Key```|
+|STRIPE_PUBLIC_KEY	|```Your Stripe Public Key```|
+|STRIPE_SECRET_KEY	|```Your Stripe Secret Ke```y|
+|STRIPE_WH_SECRET	|```Your Stripe WH Key```|
+|USE_AWS	|```True```
+
+8. In the Deploy tab, under Deployment method, selected GitHub and then set up automatic deploys. When the app has finished building, click **Open app** button on the top right of the page.
+9. Commented out current DATABASE setting in settings.py, and add the following code instead - 
+``` 
+DATABASES = {     
+        'default': dj_database_url.parse("<your Postgres database URL here>")     
+    }    
+```
+
+10. Back on the main dashboard, click on 'deploy', and then under the 'Deployment' method section, select GitHub and 'Automatic Deploys'.
+
+11. In settings.py, the the following code is commented out:
+```
+Database
+ https://docs.djangoproject.com/en/3.1/ref/settings/#databases
+```
+and then instead the following code is added:
+```
+DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+```
+12. Make migrations using the following command:
+```
+python3 manage.py makemigrations
+```
+and migrate the database models to the Postgres database using the following command:
+```
+python3 manage.py migrate
+```
+13. Load the fixtures from the 'products.json' file and then from the 'products.json' file - which are contained in the 'fixtures' folder into the database. 
+This is done by using the following command:
+```
+python3 manage.py loaddata <file name>
+```
+14. Create a new superuser with the following command:
+```
+python3 manage.py createsuperuser
+```
+and then enter chosen email, username and password.
+15. In settings.py, contain the previously entered database setting in an if statement, and add an else condition, so that different databases are 
+used depending on the environment.
+```
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
+```
+16. Disable 'COLLECTSTATIC' with the fillowing code: ``` heroku config:set DISABLE_COLLECTSTATIC=1 ``` 
+so that Heroku doesn't attempt to collect the static files.
+17. Add ```ALLOWED_HOSTS = ['siopafia.herokuapp.com', 'localhost']``` to settings.py.
+18. Add Stripe environment variables to settings.py.
+19. Push to Heroku using the following command:
+```git push heroku master```
+
+---
+
+
+## **Amazon Web Services**
+
+As in the walkthrough project, I used AWS to host the static and media files for the deployed site kept in the siopafia S3 bucket. I created a new account, then a new S3 bucket
+and uploaded the relevant static and media files. Detailed guidelines can be found [here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket.html).
+As guided in the Boutiquqe Ado walkthrough project, I used the following CORS configuration:
+```
+[
+    {
+        "AllowedHeaders": [
+            "Authorization"
+        ],
+        "AllowedMethods": [
+            "GET"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": []
+    }
+]
+```
+
+1. Returning to the IDE terminal, I installed boto3 and django-storages using the ```pip3 install``` and then froze them using ```pip3 freeze > requirements.txt```
+in order to connect the S3 bucket to Django.
+2. Added 'storages' to the list of ```INSTALLED_APPS``` in settings.py
+3. Added the following also in settings.py:
+```
+if 'USE_AWS' in os.environ:
+    if 'USE_AWS' in os.environ:
+        # Cache control
+        AWS_S3_OBJECT_PARAMETERS = {
+            'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+            'CacheControl': 'max-age=94608000',
+        }
+
+
+    # Bucket Config
+    AWS_STORAGE_BUCKET_NAME = 'siopafia'
+    AWS_S3_REGION_NAME = 'eu-west-1'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+    # Static and media files
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
+
+    # Override static and media URLs in production
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+```
+4. Created a custom_storages.py file at the top level folder which includes the location of the Static Storage and Media Storage.
+5. Removed DISABLE_COLLECTSTATIC from Heroku's Config Var.
+6. Pushed all the changes to Github and thus Heroku.
+
+## **Local Deployment**
+In order to make a local clone of the siopaFIA website, enter ```git clone https://github.com/elerel/ms4-siopa-fia.git``` into the
+terminal. 
+
+Alternatively, you can follow these steps, which are detailed on the official 
+[GitHub Documentation](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository)
+
+Next, create an .env.py file in the root directory of the project, and add it to the .gitignore file. 
+The following code needs to be added to the .env.py file:
+```
+import os  
+os.environ["DEVELOPMENT"] = "True"    
+os.environ["SECRET_KEY"] = "<Your Secret Key>"
+os.environ["STRIPE_PUBLIC_KEY"] = "<Your Stripe Public Key>"    
+os.environ["STRIPE_SECRET_KEY"] = "<Your Stripe Secret Key>"    
+os.environ["STRIPE_WH_SECRET"] = "<Your Stripe WH Secret Key>"   
+```
+
+Then make sure that the required packages are installed by running the following command: 
+```pip install -r requirements.txt```
+
+Make migrations and then migrate in order to create a database, by running the following commands:
+```python3 manage.py makemigrations``` and ```python3 manage.py migrate```.
+
+Load the fixtures from the 'product_types.json' file and then from the 'products.json' file - which are contained in the 'fixtures' folder into the database. 
+This is done by using the following command:
+```
+    python3 manage.py loaddata <file name> 
+```
+
+Create a superuser with the following command: ```python3 manage.py runserver``` and entering your credentials.
+
+Run the app by entering the following command:
+```python3 manage.py runserver```
+
+### **Disclaimer** 
+All images and content on this website is for educational purposes only.
+
+### **Acknowledgements**
+- My thanks to my mentor **Nishant Kumar**, the wonderful Slack Community, CI tutor support (my special thanks to Scott, Igor, John and Cormac!)
+- Thank you to my ever-supportive family in having the faith in me to keep going and to my two sweet little girls for letting Mummy "work"!
+
+
+##### [Back to Contents](#contents)
