@@ -181,14 +181,23 @@ Once the super user is logged in, they can edit or delete the blog or click "Add
 
 ### Blog Page:
 
-
+- Accessible to any user to the site, which includes all CRUD functionalities if logged in as a superuser.
+- Each blog is contained in its own card-style format and the user can read on by selecting "more" to open up the blog_detail page. The blog_detail page styling is kept basic with an image to upload should the user wish to include it (only the superuser can add any blog posts on user's behalf)
+- Scroll-to button to the right of the page for lengthy pages to improve UX.
+- The user can redirect back to the home page, products page or back to the blog page which are links below the blog post.
 
 ### Profile Page:
 
-This page is only accessible to a registered user where the user can track their purchases and update their details should they need: 
+This page is only accessible to a registered user where the user can track their purchases and update their details should they need. Divided into two sections, the first shows the user's default delivery information. If they have just made their first order, their address will be automatically saved with the details of their order. Here they can edit their default information which will speed up the checking out process which therefore makes the user more likely to make a purchase.
+The second section shows the user's order history which shows the order number, date, items purchased and order total. The user can click on the order number to view their past order. The user is notified by a toast message (alert) that they are looking at a previous order.
 
 
+### Product Management Page
 
+Accessible only to site admin, once logged in they can select "My Account" (dropdown in the navbar) and from there select Product Management where from here they can add any new product that fits into one of the categories listed (Clothing, Footwear, )
+
+
+### Blog Management Page
 
 ### [Features Left to Implement](#features-left-to-implement):
 - A welcome or discount offer, like 10% off their first purchase to entice the user to register or spend straight away.
@@ -274,9 +283,8 @@ What colours did you use primarily through the site, headers, text
     <p><img src="readme_materials/colors.jpg"></p>
 
 -   ### Typography
-    -   The Cutive Mono font is the logo font used throughout the whole website with Sans Serif as the fallback font in case for 
-    any reason the font isn't being imported into the site correctly. I chose this as I believe it has a modern feel and 
-    reflects the style of the remainder of the site.
+    -   The Cutive Mono font is the logo font used throughout the whole website for headers, navbar categories and dropdown list items partnered with "Monteserrat" font for the bulk text/paragraph use. Sans Serif was the fallback font in case for 
+    any reason the font isn't being imported into the site correctly. I chose these fonts as I felt it fit well with the 'eco' theme of the business without overstyling the site with flambouyancy. I believe it has a modern feel, both fonts stand out and fit well throughout the site.
 
     ![image](https://res.cloudinary.com/elerel/image/upload/v1628189312/cutivemono_taxx12.png)
 

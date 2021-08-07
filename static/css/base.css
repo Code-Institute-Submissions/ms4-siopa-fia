@@ -22,6 +22,11 @@ img {
     height: auto ;
   }
 
+
+ul {
+    list-style-type: none;
+}  
+
 .index-page {
     background: url('/media/jumperwoman.jpg') no-repeat center center fixed;
     background-size: cover;
