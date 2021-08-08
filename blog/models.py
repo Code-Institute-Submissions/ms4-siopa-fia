@@ -4,8 +4,8 @@ from django.contrib.auth.models import User
 
 class Blog(models.Model):
     title = models.CharField(max_length=200, unique=True)
-    body = models.TextField(max_length=200, blank=False, null=False,
-                            default="Intro")
+    intro = models.TextField(max_length=200, blank=False, null=False,
+                             default="Intro")
     body_one = models.TextField(blank=False,
                                 null=False, default="Paragraph 1")
     body_two = models.TextField(blank=True, null=True)

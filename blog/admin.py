@@ -5,7 +5,7 @@ from .models import Blog
 class BlogAdmin(admin.ModelAdmin):
     list_display = (
         'title',
-        'body',
+        'intro',
         'body_one',
         'body_two',
         'body_three',
