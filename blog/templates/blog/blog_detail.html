@@ -44,6 +44,13 @@
             <div class="row mt-3">
                 <div class="blog-content-container container">
                     <p class="text-center">{{ blog.body }}</p>
+                    <p class="text-center">{{ blog.body_one }}</p>
+                    {% if blog.body_two %}
+                    <p class="text-center">{{ blog.body_two }}</p>
+                    {% endif %}
+                    {% if blog.body_three %}
+                    <p class="text-center">{{ blog.body_three }}</p>
+                    {% endif %}
                     {% if request.user.is_superuser %}
                     <small class="ml-3">
                         <a href="{% url 'edit_blog' blog.id %}" class="blog-edit-btn">Edit </a> |
