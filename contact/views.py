@@ -116,9 +116,10 @@ def newsletter_unsubscribe(request):
             messages.success(request, f'{instance.email} \
                              has been removed from our mailing list')                               
         else:
-            messages.error(request, 'Sorry! This email is not currently in our mailing list.')
+            messages.error(request, 'Sorry! This email \
+                           is not currently in our mailing list.')
 
-    newsletter_form = NewsletterSubscribeForm()        
+    newsletter_form = NewsletterSubscribeForm()
     template = 'contact/confirmation_emails/newsletter_unsubscribe_confirm.html'
     context = {
         'newsletter_form': newsletter_form,

@@ -32,7 +32,7 @@
             </p>
             {% if request.user.is_superuser %}
             <small class="ml-3">
-               <a href="{% url 'edit_blog' blog.id %}">Edit</a> |
+               <a href="{% url 'edit_blog' blog.id %}" class="blog-edit-btn">Edit</a> |
                <button type="button" class="btn btn-sm text-danger" data-toggle="modal"
                   data-target="#deleteBlog_{{blog.id}}">
                   Delete
@@ -75,7 +75,11 @@
    </div>
 </div>
 {% endif %}
-
+<!--Contact Us-->
+<div class="col-12 text-center welcome-blog-text">
+   <h1 class="font-weight-bold faq-question text-uppercase text-center logo-font ">Interested in participating in our Blog Page?</h1>
+   <p>If you would like to enquire about adding a blog, please <strong><a href="{% url 'contact' %}">contact</a></strong> our team today!</p>
+</div>
 <!--Redirect buttons-->
 <div class="row blog-page-btns">
    <div class="col text-right">

@@ -46,7 +46,7 @@
                     <p class="text-center">{{ blog.body }}</p>
                     {% if request.user.is_superuser %}
                     <small class="ml-3">
-                        <a href="{% url 'edit_blog' blog.id %}" class="edit-btn">Edit </a> |
+                        <a href="{% url 'edit_blog' blog.id %}" class="blog-edit-btn">Edit </a> |
                         <button type="button" class="btn btn-sm delete-btn text-danger" data-toggle="modal"
                             data-target="#deleteBlog_{{blog.id}}">
                             Delete

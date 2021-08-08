@@ -68,10 +68,6 @@ ul {
   100% {opacity:1;}
 }
 
-.edit-btn {
-    margin-right: 3px;
-}
-
 
 a {
     color: #034909;
@@ -240,6 +236,10 @@ p {
     font-weight: bold;
 }
 
+.blog-edit-btn {
+    margin-right: 5px;
+}
+
 .blog-image {
     margin-top: 164px;
 }
@@ -299,7 +299,7 @@ p {
 }
 
 .shop-now-button {
-    background: #e0af1b !important;
+    background: #ffc107 !important;
     color: #000;
     position: absolute;
     left: 80px;
@@ -311,7 +311,6 @@ p {
             transform: translate(-50%, -50%);
     min-width: 180px;
 }
-
 
 .shop-now-button:hover,
 .signup-btn:hover {
@@ -370,11 +369,11 @@ p {
 }
 
 .bg-olive {
-    background-color: rgb(110, 168, 116) !important;
+    background-color: rgb(125,151,100) !important;
 }
 
 .bg-darkolive {
-    background-color: rgb(91, 110, 72) !important;
+    background-color: rgb(85,108,62) !important;
 }
 
 
@@ -409,7 +408,7 @@ p {
     top: 0;
     left: 0;
     position: fixed;
-    background: #bed6bc;
+    background: rgb(213,226,200);
     z-index: -1;
 }
 
@@ -602,6 +601,7 @@ a.category-badge>span.badge:hover {
 
 .edit-btn {
     padding-right: 10px;
+    font-size: 15px;
 }
 
 .delete-btn {
@@ -613,7 +613,7 @@ a.category-badge>span.badge:hover {
 }
 
 .signup-btn {
-    background-color: #e0af1b;
+    background-color: #ffc107;
     color: #000;
     border: 1px solid #000;
 }
@@ -865,12 +865,9 @@ a.category-badge>span.badge:hover {
 
 /*---------------------------------------------------------------- Colours Used */
 
-.text-green {
-    color: rgb(4, 54, 4) !important;
-}
-
+.text-green,
 .text-olive {
-    color: rgb(89, 114, 65) !important;
+    color: rgb(85,108,62);
 }
 
 .sub-text {

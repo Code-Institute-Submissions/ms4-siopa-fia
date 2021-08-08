@@ -194,18 +194,20 @@ The second section shows the user's order history which shows the order number, 
 
 ### Product Management Page
 
-Accessible only to site admin, once logged in they can select "My Account" (dropdown in the navbar) and from there select Product Management where from here they can add any new product that fits into one of the categories listed (Clothing, Footwear, )
+Accessible only to site admin, once logged in they can select "My Account" (dropdown in the navbar) and from there select Product Management where from here they can add any new product that fits into one of the categories listed (Clothing, Footwear, Skincare, etc.)
 
 
 ### Blog Management Page
+This page is also only available to site admin or the superuser. 
 
 ### [Features Left to Implement](#features-left-to-implement):
-- A welcome or discount offer, like 10% off their first purchase to entice the user to register or spend straight away.
-- A size guide on a separate HTML page but time did not allow!
-- 
+- A welcome or discount offer, such as 10% off their first purchase to entice the user to register or spend straight away.
+- A size guide on a separate HTML page
+- A favourites or wishlist added by the customer- this could then entyce the customer to come back to the site and make suture purchases.
 
 
 ## [Structure](structure)
+- I wanted to design siopaFIA in a way that seemed obvious to a new user; easy to navigate, find products easily and create a quick and fuss-free transaction. The site is divided into clear sections and created with Django using the following installed apps: Home, Products, Profiles, Bag, Checkout, Contact, About, Blog & FAQ. Having installed Django allauth, this addressed authentication, registration, account management as well as 3rd party (social) account authentication. Similar to the flow of e-commerce sites, like Boutique Ado, it created a natural transaction and with usage of the sticky navbar, footer, links to redirect across all pages, toast messages to guide the user of their interactions, siopaFIA should become an easy site to get around. 
 
 ### Database 
 - As suggested in throughout the walkthrough project, SQLlite (that comes pre-installed with Django) was used for development.
@@ -276,25 +278,27 @@ Full mobile and tablet wireframes can be access [here](static/readme/wireframes/
    
 ### Design
 -   #### Colour Scheme
-    
-What colours did you use primarily through the site, headers, text
-    - I used [Sessions.edu](https://www.sessions.edu/color-calculator/) to work out the correct complimentary colours, and 
-    [Coolors](https://coolors.co/042d52-1b466c-f9fafa) to create the palette below.
-    <p><img src="readme_materials/colors.jpg"></p>
+    As the colour green is the dominant colour throughout the site, I thought it was a good choice that suited the theme of the site. It is fresh, clean and most often the colour choice for use with the term, "eco" or "environment". The colour chart used is as below, taken from [Color-Hex:](https://www.color-hex.com/color-palette/112498)
 
--   ### Typography
-    -   The Cutive Mono font is the logo font used throughout the whole website for headers, navbar categories and dropdown list items partnered with "Monteserrat" font for the bulk text/paragraph use. Sans Serif was the fallback font in case for 
-    any reason the font isn't being imported into the site correctly. I chose these fonts as I felt it fit well with the 'eco' theme of the business without overstyling the site with flambouyancy. I believe it has a modern feel, both fonts stand out and fit well throughout the site.
+    ![image](https://res.cloudinary.com/elerel/image/upload/v1628434425/darkrose_green_Color_Palette_-_color-hex.com_busqpd.png)
 
-    ![image](https://res.cloudinary.com/elerel/image/upload/v1628189312/cutivemono_taxx12.png)
+-   The other strong colour I wanted to go with the green chart is #FFC107 - a strong, bold and mustard-like colour that is eye catching and grabs the user's attention. I used it for the CTA button on the home page, the submit button below the newsletter signup and when hovering over the links in the footer:
 
--   ### Imagery
-    - For most of the product images, I compiled a list from [Kaggle](https://www.kaggle.com/paramaggarwal/fashion-product-images-small) and then sourced the rest of the images from [Pixabay](https://pixabay.com/), [Unsplash](https://unsplash.com/) and [Pexels](https://www.pexels.com/)
+    ![image](https://res.cloudinary.com/elerel/image/upload/v1628435266/colors_muj5yj.png)
 
-    - All photos were put through [Tiny PNG](https://tinypng.com/) to reduce the file size and improve loading time.
 
--   ### Icons
-    -   The icons used throughout the site are taken from [Font Awesome](https://fontawesome.com/).
+
+### Typography
+[Cutive Mono](https://fonts.google.com/specimen/Cutive+Mono) font is the logo font used throughout the whole website for headers, navbar categories and dropdown list items partnered with [Monteserrat](https://fonts.google.com/specimen/Montserrat?query=mon) font for the bulk text/paragraph use. Sans Serif was the fallback font in case for 
+any reason the font isn't being imported into the site correctly. I chose these fonts as I felt it fit well with the 'eco' theme of the business without overstyling the site with flambouyancy. I believe it has a modern feel, both fonts stand out and fit well throughout the site.
+
+![image](https://res.cloudinary.com/elerel/image/upload/v1628189312/cutivemono_taxx12.png)
+
+ ### Imagery
+ For most of the product images, I compiled a list from [Kaggle](https://www.kaggle.com/paramaggarwal/fashion-product-images-small) and then sourced the rest of the images from [Pixabay](https://pixabay.com/), [Unsplash](https://unsplash.com/) and [Pexels](https://www.pexels.com/)
+
+### Icons
+The icons used throughout the site are taken from [Font Awesome](https://fontawesome.com/).
 
 
 ---
@@ -320,7 +324,7 @@ What colours did you use primarily through the site, headers, text
 - [SQLite3](https://www.sqlite.org/index.html) is the database that was used in production.
 - [PostgreSQL](https://www.postgresql.org/) is the database used by the deployed site.
 - [Heroku](https://www.heroku.com/) is used as an online cloud platform service used to host the site.
-- [JQuery](https://jquery.com/) was used extensively throughout the site, in order to provide functionality for Bootstrap elements, and for Stripe. 
+- [JQuery](https://jquery.com/) was used primarily throughout the site, in order to provide functionality for Bootstrap elements and for use of Stripe. 
 - [GitPod](https://gitpod.io/) was used as an IDE for this project. 
 - [GitHub](https://github.com/) is where siopaFIA's repository is stored. Regular commits were made throughout, and code was pushed to GitHub from GitPod.
 
@@ -330,6 +334,7 @@ Testing for siopaFIA has been documented in a separate file that can be accessed
 
 #### [Back to Contents](#contents)
 
+---
 
 # **Deployment**
 
@@ -340,8 +345,8 @@ In order to deploy the site onto [Heroku](https://dashboard.heroku.com/apps), I 
 2. Created a requirements.txt file and froze all the required modules to this file using ```pip3 freeze > requirements.txt```
 3. Created a Procfile and added ```web: gunicorn siopa_fia.wsgi:application```
 4. ```git add```, ```git commit``` and ```git push``` to push these changes to my GitHub repository.
-5. Logged into my Heroku account and created a new app, using Europe (eu-west-1) as my region.
-6. Next was selecting the Resources tab in Heroku, then in the Add-ons search bar added Heroku Postgres, select plan name **Hobby Dev - Free** then clicked 
+5. Logged into my Heroku account and created a new app, I selected Europe (eu-west-1) as my region.
+6. Select Resources tab in Heroku, then in the Add-ons search bar added Heroku Postgres, select plan name **Hobby Dev - Free** then clicked 
 Submit Order Form in order to add it to my project.
 7. In the dashboard for the application, I clicked on Settings, then Reveal Config Vars and set the following values to appear as below:
 
@@ -359,7 +364,7 @@ Submit Order Form in order to add it to my project.
 |USE_AWS	|```True```
 
 8. In the Deploy tab, under Deployment method, selected GitHub and then set up automatic deploys. When the app has finished building, click **Open app** button on the top right of the page.
-9. Commented out current DATABASE setting in settings.py, and add the following code instead - 
+9. Commented out current DATABASE setting in settings.py, and add the following code instead:
 ``` 
 DATABASES = {     
         'default': dj_database_url.parse("<your Postgres database URL here>")     
@@ -379,7 +384,12 @@ DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 ```
-12. Make migrations using the following command:
+12. Plan for migration with the following command:
+```
+python3 manage.py makemigrations --dry-run
+```
+
+13. Make migrations using the following command:
 ```
 python3 manage.py makemigrations
 ```
@@ -424,7 +434,7 @@ so that Heroku doesn't attempt to collect the static files.
 
 ## **Amazon Web Services**
 
-As in the walkthrough project, I used AWS to host the static and media files for the deployed site kept in the siopafia S3 bucket. I created a new account, then a new S3 bucket
+I used AWS to host the static and media files for the deployed site kept in the siopafia S3 bucket. I created a new account, then a new S3 bucket
 and uploaded the relevant static and media files. Detailed guidelines can be found [here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket.html).
 As guided in the Boutiquqe Ado walkthrough project, I used the following CORS configuration:
 ```
@@ -486,8 +496,8 @@ terminal.
 Alternatively, you can follow these steps, which are detailed on the official 
 [GitHub Documentation](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository)
 
-Next, create an .env.py file in the root directory of the project, and add it to the .gitignore file. 
-The following code needs to be added to the .env.py file:
+Next, create an .env.py file in the root directory of the project, and add it to the .gitignore file. This project will only run locally if an env.py file is set up containing the IP, PORT and SECRET_KEY. As per security measures advised, these details will not be shared on this documentation.
+The following code to be added to the .env.py file:
 ```
 import os  
 os.environ["DEVELOPMENT"] = "True"    
@@ -503,7 +513,7 @@ Then make sure that the required packages are installed by running the following
 Make migrations and then migrate in order to create a database, by running the following commands:
 ```python3 manage.py makemigrations``` and ```python3 manage.py migrate```.
 
-Load the fixtures from the 'product_types.json' file and then from the 'products.json' file - which are contained in the 'fixtures' folder into the database. 
+Load the fixtures from the 'products.json' file - which are contained in the 'fixtures' folder into the database. 
 This is done by using the following command:
 ```
     python3 manage.py loaddata <file name> 
@@ -514,11 +524,29 @@ Create a superuser with the following command: ```python3 manage.py runserver```
 Run the app by entering the following command:
 ```python3 manage.py runserver```
 
+
+### **Credits**
+
+**Code:**
+- The walkthrough project in the Full Stack Frameworks with Django Module, Boutique Ado, was used as the primary resource throughout this project.
+- For the Newsletter sign-up View in the Contact App, I followed this tutorial by [Master Code Online](https://www.youtube.com/watch?v=Hy94jBBgvpk)
+- To add an unsubscribe view to the Contact App, I followed this tutorial also by [Master Code Online](https://www.youtube.com/watch?v=q2B1VpjDjMQ)
+- [Bootstrap](https://getbootstrap.com/docs/5.0/forms/layout/) on grid layout for the Blog and FAQs page
+
+**Content:**
+- Snippets from blog post "Lets talk about going grey" is taken from [OhhByGum's Blog Page.](https://ohhbygum.ie/blogs/news/thinking-about-going-grey)
+- Blog post named "Marci Zaroff: The woman we have to thank for eco fashion" is from [liveeco.co.za](http://www.liveeco.co.za/2016/08/09/marci-zaroff-woman-thank-eco-friendly-fashion/)
+- Blog post named "Upcycled Fashion is Growing in India" is also taken from [liveeco.co.za](http://www.liveeco.co.za/2016/08/01/upcycled-fashion-growing-india/)
+- Blog post named "How to Dress Sustainably" is from [Harpers Bazaar](https://www.harpersbazaar.com/uk/fashion/what-to-wear/a41158/how-to-be-sustainable-fashion/)
+
+**Media:**
+- All images were taken from [Unsplash](), [Pixels](), and [Pixabay](), and some images from [Kaggle]() which are all royalty-free.
+
 ### **Disclaimer** 
 All images and content on this website is for educational purposes only.
 
 ### **Acknowledgements**
-- My thanks to my mentor **Nishant Kumar**, the wonderful Slack Community, CI tutor support (my special thanks to Scott, Igor, John and Cormac!)
+- My thanks to my mentor [**Nishant Kumar**](https://github.com/nishant8BITS/) for his time and support, the wonderful and helpful as ever Slack Community, CI tutor support (my special thanks to Scott, Igor, John and Cormac!) and last but not least, [Chris Z](https://github.com/ckz8780) for explaining everything so well and in-depth throughout the project.
 - Thank you to my ever-supportive family in having the faith in me to keep going and to my two sweet little girls for letting Mummy "work"!
 
 
