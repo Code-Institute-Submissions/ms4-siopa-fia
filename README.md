@@ -8,7 +8,7 @@
 
 View the live project [here.](https://siopafia.herokuapp.com/)
 
-Siopa Fia was created as my 4th and final milestone project as part of the Code Institute's Software Development Diploma, intending to be full-stack site based on a fictional online Irish eco/sustainable women's clothing store. Visitors to the site would be able to browse across all products available (women's clothing, footwear and cosmetics), read blogs posted by users or the owner, register for an account to keep track of their recent purchases and they can sign up to the company newsletter to avail of product discounts available in the future. siopaFIA is a fashion store that promotes sustainable fashion, for someone who likes to wear good quality clothing, made locally and supports local business.
+Siopa Fia was created as my 4th and final milestone project as part of the Code Institute's Software Development Diploma Course. It is intended to be full-stack e-commerce site using Python and Django frameworks and based on a fictional online Irish eco/sustainable women's clothing store. Visitors to the site would be able to browse across all products available (women's clothing, footwear and cosmetics), read blogs posted by users or the owner, register for an account to keep track of their recent purchases and they can sign up to the company newsletter to avail of product discounts available in the future. Siopa Fia or "siopaFIA" (as it will appear throughout the documentation) is a fashion store that promotes sustainable fashion, for someone who likes to wear good quality clothing, that is made locally and supports local business.
 
 
 The logic behind siopaFIA was to create an e-commerce based around a personal interest: eco-fashion. siopaFIA was created to incorporate every valuable takeaway learned from the [Code Institute's Full Stack Diploma in Web Development](https://codeinstitute.net/) course, maintaining a MVP approach to the site and keeping it to the level that fits my abilities.
@@ -222,6 +222,10 @@ Like Product Management, there is a form to fill out - simply the subject and co
 
 ![image](https://res.cloudinary.com/elerel/image/upload/v1626455309/drawSQL-export-2021-07-16_18_07_zniam0.png)
 
+Changes made to the Database Model since creation:
+- The one addition I made to the Blog Model was alter and create three further fields (intro, body_one, body_two, body_three) that contain TextFields. This was to allow more spacing and better paragraph usage in the blog_detail page thus avoiding long and chunky text that can be difficult to read.
+
+#### [Back to Contents](#contents)
 ---
 
 ## Wireframes
@@ -274,6 +278,7 @@ Full desktop wireframes can be access [here](static/readme/wireframes/siopafia_d
 
 Full mobile and tablet wireframes can be access [here](static/readme/wireframes/siopafia_tabletmobile_view.pdf)
 
+#### [Back to Contents](#contents)
 
 ## Surface
    
