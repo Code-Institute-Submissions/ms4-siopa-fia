@@ -221,7 +221,7 @@ p {
 }
 
 .blog-card-body {
-    background-color: rgb(111, 145, 80);
+    background-color: rgb(157,181,134);
     padding: 1.25rem;
 }
 
@@ -797,6 +797,10 @@ a.category-badge>span.badge:hover {
         font-size: 3px;
     }
 
+    .faq-question {
+        font-size: 1.4rem;
+    }
+
 }
 
 @media only screen and (min-width: 385px) and (max-width: 664px) {
@@ -806,6 +810,10 @@ a.category-badge>span.badge:hover {
 
     .navbar li p {
         font-size: .75rem;
+    }
+
+    .faq-question {
+        font-size: 1.6rem;
     }
 }
 
