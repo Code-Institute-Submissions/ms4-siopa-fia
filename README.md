@@ -198,12 +198,13 @@ Accessible only to site admin, once logged in they can select "My Account" (drop
 
 
 ### Blog Management Page
-This page is also only available to site admin or the superuser. 
+Like Product Management, this page is also only available to site admin or the superuser. Should a new user wish to add a blog to siopaFIA, they must contact the site admin so that they can request to send in an article or piece written by themselves. Only the admin have access to this page so they wold upload on the user's behalf.
+Like Product Management, there is a form to fill out - simply the subject and content with an image to upload should the user wish. Had I known at the time of creation, I would have included three content sections to make the content look more tidy, than one large block of text.
 
 ### [Features Left to Implement](#features-left-to-implement):
 - A welcome or discount offer, such as 10% off their first purchase to entice the user to register or spend straight away.
 - A size guide on a separate HTML page
-- A favourites or wishlist added by the customer- this could then entyce the customer to come back to the site and make suture purchases.
+- A favourites or wishlist added by the customer- this could allow the customer to save what they would have like to purchase at the time but were unable to. It further invites the user to come back to the site and make these saved purchases and possibly more.
 
 
 ## [Structure](structure)

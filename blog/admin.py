@@ -6,6 +6,9 @@ class BlogAdmin(admin.ModelAdmin):
     list_display = (
         'title',
         'body',
+        'body_one',
+        'body_two',
+        'body_three',
         'author',
         'published_date',
     )
