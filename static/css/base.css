@@ -49,7 +49,6 @@ ul {
     text-transform: uppercase;
     font-size: 3.5rem;
     font-weight: bold;
-    top: 200px;
     margin-left: 20px;
     animation: fadeIn linear 7s;
     -webkit-animation: fadeIn linear 7s;
@@ -770,7 +769,7 @@ a.category-badge>span.badge:hover {
     }
 }
 
-@media (max-width: 385px) {
+@media screen and (max-width: 385px) {
     .nav-link {
         padding: 0.05rem;
     }
@@ -844,17 +843,17 @@ a.category-badge>span.badge:hover {
 
 @media only screen and (min-width: 665px) and (max-width: 1092px) {
     .hero-text {
-        font-size: 2.5rem !important;
-        top: 200px;
+        font-size: 1.8rem;
+        
     }
     
     .because-text {
-        font-size: 3rem;
+        font-size: 2.2rem;
         margin-left: 0px;
     }
 
     .shop-now-button {
-        top: 525px;
+        top: 270px;
     }
 
 }
