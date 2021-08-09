@@ -148,8 +148,9 @@ p {
     color: rgb(111, 145, 80);
     -ms-flex-line-pack: center;
         align-content: center;
-    padding-top: 2rem;
+    padding-top: .75rem;
     font-size: 1.6rem;
+    line-height: 2;
 }
 
 

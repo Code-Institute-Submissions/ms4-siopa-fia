@@ -205,6 +205,8 @@ Like Product Management, there is a form to fill out - simply the subject and co
 - A welcome or discount offer, such as 10% off their first purchase to entice the user to register or spend straight away.
 - A size guide on a separate HTML page
 - A favourites or wishlist added by the customer- this could allow the customer to save what they would have like to purchase at the time but were unable to. It further invites the user to come back to the site and make these saved purchases and possibly more.
+- Email notification to the user/customer that should their order prove unsuccessful, this is also confirmed by email. This way they can keep track of what they were originally seeking to purchase.
+- Email notification to the business owner of any new order that is made- sent directly to the store's email rather than checking orders through admin.
 
 
 ## [Structure](structure)
