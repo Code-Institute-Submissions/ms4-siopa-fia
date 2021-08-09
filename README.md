@@ -288,7 +288,7 @@ Full mobile and tablet wireframes can be access [here](static/readme/wireframes/
 
     ![image](https://res.cloudinary.com/elerel/image/upload/v1628434425/darkrose_green_Color_Palette_-_color-hex.com_busqpd.png)
 
--   The other strong colour I wanted to go with the green chart is #FFC107 - a strong, bold and mustard-like colour that is eye catching and grabs the user's attention. I used it for the CTA button on the home page, the submit button below the newsletter signup and when hovering over the links in the footer:
+-   In addition to the colour chart chosen, primarily green, to add some diversity is #FFC107 - a strong, bold and mustard-toned yellow that I found eye catching and grabs the user's attention towards it. I used it for the CTA button on the home page, the submit button below the newsletter signup and when hovering over the links in the footer:
 
     ![image](https://res.cloudinary.com/elerel/image/upload/v1628435266/colors_muj5yj.png)
 
@@ -412,7 +412,8 @@ python3 manage.py loaddata <file name>
 ```
 python3 manage.py createsuperuser
 ```
-and then enter chosen email, username and password.
+proceed to then enter chosen email, username and password.
+
 15. In settings.py, contain the previously entered database setting in an if statement, and add an else condition, so that different databases are 
 used depending on the environment.
 ```

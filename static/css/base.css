@@ -96,7 +96,8 @@ a {
     letter-spacing: 3px;
 }
 
-.footer-link>a {
+.footer-link>a,
+.unsubscribe-link a {
     font-weight: bold;
     color: #ffc107 !important;
 }
@@ -875,6 +876,10 @@ a.category-badge>span.badge:hover {
 .text-green,
 .text-olive {
     color: rgb(85,108,62);
+}
+
+.text-yellow {
+    color: #ffc107 !important;
 }
 
 .sub-text {
