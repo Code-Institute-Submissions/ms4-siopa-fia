@@ -30,8 +30,8 @@
             </div>
 
             <!--Blog post if image uploaded-->
-            <div class="row">
-                <div class="col-10 offset-1 mt-4">
+            <div class="d-flex justify-content-center">
+                <div class="mt-4">
                     <div class="blog-image-detail h-50">
                         {% if blog.image %}
                         <img class="img-fluid" src="{{ blog.image.url }}" alt="{{ blog.title }}">
