@@ -31,7 +31,7 @@ Primary functions of Siopa Fia:
         - [User Stories](#user-stories)
     - [Scope](#scope)
         - [Existing Features](#current-features)
-            - [Base HTML](#base-HTML)
+            - [Base HTML](#base-html)
             - [Home Page](#home-page)
             - [All Products Page](#all-products-page)
             - [Product Detail Page](#product-detail-page)
@@ -123,7 +123,7 @@ Primary functions of Siopa Fia:
 
 ### [Existing Features](#existing-features)
 
-### Base HTML 
+### [Base HTML](#base-html)
 
 Features across all pages
 
@@ -194,6 +194,8 @@ Once the super user is logged in, they can edit or delete the blog or click "Add
 This page is only accessible to a registered user where the user can track their purchases and update their details should they need. Divided into two sections, the first shows the user's default delivery information. If they have just made their first order, their address will be automatically saved with the details of their order. Here they can edit their default information which will speed up the checking out process which therefore makes the user more likely to make a purchase.
 The second section shows the user's order history which shows the order number, date, items purchased and order total. The user can click on the order number to view their past order. The user is notified by a toast message (alert) that they are looking at a previous order.
 
+### [Product and Blog Management Page](#product-and-blog-management-page)
+---
 
 ### Product Management Page
 
@@ -204,12 +206,18 @@ Accessible only to site admin, once logged in they can select "My Account" (drop
 Like Product Management, this page is also only available to site admin or the superuser. Should a new user wish to add a blog to siopaFIA, they must contact the site admin so that they can request to send in an article or piece written by themselves. Only the admin have access to this page so they wold upload on the user's behalf.
 Like Product Management, there is a form to fill out - simply the subject and content with an image to upload should the user wish. Had I known at the time of creation, I would have included three content sections to make the content look more tidy, than one large block of text.
 
+#### Error Pages:
+- a custom 404 Error Page was designed to redirect the user back to the home page should they be met with a 404 error:
+![image](https://res.cloudinary.com/elerel/image/upload/v1628627009/404_ihxslr.png)
+- Much similar to the above 404 error page, a custom 500 Error Page was designed to redirect the user back to the home page should they be met with a 500 error.
+
 ### [Features Left to Implement](#features-left-to-implement):
 - A welcome or discount offer, such as 10% off their first purchase to entice the user to register or spend straight away.
 - A size guide on a separate HTML page
 - A favourites or wishlist added by the customer- this could allow the customer to save what they would have like to purchase at the time but were unable to. It further invites the user to come back to the site and make these saved purchases and possibly more.
 - Email notification to the user/customer that should their order prove unsuccessful, this is also confirmed by email. This way they can keep track of what they were originally seeking to purchase.
 - Email notification to the business owner of any new order that is made- sent directly to the store's email rather than checking orders through admin.
+- Additional payment providers such as Paypal or Apple Pay
 
 
 ## [Structure](structure)
@@ -220,14 +228,14 @@ Like Product Management, there is a form to fill out - simply the subject and co
 - PostgreSQL was used when deployed through Heroku (as an additional add-on).
 - The user model is provided by default with [Django's Authentication System](https://docs.djangoproject.com/en/3.1/ref/contrib/auth/)
 
-### Database Modelling
+### Data Modelling
 
 - All data related to Products was compiled in a JSON format and is stored in a fixtures folder, as does the FAQ data in its own fixtures folder.
 - The Data Model below was created using [drawSQL](https://drawsql.app/):
 
 ![image](https://res.cloudinary.com/elerel/image/upload/v1626455309/drawSQL-export-2021-07-16_18_07_zniam0.png)
 
-Changes made to the Database Model since creation:
+**Changes made to the Database Model since creation:**
 - The one addition I made to the Blog Model was alter and create three further fields (intro, body_one, body_two, body_three) that contain TextFields. This was to allow more spacing and better paragraph usage in the blog_detail page thus avoiding long and chunky text that can be difficult to read.
 
 #### [Back to Contents](#contents)
@@ -525,7 +533,7 @@ Then make sure that the required packages are installed by running the following
 Make migrations and then migrate in order to create a database, by running the following commands:
 ```python3 manage.py makemigrations``` and ```python3 manage.py migrate```.
 
-Load the fixtures from the 'products.json' file - which are contained in the 'fixtures' folder into the database. 
+Load the fixtures from the 'products.json' and 'faq.json' files - which are contained in the 'fixtures' folder into the database. 
 This is done by using the following command:
 ```
     python3 manage.py loaddata <file name> 

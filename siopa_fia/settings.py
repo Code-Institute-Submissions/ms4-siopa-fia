@@ -26,6 +26,7 @@ SECRET_KEY = os.environ.get(
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = False
 
 ALLOWED_HOSTS = ['siopafia.herokuapp.com', 'localhost']
 
