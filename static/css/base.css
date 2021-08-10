@@ -247,6 +247,7 @@ p {
 
 .blog-page-btns {
     margin: 10px 0 40px 0;
+    justify-content: center;
 
 }
 

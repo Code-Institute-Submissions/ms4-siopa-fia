@@ -96,7 +96,7 @@ Primary functions of Siopa Fia:
 | First time user      | view items selected in the shopping bag                                  | easily see how much I am spending                             |
 | First time user      | adjust or remove items from the shopping bag                             | easily change my order in case I change my mind               |
 | First time user      | access contact details;                                                  | get in touch with any questions                               |
-| First time user      | access social media of the company;                                      | join social media forums for news and updates                 |
+| First time user      | access social media of the company;                                      | view their social media presence                 |
 | First time user      | register for a user profile account by choosing a username and password; | store my own personal details and purchase history            |
 | First time user      | make purchases as a guest user                                           | do not have to set up an account if I dont want to            |              
 |          ---         |                                    ---                                   |                              ---                              |
