@@ -13,6 +13,7 @@ from bag.contexts import bag_contents
 import stripe
 import json
 
+
 @require_POST
 def cache_checkout_data(request):
     try:
@@ -162,20 +163,21 @@ def checkout_success(request, order_number):
             user_profile_form = UserProfileForm(profile_data, instance=profile)
             if user_profile_form.is_valid():
                 user_profile_form.save()
-    if 'user' in request.session:
-        messages.success(request, f'Order successfully processed! \
-            Your order number is {order_number}. A confirmation \
-            email will be sent to {order.email}.')
+                # Added to protect checkout success url being copied- referenced in credit section
+                if 'user' in request.session:
+                    messages.success(request, f'Order successful! \
+                        Your order number is {order_number}. \
+                        A confirmation email will be sent to {order.email}.')
 
     if 'bag' in request.session:
         del request.session['bag']
 
-    template = 'checkout/checkout_success.html'
-    context = {
-        'order': order,
-    }
+        template = 'checkout/checkout_success.html'
+        context = {
+            'order': order,
+        }
 
-    return render(request, template, context)
-
+        return render(request, template, context)
+    # Redirect to homepage if checkout success url is copied
     if 'user' not in request.session:
         return redirect('home')

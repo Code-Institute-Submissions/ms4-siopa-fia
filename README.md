@@ -542,6 +542,7 @@ Run the app by entering the following command:
 - To add an unsubscribe view to the Contact App, I followed this tutorial also by [Master Code Online](https://www.youtube.com/watch?v=q2B1VpjDjMQ)
 - [Bootstrap](https://getbootstrap.com/docs/5.0/forms/layout/) on grid layout for the Blog and FAQs page
 - [Stackoverflow](https://stackoverflow.com/questions/38062124/mobile-media-queries-in-landscape-mode) for help with fixing landscape orientation bug
+- [Django Docs](https://django-book.readthedocs.io/en/latest/chapter14.html) on users and sessions
 
 **Content:**
 - Snippets from blog post "Lets talk about going grey" is taken from [OhhByGum's Blog Page.](https://ohhbygum.ie/blogs/news/thinking-about-going-grey)
