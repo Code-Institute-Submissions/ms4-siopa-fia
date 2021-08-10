@@ -294,13 +294,16 @@ To ensure the site meets user expectations, I tested each of the user stories ca
     The user can log in and out of the site from 'My Account' link on the navbar. They are informed when they log in and out with a success toast message:
 
     - Signed in:
-    ![image](https://res.cloudinary.com/elerel/image/upload/v1628614767/signedin_qzt545.png)
+
+        ![image](https://res.cloudinary.com/elerel/image/upload/v1628614767/signedin_qzt545.png)
 
     - Sign out prompt: 
-    ![image](https://res.cloudinary.com/elerel/image/upload/v1628614799/signoutprompt_kr50hw.png)
+
+        ![image](https://res.cloudinary.com/elerel/image/upload/v1628614799/signoutprompt_kr50hw.png)
 
     - Signed out: 
-    ![image](https://res.cloudinary.com/elerel/image/upload/v1628614825/signedout_oedqkb.png)
+
+        ![image](https://res.cloudinary.com/elerel/image/upload/v1628614825/signedout_oedqkb.png)
 
 - *I want to be able to update my details so that I can update address or other details in case they change*
     - Once the user is signed in, they simply click on 'My Profile' from the 'My Account' link in the navbar. Then they are navigated to the profile page where they can update the form and select 'Update Information':
@@ -328,7 +331,34 @@ To ensure the site meets user expectations, I tested each of the user stories ca
 
 ## Site Owner User Stories    
 
-The site owner, superuser or admin can access the admin panel from the 
+The site owner, superuser or admin can access the admin panel from the navbar (if logged in) by clicking on 'My Account'. Site Administration will be the first item in the dropdown list and from here they will be redirected to Django Site Administration index page. 
+
+-   *As a site owner, I want the ability to add new items and categories to continuously update the site*
+    - The site owner can add new items when logged into the site as admin or super user via 'Product Management' or via Site Administration- both accessed from the navbar.
+    ---
+
+-   *I want to be able to update items, i.e. change item description or price*
+    - The superuser can do this once they are logged in and viewing a product by clicking on 'Edit' either on the products or product detail page. Alternatively they can log in to site admin and update accordingly there.
+    ---
+
+-   *I want to be able to delete items that are no longer for sale*
+    - The superuser can delete items, much the same way they can edit like above, by clicking on 'Delete' on the products or product detail page and alternatively from the site admin.
+    ---
+-   *I want to be able to view and manage new and existing orders to keep of track of business*
+    - By logging in to the site admin the superuser can keep track by clicking on 'Orders' in the Checkout app. All orders are stored here with customer name, date, order total, delivery charges and order number.
+    ---
+-   *I want to be able to view and manage newsletter subscriptions to keep track of new and exisiting newsletter subscribers and potential customers
+    - From the site admin, the superuser can access subscriber details under 'Newsletter Subscribes' under the 'Contact' app.
+    ---
+-   *I want to be able to keep track of contact details from the contact page*
+    - Like the above, the user can find all contact details under 'Contacts' in the site admin under 'Contact' app. They can read and delete previous messages sent to the site owner.
+    ---
+-   *I want to be able to manage blog posts, read, edit and delete each blog post uploaded to siopaFIA
+    - The superuser can access Blog management from the 'My Account' dropdown menu on the navbar once they are logged on. Here, they can add a blog and they can also do this from the blog page by clicking 'Add Blog' at the bottom of the blogs section. When logged in they can edit or delete each blog when on the blog page and on the blog detail page also. If they are in the site admin, they can also access each blog to read, edit, create or delete under 'Blogs' in the Blog app.
+    ---
+
+        
+
 
 #### [Back to contents](#contents)
 

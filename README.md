@@ -111,7 +111,10 @@ Primary functions of Siopa Fia:
 | Site Owner           | add new items and category listings;                                     | continuously update the site with new items or specials       |
 | Site Owner           | update items                                                             | change price or product criteria                              |
 | Site Owner           | delete items                                                             | delete items that are no longer for sale                      |
-
+| Site Owner           | view and manage orders made through siopaFIA                                                              | keep track of new and existing orders                      |
+| Site Owner           | view and manage newsletter subscriptions                                                              | keep track of new and existing newsletter subscribers, potential customers                      |
+| Site Owner           | view and manage users siopaFIA                                                              | keep track of new and existing users                      |
+| Site Owner           | view and manage blog posts, add, edit and delete existing blog posts made through siopaFIA                                                              | keep track of blog post page                      |
 
  ---
 
@@ -542,6 +545,7 @@ Run the app by entering the following command:
 - To add an unsubscribe view to the Contact App, I followed this tutorial also by [Master Code Online](https://www.youtube.com/watch?v=q2B1VpjDjMQ)
 - [Bootstrap](https://getbootstrap.com/docs/5.0/forms/layout/) on grid layout for the Blog and FAQs page
 - [Stackoverflow](https://stackoverflow.com/questions/38062124/mobile-media-queries-in-landscape-mode) for help with fixing landscape orientation bug
+- [Stackoverflow](https://stackoverflow.com/questions/29211115/adding-link-to-the-admin-index-page-in-django) on adding the Django admin index url
 - [Django Docs](https://django-book.readthedocs.io/en/latest/chapter14.html) on users and sessions
 
 **Content:**
