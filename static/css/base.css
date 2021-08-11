@@ -259,6 +259,11 @@ p {
     color: rgb(21, 131, 21);
 }
 
+.faq-delete-btn {
+    padding-left: 0px !important;
+    margin-bottom: 2px !important;
+}
+
 /* Clearfix (clear floats) */
 .staff-images::after {
     content: "";
