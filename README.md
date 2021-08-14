@@ -41,7 +41,7 @@ Primary functions of Siopa Fia:
             - [Profile Page](#profile-page)
             - [FAQs Page](#faqs-page)
             - [Profile Page](#profile-page)
-            - [Product and Blog Management Page](#product-and-blog-management-page)
+            - [Product and Blog Management Pages](#product-and-blog-management-pages)
         - [Features Left To Implement](#features-left-to-implement)
     - [Structure](#structure)
     - [Skeleton](#skeleton)
@@ -148,7 +148,7 @@ Throughout the site, users will see the free delivery offer on spending anything
  ![image](https://res.cloudinary.com/elerel/image/upload/v1628175943/footer_wjgzwr.png)
  
 
-### Home Page
+### Home Page:
 Upon entering the site, the user will get a feel of what the site is about with its catchy slogan above the call-to-action "Sale Now On!" button. The hero image of the girl snuggling into her "organic" sweater was chosen to convey the message of the siopaFIA's general mission statement of quality over quantity and promote sustainability. The sale button redirects the user to all products the website has to offer its customer. From there, the user will be able to view the selected items on sale and they can filter results using the sort by feature on the all products page. 
 
 
@@ -194,7 +194,7 @@ Once the super user is logged in, they can edit or delete the blog or click "Add
 This page is only accessible to a registered user where the user can track their purchases and update their details should they need. Divided into two sections, the first shows the user's default delivery information. If they have just made their first order, their address will be automatically saved with the details of their order. Here they can edit their default information which will speed up the checking out process which therefore makes the user more likely to make a purchase.
 The second section shows the user's order history which shows the order number, date, items purchased and order total. The user can click on the order number to view their past order. The user is notified by a toast message (alert) that they are looking at a previous order.
 
-### Product and Blog Management Page
+### Product and Blog Management Pages
 ---
 
 ### Product Management Page
@@ -418,7 +418,7 @@ and migrate the database models to the Postgres database using the following com
 ```
 python3 manage.py migrate
 ```
-13. Load the fixtures from the 'products.json' file and then from the 'products.json' file - which are contained in the 'fixtures' folder into the database. 
+13. Load fixtures from the relevant JSON files, which are contained in the 'fixtures' folders in the respective apps into the database. 
 This is done by using the following command:
 ```
 python3 manage.py loaddata <file name>
