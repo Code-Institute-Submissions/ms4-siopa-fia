@@ -94,6 +94,14 @@ Fixed? **Yes.** I wanted to avoid this so added an if statement to prevent anoth
 Fix: **Yes**
 In order to get around this, I double checked the media url and path name which was not matching the file name in the media directory and changed it to the correct name.
 
+6. On tablet and mobile view- the dropdown nav-links with little left spacing:
+
+    ![image](https://res.cloudinary.com/elerel/image/upload/v1628974172/navlinkbefore_jxrwtz.png)
+
+    To **fix**, I added "ml-2" to each of the unordered links on the navbar links which spaced out the menu text for better view:
+
+    ![image](https://res.cloudinary.com/elerel/image/upload/v1628974344/navlinknew_x5d8jj.png) 
+
 Other changes made before prior to submit:
 - Removed the two decimals from rating- improved the look with a simple decimal point.
 
@@ -102,12 +110,6 @@ Other changes made before prior to submit:
 - When the user is signed in, if they click Register or Sign In in the footer, they are redirected to the home page and no message appears to notify they are already logged in 
     - I wasnt immediately sure how to go about fixing this error- I first thought it might be a good idea to remove these from the footer, but left the two links there in case a guest user would like to sign up quickly while browsing the site. 
 
-- Footer: position on 404, 500 and pages with little content
-    - I found the footer was placed a little higher than I would have liked on the above pages:
-
-    ![image](https://res.cloudinary.com/elerel/image/upload/v1628972330/footer_lxtfhc.png)
-
-    -  To try and resolve this, I set the footer bottom to zero, set it to relative position and clear to both- still not doing the trick. Anything I added cause a large white space that took over the other images/content on the page. As I was stuck for time to complete, I added "py-5" or top and bottom padding set to three times its padding size which made a little difference and pushing the footer slightly downwards. I have left it as is as it only affect few pages and only is in effect on screens larger than 992px wide.
 
 #### [Back to contents](#contents)
 ## Testing Stripe Payments
