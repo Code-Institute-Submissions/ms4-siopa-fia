@@ -8,10 +8,10 @@
 
 View the live project [here.](https://siopafia.herokuapp.com/)
 
-Siopa Fia was created as my 4th and final milestone project as part of the Code Institute's Software Development Diploma Course. It is intended to be full-stack e-commerce site using Python and Django frameworks and based on a fictional online Irish eco/sustainable women's clothing store. Visitors to the site would be able to browse across all products available (women's clothing, footwear and cosmetics), read blogs posted by users or the owner, register for an account to keep track of their recent purchases and they can sign up to the company newsletter to avail of product discounts available in the future. Siopa Fia or "siopaFIA" (as it will appear throughout the documentation) is a fashion store that promotes sustainable fashion, for someone who likes to wear good quality clothing, that is made locally and supports local business.
+Siopa Fia was created as my 4th and final milestone project as part of the Code Institute's Software Development Diploma Course. It is intended to be a full-stack e-commerce site using Python and Django frameworks and based on a fictional online Irish eco/sustainable women's clothing store. Visitors to the site would be able to browse across all products available (women's clothing, footwear and cosmetics), read blogs posted by users or the owner, register for an account to keep track of their recent purchases and in addition they can sign up to the company newsletter to avail of product discounts available in the future. Siopa Fia or "siopaFIA" (as it will appear throughout the documentation) is a fashion store that promotes sustainable fashion, for someone who likes to wear good quality clothing, that is made locally and supports local business.
 
 
-The logic behind siopaFIA was to create an e-commerce based around a personal interest: eco-fashion. siopaFIA was created to incorporate every valuable takeaway learned from the [Code Institute's Full Stack Diploma in Web Development](https://codeinstitute.net/) course, maintaining a MVP approach to the site and keeping it to the level that fits my abilities.
+The logic behind siopaFIA was to create an e-commerce based around a personal interest: eco-fashion. siopaFIA was created to incorporate every valuable takeaway learned from the [Code Institute's Full Stack Diploma in Web Development](https://codeinstitute.net/) course, maintaining a MVP approach to the site whilst creating a fully-functioning e-commerce site.
 
 
 Primary functions of Siopa Fia:
@@ -69,7 +69,7 @@ Primary functions of Siopa Fia:
 
 # User Experience (UX)
 
-## [Strategy](#strategy)
+## Strategy
 
 ### Business Logic
 
@@ -119,11 +119,11 @@ Primary functions of Siopa Fia:
  ---
 
 
-## [Scope](#scope)
+## Scope
 
-### [Existing Features](#existing-features)
+### Existing Features
 
-### [Base HTML](#base-html)
+### Base HTML
 
 Features across all pages
 
@@ -194,7 +194,7 @@ Once the super user is logged in, they can edit or delete the blog or click "Add
 This page is only accessible to a registered user where the user can track their purchases and update their details should they need. Divided into two sections, the first shows the user's default delivery information. If they have just made their first order, their address will be automatically saved with the details of their order. Here they can edit their default information which will speed up the checking out process which therefore makes the user more likely to make a purchase.
 The second section shows the user's order history which shows the order number, date, items purchased and order total. The user can click on the order number to view their past order. The user is notified by a toast message (alert) that they are looking at a previous order.
 
-### [Product and Blog Management Page](#product-and-blog-management-page)
+### Product and Blog Management Page
 ---
 
 ### Product Management Page
@@ -211,7 +211,7 @@ Like Product Management, there is a form to fill out - simply the subject and co
 ![image](https://res.cloudinary.com/elerel/image/upload/v1628627009/404_ihxslr.png)
 - Much similar to the above 404 error page, a custom 500 Error Page was designed to redirect the user back to the home page should they be met with a 500 error.
 
-### [Features Left to Implement](#features-left-to-implement):
+### Features Left To Implement
 - A welcome or discount offer, such as 10% off their first purchase to entice the user to register or spend straight away.
 - A size guide on a separate HTML page
 - A favourites or wishlist added by the customer- this could allow the customer to save what they would have like to purchase at the time but were unable to. It further invites the user to come back to the site and make these saved purchases and possibly more.
@@ -220,8 +220,10 @@ Like Product Management, there is a form to fill out - simply the subject and co
 - Additional payment providers such as Paypal or Apple Pay
 
 
-## [Structure](structure)
+## Structure
 - I wanted to design siopaFIA in a way that seemed obvious to a new user; easy to navigate, find products easily and create a quick and fuss-free transaction. The site is divided into clear sections and created with Django using the following installed apps: Home, Products, Profiles, Bag, Checkout, Contact, About, Blog & FAQ. Having installed Django allauth, this addressed authentication, registration, account management as well as 3rd party (social) account authentication. Similar to the flow of e-commerce sites, like Boutique Ado, it created a natural transaction and with usage of the sticky navbar, footer, links to redirect across all pages, toast messages to guide the user of their interactions, siopaFIA should become an easy site to get around. 
+
+## Information Architecture
 
 ### Database 
 - As suggested in throughout the walkthrough project, SQLlite (that comes pre-installed with Django) was used for development.

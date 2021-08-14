@@ -245,9 +245,9 @@ Chrome, Firefox, Opera, Microsoft Edge, iOS and Samsung Internet were the browse
 
 To ensure the site meets user expectations, I tested each of the user stories categorised below:
 
-### First Time User
+### First Time User:
 - *I want to easily navigate around the site so that I can find what I am looking for quickly*
-    - With the implementation of the site sticky navbar and footer across all pages, links are clearly marked allowing the user to navigate easily around the site
+    - With the implementation of the site sticky navbar and footer across all pages, links are clearly marked allowing the user to navigate easily around the site.
     ---
     - Each of the buttons on each page is clearly marked and functional
     - The site is consistent in appearance without anything unexpected or hidden from the user, with many options to redirect to the home page if need be.
@@ -264,13 +264,13 @@ To ensure the site meets user expectations, I tested each of the user stories ca
     ---
 
 - *I want to be able to view individual product details so I can see exactly what I am buying*
-    - The user simply clicks on the item image and are navgated to the product detail page where there is a non-lengthy description, size and quantity selector box and proceed to their shopping bag from there
-    - The names, categories and price all match the same item selected from the product page 
+    - The user simply clicks on the item image and are navgated to the product detail page where there is a non-lengthy description, size and quantity selector box and proceed to their shopping bag from there.
+    - The names, categories and price all match the same item selected from the product page.
     ---
 
 - *I want to be able to read about the company so that I gain trust and support local business*
-    - Should the user wish to find out more about the company's values and origins they can select 'About Us' that is found on the navbar across all pages. This page is divided into three sections, About Us, Our Philosophy and Meet the Team where the user can find out all the vital information around siopaFIA
-    - In addition, they can contact the company via the Contact page should they have any queries
+    - Should the user wish to find out more about the company's values and origins they can select 'About Us' that is found on the navbar across all pages. This page is divided into three sections, About Us, Our Philosophy and Meet the Team where the user can find out all the vital information around siopaFIA.
+    - In addition, they can contact the company via the Contact page should they have any queries.
     ---
 
 - *I want to be able to search for categories of products so that I can find the best-rated/priced products in a specific category*
@@ -279,23 +279,23 @@ To ensure the site meets user expectations, I tested each of the user stories ca
     ---
 
 - *I want to be able to view items selected in the shopping bag so I easily see how much I am spending*
-    - The user can at any time view their total spend by viewing the total amount above the shopping bag icon- each time an item is added or removed, the total amount reflects this change
-    - If the user clicks on the shopping bag icon/total amount in the navbar, they are navigated to the shopping bag
+    - The user can at any time view their total spend by viewing the total amount above the shopping bag icon- each time an item is added or removed, the total amount reflects this change.
+    - If the user clicks on the shopping bag icon/total amount in the navbar, they are navigated to the shopping bag.
     ---
 
 - *I want to be able to adjust or remove items from the shopping bag in case I change my mind*
-    - Their shopping bag can be adjusted by clicking on the bag icon in the navbar and then they are redirected to the shopping bag
+    - Their shopping bag can be adjusted by clicking on the bag icon in the navbar and then they are redirected to the shopping bag.
     - Once they are in the shopping bag page, they can adjust the bag by choosing the amount using the quantity selector box or remove the item completely by selecting 'Remove' - both options present below the quantity selector box:
     ![image](https://res.cloudinary.com/elerel/image/upload/v1628613418/updatebag_puyd4r.png)
     ---
 
 - *I want to access contact details so that I can get in touch with any questions*
-    - A Contact Us link is available in the About Us dropdown item in the navbar and in the footer, under Company menu should the user wish to access the contact page
-    - Once the user is on the Contact page, they will find more contact details and can also submit the form with any questions they might have
+    - A Contact Us link is available in the About Us dropdown item in the navbar and in the footer, under Company menu should the user wish to access the contact page.
+    - Once the user is on the Contact page, they will find more contact details and can also submit the form with any questions they might have.
     ---
 
 - *I want to easily access social media about the company to discover their social media presence*
-    - The user can find the company social links in the left-hand-side footer and each page then opens up in a new tab
+    - The user can find the company social links in the left-hand-side footer and each page then opens up in a new tab.
     ---
 
 - *I want to be able to register for a user profile account by choosing a username or password so that I can store my personal details and purchase history*
@@ -306,10 +306,10 @@ To ensure the site meets user expectations, I tested each of the user stories ca
     - The user can still make purchases from the site without signing up creating a better user experience if they wish to purchase something in a hurry. The user just needs to fill out the forms and will be notified the same way a registered user is by email of purchase confirmation. They need to create an account if they wish to have their billing information saved for the next time they come to purchase.
     ---
 #### [Back to contents](#contents)
-### Registered User 
+### Registered User:
 
 - *I want to be able to log in and out of my profile to protext my information whilst not active on the site*
-    The user can log in and out of the site from 'My Account' link on the navbar. They are informed when they log in and out with a success toast message:
+    -   The user can log in and out of the site from 'My Account' link on the navbar. They are informed when they log in and out with a success toast message:
 
     - Signed in:
 
@@ -356,7 +356,7 @@ To ensure the site meets user expectations, I tested each of the user stories ca
     - The confirmation email will detail all the purchase information of that particular transaction. Should they need, they can contact the site admin from that email if they have any questions.
     ---
 
-## Site Owner User Stories    
+## Site Owner User:   
 
 The site owner, superuser or admin can access the admin panel from the navbar (if logged in) by clicking on 'My Account'. Site Administration will be the first item in the dropdown list and from here they will be redirected to Django Site Administration index page. 
 
