@@ -174,7 +174,7 @@ p {
     padding: 5px;
 }
 
-/*------------------------------------------------------------------Philophy page */
+/*------------------------------------------------------------------Philosophy page */
 
 .faq-page {
     background: url('/media/blogheaderimage.jpg') no-repeat center center fixed;
@@ -871,6 +871,10 @@ a.category-badge>span.badge:hover {
     .shop-now-button {
         top: 525px;
         
+    }
+
+    .error-container {
+        margin-bottom: 120px !important;
     }
 } 
 
