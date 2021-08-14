@@ -79,8 +79,8 @@ a {
 }
 
 .mobile-menu {
-    margin: 8px 0 8px 0;
-
+    margin: 8px 10px 8px 0;
+    
 }
 
 /*--------------------FOOTER STYLING------*/
@@ -798,10 +798,6 @@ a.category-badge>span.badge:hover {
     .shop-now-button {
         top: 325px;
         
-    }
-
-    .mobile-logo {
-        font-size: 3px;
     }
 
     .faq-question {
